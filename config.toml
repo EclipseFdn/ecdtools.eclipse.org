@@ -1,0 +1,69 @@
+baseurl = "https://ecdtools.eclipse.org/"
+DefaultContentLanguage = "en"
+title = "Eclipse ecdtools"
+theme = "eclipsefdn-hugo-solstice-theme"
+metaDataFormat = "yaml"
+googleAnalytics = "UA-910670-30"
+disableKinds = []
+themesDir = "node_modules/"
+enableRobotsTXT = true
+pluralizeListTitles = false
+
+[Params]
+  google_tag_manager = "GTM-5WLCZXC"
+  description = "The Eclipse Cloud Development Tools Working Group drives the evolution and broad adoption of de facto standards for cloud development tools, including language support, extensions, and developer workspace definition."
+  seo_title_suffix = " | The Eclipse Foundation"
+  keywords = []
+  logo = "images/ecdtools/ecdtools-logo-white.svg"
+  styles = "css/styles.css"
+#  favicon = "images/ecdtools/favicon/favicon.ico"
+#  share_img = "images/ecdtools/social-image-ecdtools.png"
+  gcse = "011805775785170369411:p3ec0igo0qq"
+  js = "js/solstice.js"
+  header_wrapper_class = " featured-section-darken header-default-bg-img"
+  logo_width = "210"
+  header_left_classes = "col-sm-7"
+  main_menu_wrapper_classes = "col-sm-17 margin-top-25"
+  
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  membership_level = "membership_levels"
+  participation_level = "participation_levels"
+
+[Author]
+  name = "Christopher Guindon"
+  website = "https://www.eclipse.org"
+  email = "webdev@eclipse-foundation.org"
+  facebook = "eclipse.org"
+  twitter = "EclipseFdn"
+  youtube = "EclipseFdn"
+  googleplus = "+Eclipse"
+  linkedin = "company/eclipse-foundation/"
+
+[permalinks]
+  news = "/:sections/:year/:month/:day/:slug/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
+[[menu.main]]
+    name = "About"
+    url = "/about/faq"
+    weight = 1
+
+[[menu.main]]
+    name = "Members"
+    url = "/#members"
+    weight = 2
+
+[[menu.main]]
+    name = "Testimonials"
+    url = "/#testimonials"
+    weight = 2
+
+[[menu.main]]
+    name = "Join"
+    url = "https://accounts.eclipse.org/contact/membership"
+    weight = 2

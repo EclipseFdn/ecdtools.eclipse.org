@@ -1,0 +1,173 @@
+/*!
+ * Copyright (c) 2019 Eclipse Foundation, Inc.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * Contributors:
+ *   Christopher Guindon <chris.guindon@eclipse-foundation.org>
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+@import '~eclipsefdn-solstice-assets/less/quicksilver/styles.less';
+@import '_variables.less';
+
+#header-wrapper{
+  background-size:cover;
+  background-image: url('images/jumbotron-image.jpg');
+  background-position: 0 100%;
+  .featured-jumbotron{
+    padding-top:48px;
+  }
+}
+
+.btn-primary{
+  .btn-warning;
+}
+
+.btn{
+  border: none;
+}
+.logo-eclipse-default{
+  padding-top:9px;
+}
+
+.logo-eclipse-default-mobile{
+  max-width:260px;
+}
+
+.featured-ad a{
+  float:none;
+}
+
+.news-list{
+  .news-list-col {
+    margin-bottom:0;
+    padding-bottom:0;
+    h2.heading-line {
+      text-align:center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+  }
+  .media-link:hover {
+    .box-shadow(3px 3px 3px #cecece);
+    background-color: white;
+  }
+}
+
+.event-list {
+  a:visited{
+    color: @brand-tertiary;
+  }
+}
+
+.featured-section{
+  padding: 60px 0 60px 0;
+  background-position: 0 100%;
+  font-size:19px;
+  h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: @brand-primary;
+    margin-top:0;
+    text-transform: uppercase;
+  }
+  p{
+    margin-bottom:20px;
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+  .feather {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.featured-section-darken{
+  background: @brand-primary;
+  color: #fff;
+  h2 {
+    color: white;
+  }
+}
+
+.featured-section-testimonials{
+  background-size:cover;
+  background-image: url('images/testimonial-image.jpg');
+  background-position: 0 100%;
+}
+
+.featured-section-members {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  li {
+   padding:10px;
+  }  
+}
+
+.testimonial-item {
+  margin-top:120px;
+  .testimonial-logo {
+    background-color: #f9f9f9;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin: -120px auto 30px;
+    position: relative;
+    img {
+      margin:0 auto;
+    }
+  }
+  .title {
+    font-size:18px;
+    display: flex;
+    flex-direction: column;
+    strong {
+      font-size: larger;
+    }
+  }
+  .content {
+    font-size:16px;
+  }
+}
+
+.mission-circle {
+  display:block;
+  width:300px;
+  height:300px;
+  padding:37px 26px 34px 40px;
+  background-color:@white;
+  border-radius:150px;
+  margin:0px auto 0;
+  img{
+    margin-top:-26px;
+    padding:10px;
+  }
+}
+
+.featured-section-statement {
+  background-size:cover;
+  background-image: url('images/mission-statement-image.jpg');
+  background-position: 0 50%;
+}
+
+@media (max-width: @screen-xs-max) {
+  .featured-section-faq,
+  .featured-section-statement{
+    text-align:center;
+  }
+  .mission-circle{
+    margin-top: 50px;
+  }
+}
+.featured-jumbotron h1 sup {
+  font-size: 0.66em;
+  position: relative;
+  top: -0.34em;
+}
