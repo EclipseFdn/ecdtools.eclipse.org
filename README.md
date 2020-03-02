@@ -4,7 +4,7 @@ The [ecdtools.eclipse.org](https://ecdtools.eclipse.org) website is generated wi
 
 The Eclipse Cloud Development Tools Working Group drives the evolution and broad adoption of de facto standards for cloud development tools, including language support, extensions, and developer workspace definition. In addition, the group explores the impacts and optimizations for running developer tools in a cloud environment, including scale out / scale-to-zero execution of compute-intensive tasks like CI and testing.
 
-[![Build Status](https://travis-ci.org/eclipsefdn/ecdtools.eclipse.org.svg?branch=src)](https://travis-ci.org/eclipsefdn/ecdtools.eclipse.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/8d42015f-09c7-46b1-9f9c-419404d01f6d/deploy-status)](https://app.netlify.com/sites/eclipsefdn/deploys)
+[![Build Status](https://travis-ci.org/EclipseFdn/ecdtools.eclipse.org.svg?branch=master)](https://travis-ci.org/eclipsefdn/ecdtools.eclipse.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/8d42015f-09c7-46b1-9f9c-419404d01f6d/deploy-status)](https://app.netlify.com/sites/eclipsefdn/deploys)
 
 ## Getting started
 
