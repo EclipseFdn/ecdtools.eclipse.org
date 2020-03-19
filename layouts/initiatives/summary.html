@@ -1,0 +1,23 @@
+<div class="initiative-summary">
+	<h3>{{ .Title }}</h3>
+	{{ .Content }}
+	{{ if .Params.preliminary_work }}
+	<p><strong>Preliminary Work:</strong> {{ .Params.preliminary_work }}</p>
+	{{ end }}
+	<p><strong>Output:</strong> {{ .Params.output }}</p>
+	<h4>Participants</h4>
+	<ul class="list-inline">
+	{{ range sort .Params.participants }}
+		{{ $id:= . }}
+		{{ range $.Site.Data.members.types }}
+			{{ range first 1 (where .items "id" $id) }}
+			<li class="vertical-align">
+				<a href="{{.link}}" title="{{ .title }} homepage" target="_blank">
+					<img class="img img-responsive" src="{{ .image | relURL }}" alt="{{ .title }} logo" width="{{ .img_width | default 125 }}"/>
+				</a>
+			</li>
+			{{ end }}
+		{{ end }}
+	{{ end }}
+	</ul>
+</div>
