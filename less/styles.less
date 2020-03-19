@@ -56,6 +56,10 @@
     .box-shadow(3px 3px 3px #cecece);
     background-color: white;
   }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 }
 
 .event-list {
@@ -88,7 +92,7 @@
 }
 
 .featured-section-darken{
-  background: @brand-primary;
+  background: @brand-tertiary;
   color: #fff;
   h2 {
     color: white;
@@ -105,8 +109,39 @@
   padding-top: 80px;
   padding-bottom: 80px;
   li {
-   padding:10px;
+   padding: 15px;
   }  
+}
+
+.featured-section-initiatives {
+	background-color: #efefef;
+}
+section#wg-projects {
+  & {
+    margin-top: 20px; 
+    margin-bottom: 40px;
+  }
+  img {max-height: 100px;}
+  .image-container { height: 75px; }
+  li { 
+    & {
+      padding: 10px;
+    }
+    & > div > a { 
+      position: absolute; 
+      bottom: 20px; 
+      margin-left: auto;
+      margin-right: auto; 
+      left: 20px; 
+      right: 20px;
+    }
+    & > div { 
+      border: 1px solid #f0f0f2;
+      padding:10px;
+      padding-bottom: 50px;
+      background-color: #fff;
+    }
+  }
 }
 
 .testimonial-item {
@@ -171,4 +206,17 @@
   font-size: 0.66em;
   position: relative;
   top: -0.34em;
+}
+
+.initiative-summary {
+	& {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	& h4 {
+		margin-top: 20px;
+	}
+	& ul.list-inline li {
+		padding: 0 15px;
+	}
 }

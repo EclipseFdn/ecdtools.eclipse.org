@@ -1,0 +1,82 @@
+<!-- 
+  Copyright (c) 2020 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Martin Lowe <martin.lowe@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+{{/* Pre process projects to find projects with the given working groups (if one is set) */}}
+{{ range sort $.Site.Data.eclipsefdn_projects "name" "asc" }}
+  {{ $project_contains_working_group := false }}
+  {{ if $.Site.Params.projects_working_group }}
+    {{ $working_group_id := $.Site.Params.projects_working_group }}
+    {{ range .working_groups }}
+      {{ if and (ne $project_contains_working_group true) (eq .id $working_group_id) }}
+        {{ $project_contains_working_group = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if or (not ($.Site.Params.projects_working_group)) (eq $project_contains_working_group true) }}
+    {{ $.Scratch.SetInMap "wg_projects" .name . }}
+  {{ end }}
+{{ end }}
+
+<section id="wg-projects" class="container" data-filter-wg="{{ $.Site.Params.projects_working_group }}">
+  <div class="row">
+    <h2 id="projects" class="brand-primary text-center">Projects</h2>
+    <p class="text-center">The ECD WG serves to advance, promote, and drive community participation in a broad portfolio of Eclipse projects.</p>
+    <ul class="list-inline margin-top-30">
+      {{ range first 4 ($.Scratch.GetSortedMapValues "wg_projects") }} 
+      <li class="col-xs-12 col-sm-8 col-md-6 ">
+        <div class="match-height-item-by-row text-center">
+          <h2 class="h4">
+            <span class="image-container vertical-align margin-bottom-20">
+              {{ if .logo }}
+              <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
+              {{ else }}
+              <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
+              {{ end }}
+            </span>
+            {{ .name }}
+          </h2>
+          <p>{{ .summary | safeHTML }}</p>
+          <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
+        </div>
+      </li>
+      {{ end }}
+      {{if gt (len ($.Scratch.GetSortedMapValues "wg_projects")) 3}}
+        <div class="collapse" id="featured-more-projects" aria-expanded="true" style="">
+          {{ range after 4 ($.Scratch.GetSortedMapValues "wg_projects") }} 
+          <li class="col-xs-12 col-sm-8 col-md-6 ">
+            <div class="match-height-item-by-row text-center">
+              <h2 class="h4">
+                <span class="image-container vertical-align margin-bottom-20">
+                  {{ if .logo }}
+                  <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
+                  {{ else }}
+                  <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
+                  {{ end }}
+                </span>
+                {{ .name }}
+              </h2>
+              <p>{{ .summary | safeHTML }}</p>
+              <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
+            </div>
+          </li>
+          {{ end }}
+        </div>
+      {{ end }}
+    </ul>
+  </div>
+  {{ if gt (len ($.Scratch.GetSortedMapValues "wg_projects")) 3 }}
+  <p class="text-center margin-top-30">
+    <a data-toggle-text="Close" role="button" data-toggle="collapse" href="#featured-more-projects" aria-expanded="true" aria-controls="featured-more-projects" class="btn btn-primary toggle-text">View More</a>
+  </p>
+  {{ end }}
+</section>
