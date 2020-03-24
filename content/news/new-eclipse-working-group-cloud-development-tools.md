@@ -1,5 +1,5 @@
 ---
-title: "New Eclipse Working Group: Cloud Development Tools – \"The time has come for the IDE to move into the browse\""
+title: "New Eclipse Working Group: Cloud Development Tools – \"The time has come for the IDE to move into the browser\""
 date: 2019-10-11T00:00:00-04:00
 hide_page_title: "false"
 link: https://jaxenter.com/eclipse-working-group-cloud-development-tools-162927.html
