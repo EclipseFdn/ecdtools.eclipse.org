@@ -10,6 +10,8 @@
 
   SPDX-License-Identifier: EPL-2.0
 -->
+
+{{ $highlights:= split (.Get "highlight") ":" }}
 {{/* Pre process projects to find projects with the given working groups (if one is set) */}}
 {{ range sort $.Site.Data.eclipsefdn_projects "name" "asc" }}
   {{ $project_contains_working_group := false }}
@@ -32,43 +34,48 @@
     <h2 id="projects" class="brand-primary text-center">Projects</h2>
     <p class="text-center">The ECD WG serves to advance, promote, and drive community participation in a broad portfolio of Eclipse projects.</p>
     <ul class="list-inline margin-top-30">
-      {{ range first 4 ($.Scratch.GetSortedMapValues "wg_projects") }} 
-      <li class="col-xs-12 col-sm-8 col-md-6 ">
-        <div class="match-height-item-by-row text-center">
-          <h2 class="h4">
-            <span class="image-container vertical-align margin-bottom-20">
-              {{ if .logo }}
-              <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
-              {{ else }}
-              <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
-              {{ end }}
-            </span>
-            {{ .name }}
-          </h2>
-          <p>{{ .summary | safeHTML }}</p>
-          <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
-        </div>
-      </li>
+      {{ range $highlights }}
+        {{ $id:=.}}
+        {{ range first 1 (where ($.Scratch.GetSortedMapValues "wg_projects") "project_id" $id) }} 
+        <li class="col-xs-12 col-sm-8 col-md-6 ">
+          <div class="match-height-item-by-row text-center">
+            <h2 class="h4">
+              <span class="image-container vertical-align margin-bottom-20">
+                {{ if .logo }}
+                <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
+                {{ else }}
+                <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
+                {{ end }}
+              </span>
+              {{ .name }}
+            </h2>
+            <p>{{ .summary | safeHTML }}</p>
+            <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
+          </div>
+        </li>
+        {{ end }}
       {{ end }}
-      {{if gt (len ($.Scratch.GetSortedMapValues "wg_projects")) 3}}
+      {{if gt (len ($.Scratch.GetSortedMapValues "wg_projects")) 4}}
         <div class="collapse" id="featured-more-projects" aria-expanded="true" style="">
-          {{ range after 4 ($.Scratch.GetSortedMapValues "wg_projects") }} 
-          <li class="col-xs-12 col-sm-8 col-md-6 ">
-            <div class="match-height-item-by-row text-center">
-              <h2 class="h4">
-                <span class="image-container vertical-align margin-bottom-20">
-                  {{ if .logo }}
-                  <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
-                  {{ else }}
-                  <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
-                  {{ end }}
-                </span>
-                {{ .name }}
-              </h2>
-              <p>{{ .summary | safeHTML }}</p>
-              <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
-            </div>
-          </li>
+          {{ range after 4 ($.Scratch.GetSortedMapValues "wg_projects") }}
+            {{ if not (in $highlights .project_id) }}
+            <li class="col-xs-12 col-sm-8 col-md-6 ">
+              <div class="match-height-item-by-row text-center">
+                <h2 class="h4">
+                  <span class="image-container vertical-align margin-bottom-20">
+                    {{ if .logo }}
+                    <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
+                    {{ else }}
+                    <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
+                    {{ end }}
+                  </span>
+                  {{- .name -}}
+                </h2>
+                <p>{{ .summary | safeHTML }}</p>
+                <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
+              </div>
+            </li>
+            {{ end }}
           {{ end }}
         </div>
       {{ end }}
