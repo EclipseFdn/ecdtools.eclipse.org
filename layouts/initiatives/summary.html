@@ -4,7 +4,7 @@
 	{{ if .Params.preliminary_work }}
 	<p><strong>Preliminary Work:</strong> {{ .Params.preliminary_work }}</p>
 	{{ end }}
-	<p><strong>Output:</strong> {{ .Params.output }}</p>
+	<p><strong>Output:</strong> {{ .Params.output | safeHTML }}</p>
 	<h4>Participants</h4>
 	<ul class="list-inline">
 	{{ range sort .Params.participants }}
