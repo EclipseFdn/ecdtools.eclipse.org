@@ -1,6 +1,11 @@
 {{ define "breadcrumbs"}}{{ partial "breadcrumbs.html" . }}{{end}}
 {{ define "main" }}
 <main>
+  <ul class="margin-top-30 margin-bottom-30">
+    {{ range .Data.Pages }}
+      <li><a href="#{{ replace .Title " " "_" }}">{{ .Title | safeHTML }}</a></li>
+    {{ end }}
+  </ul>
   {{ range .Data.Pages }}
     <h3 class="h4" id="{{ replace .Title " " "_" }}">{{ .Title | safeHTML }}</h4>
     {{ .Content }}

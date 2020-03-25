@@ -1,5 +1,5 @@
 ---
-title: "Free Marketplace Alternative for vs Code Extensions"
+title: "Open VSX - Free Marketplace Alternative for vs Code Extensions"
 date: 2020-03-20T09:09:54-04:00
 tags: []
 output: "A registry for VS Code extensions that can be self-hosted as well as an instance of it, publicly hosted by the Eclipse Foundation, which can be used from any non-Visual Studio Products."
