@@ -1,0 +1,10 @@
+{{ define "breadcrumbs"}}{{ partial "breadcrumbs.html" . }}{{end}}
+{{ define "main" }}
+<main>
+  {{ range .Data.Pages }}
+    <h3 class="h4" id="{{ replace .Title " " "_" }}">{{ .Title | safeHTML }}</h4>
+    {{ .Content }}
+    <hr>
+  {{ end }}
+</main>
+{{ end }}

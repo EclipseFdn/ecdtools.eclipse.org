@@ -29,7 +29,7 @@
   {{ end }}
 {{ end }}
 
-<section id="wg-projects" class="container" data-filter-wg="{{ $.Site.Params.projects_working_group }}">
+<section id="wg-projects" class="container featured-section" data-filter-wg="{{ $.Site.Params.projects_working_group }}">
   <div class="row">
     <h2 id="projects" class="brand-primary text-center">Projects</h2>
     <p class="text-center">The ECD WG serves to advance, promote, and drive community participation in a broad portfolio of Eclipse projects.</p>
@@ -39,7 +39,7 @@
         {{ range first 1 (where ($.Scratch.GetSortedMapValues "wg_projects") "project_id" $id) }} 
         <li class="col-xs-12 col-sm-8 col-md-6 ">
           <div class="match-height-item-by-row text-center">
-            <h2 class="h4">
+            <h3 class="h4">
               <span class="image-container vertical-align margin-bottom-20">
                 {{ if .logo }}
                 <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
@@ -48,7 +48,7 @@
                 {{ end }}
               </span>
               {{ .name }}
-            </h2>
+            </h3>
             <p>{{ .summary | safeHTML }}</p>
             <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
           </div>
@@ -61,7 +61,7 @@
             {{ if not (in $highlights .project_id) }}
             <li class="col-xs-12 col-sm-8 col-md-6 ">
               <div class="match-height-item-by-row text-center">
-                <h2 class="h4">
+                <h3 class="h4">
                   <span class="image-container vertical-align margin-bottom-20">
                     {{ if .logo }}
                     <img class="img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
@@ -70,7 +70,7 @@
                     {{ end }}
                   </span>
                   {{- .name -}}
-                </h2>
+                </h3>
                 <p>{{ .summary | safeHTML }}</p>
                 <a href="{{ .website_url | default .url }}" target="_blank" class="btn btn-primary" title="Learn more about {{ .name }}">Learn more</a>
               </div>
