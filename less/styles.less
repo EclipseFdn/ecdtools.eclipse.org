@@ -129,7 +129,7 @@ section#wg-projects {
     & {
       padding: 10px;
     }
-    & > div > a { 
+    & > div:not(#featured-more-projects) > a { 
       position: absolute; 
       bottom: 20px; 
       margin-left: auto;
@@ -137,12 +137,19 @@ section#wg-projects {
       left: 20px; 
       right: 20px;
     }
-    & > div { 
+    & > div:not(#featured-more-projects) { 
       border: 1px solid #f0f0f2;
       padding:10px;
       padding-bottom: 50px;
       background-color: #fff;
     }
+    // required to override inline-list padding
+    &.padding-0 {
+      padding: 0;
+    }
+  }
+  #featured-more-projects ul {
+  	margin-left:0px;
   }
 }
 
