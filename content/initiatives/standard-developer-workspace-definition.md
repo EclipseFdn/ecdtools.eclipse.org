@@ -6,8 +6,8 @@ output: "Standard and Reference Implementation(s)"
 preliminary_work: "Proposal and Guidelines for a Specification, Work in-progress"
 participants: ["sap", "redhat", "ibm"]
 ---
-Introduce Standard developer Workspace definition (like a recipe) that will be used by many IDE products, and will enable portability and sharing between the different products.  
+Introduce Standard developer Workspace definition (like a recipe) that will be used by many IDEs and developer tools, and will enable portability and sharing between the different products.  
 
-Standard developer Workspace aims to support all developer tasks, such as: code, compile, build, test, debug, and deploy, from a single user virtual environment. It may include: IDE, technology stacks, toolchains, security and connectivity instruments, developed source-code and apps (build artifacts) storage.  
+The standard aims to define how all developer tasks (such as: code, compile, build, test, debug, and deploy) can be performed on a single user virtual environment. It may include: IDEs and developer tools, technology stacks, toolchains, security and connectivity instruments, developed source-code and apps (build artifacts) storage.  
 
 Note: the focus (and reference implementation) is cloud and Kubernetes  
