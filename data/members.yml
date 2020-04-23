@@ -21,11 +21,6 @@ types:
          link: https://www.ibm.com/ca-en
          image: /images/ecdtools/members/ibm.svg
          img_width: 100
-       - title: Intel Corporation
-         id: "intel"
-         link: https://software.intel.com/intel-sdp-home
-         image: /images/ecdtools/members/intel-logo.png
-         img_width: 100
        - title: Red Hat
          id: "redhat"
          link: https://www.redhat.com/en
