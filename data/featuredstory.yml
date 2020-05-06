@@ -6,6 +6,7 @@ items:
         <polyline points="22,6 12,13 2,6"></polyline> 
       </svg>
     title: Stay Connected
+    preamble_class: 
     footer_classes: featured-section featured-section-darken text-center
     link: <a class="btn btn-primary" href="https://accounts.eclipse.org/mailing-list/ecd-tools-wg">Join our Mailing List</a> <a class="btn btn-primary" href="https://accounts.eclipse.org/contact/membership/ecdtools">Contact Us</a>
     startDate: 2019-07-18
