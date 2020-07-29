@@ -1,4 +1,4 @@
-# ecdtools.eclipse.org
+# ecdtools.eclipse.org2
 
 The [ecdtools.eclipse.org](https://ecdtools.eclipse.org) website is generated with [Hugo](https://gohugo.io/documentation/).
 
