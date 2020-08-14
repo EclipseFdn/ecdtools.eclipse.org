@@ -6,7 +6,7 @@ output: "A registry for VS Code extensions that can be self-hosted as well as an
 preliminary_work: ""
 participants: ["typefox","sap","ericsson"]
 ---
-Open VSX is a free vendor-neutral extension registry for VS Code extensions.  
+[Open VSX](https://open-vsx.org/) is a free vendor-neutral extension registry for VS Code extensions.  
 
 #### Why do we want to do this?  
 

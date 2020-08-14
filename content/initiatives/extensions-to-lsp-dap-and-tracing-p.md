@@ -1,5 +1,5 @@
 ---
-title: "Extensions to LSP, DAP, and Tracing P"
+title: "Extensions to LSP and DAP"
 date: 2020-03-20T09:12:09-04:00
 tags: []
 output: | 
@@ -18,5 +18,3 @@ Developers operate more and more in a multi language/multi stack environment. A 
 In our experience integrating language server protocols (LSP), and emerging debug adapter protocols (DAP) causes a major decrease in IDE maintenance due to offloading of the heavy-lifting to Language Servers. IDEs then are only responsible to present the results of the processing.
 
 LSP and DAP are critical pieces of emerging cloud-based and containerized IDEs such as Theia and Che.
-
-Work is needed to establish a standard for tracing that can mirror the benefits seen by LSP and DAP.
