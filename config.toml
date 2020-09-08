@@ -26,6 +26,7 @@ pluralizeListTitles = false
   main_menu_wrapper_classes = "col-sm-17 margin-top-25"
   projects_working_group = "cloud-development-tools"
   news_count = 3
+  twitter_url = "https://twitter.com/ECDTools"
   
 [taxonomies]
   category = "categories"

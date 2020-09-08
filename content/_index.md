@@ -20,3 +20,4 @@ container: "container-fluid"
 {{< home-founding-members >}}
 {{< home-testimonials >}}
 {{< home-faq >}}
+{{< social-media-section >}}
