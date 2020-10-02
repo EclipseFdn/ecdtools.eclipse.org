@@ -13,7 +13,7 @@
   <div class="container">
     {{ range .Site.Data.members.types }}
     <div>
-    <h2>{{ .name }} Members</h2>
+    <h2>{{ .name | title }} Members</h2>
     <ul class="list-inline">
       
       {{ range .items }}
