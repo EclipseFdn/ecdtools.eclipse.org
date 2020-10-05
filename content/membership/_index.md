@@ -1,14 +1,15 @@
 ---
 title: "Membership"
+headline: "Membership"
 date: 2020-09-02T16:09:45-04:00
 hide_page_title: true
 hide_sidebar: true
 show_featured_footer: false
 container: "container-fluid"
+links: [[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text: "Contact Us About Membership"]]
 ---
 {{< grid/section-container>}}
-{{<grid/div class="margin-bottom-30" isMarkdown="true">}}
-# Membership
+{{<grid/div class="margin-bottom-30 margin-top-30" isMarkdown="true">}}
 Join industry leaders like [Ericsson](https://www.eclipse.org/membership/showMember.php?member_id=682), [IBM](https://www.eclipse.org/membership/showMember.php?member_id=656), [Red Hat](https://www.eclipse.org/membership/showMember.php?member_id=731), and [SAP](https://www.eclipse.org/membership/showMember.php?member_id=665) as we define and build the future of Web and cloud development tools.  
 
 Becoming part of the Eclipse Cloud Development Tools (ECD Tools) Working Group demonstrates your commitment to the evolution and sustainability of industry-leading cloud native development tools, while also ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem that benefits all.  
@@ -30,7 +31,7 @@ ECD Tools Working Group member benefits:
 - Learn best practices to leverage open Cloud Development Tool technologies in order to accelerate product development and improve time-to-revenue.  
 - Help define and build the Open VSX marketplace of VS Code extensions  
 {{</grid/div>}}
-{{<bootstrap/button pClass="d-inline-block" href="https://www.eclipse.org/org/workinggroups/eclipse_cloud_development_charter.php">}}Working Group Charter {{</bootstrap/button>}}
+{{<bootstrap/button pClass="d-inline-block margin-right-10" href="https://www.eclipse.org/org/workinggroups/eclipse_cloud_development_charter.php">}}Working Group Charter {{</bootstrap/button>}}
 {{<bootstrap/button pClass="d-inline-block" href="https://www.eclipse.org/org/workinggroups/wpga/eclipse_cloud_development_tools_participation_agreement.pdf">}}Participation Agreement{{</bootstrap/button>}}
 {{</ grid/section-container >}}
 {{< members-list-inline >}}
