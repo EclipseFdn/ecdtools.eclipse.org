@@ -9,19 +9,15 @@
 -->
 <!-- start: Founding Members -->
 {{ $data := .Site.Data.members.types}}
-<div id="members" class="row featured-section featured-section-members text-center">
+<div id="members" class="row featured-section text-center">
   <div class="container">
-    {{ range .Site.Data.members.types }}
-    <div>
-    <h2>{{ .name | title }} Members</h2>
+    {{ range $index, $type := .Site.Data.members.types }}
+    <h3 class="h2{{ if ne $index 0 }} margin-top-40{{end}}">{{ $type.name | title }} Members</h3>
     <ul class="list-inline">
-      
-      {{ range .items }}
+      {{ range $type.items }}
         <li><a href="{{ .link }}"><img class="founder-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a></li>
       {{ end }}
     </ul>
-    
-    </div>
     {{ end }}
   </div>
 </div>

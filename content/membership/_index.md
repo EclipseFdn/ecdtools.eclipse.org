@@ -1,6 +1,7 @@
 ---
 title: "Membership"
-headline: "Membership"
+headline: "Join Us"
+tagline: Join industry leaders like Ericsson, IBM, Red Hat, and SAP as we define and build the future of Web and cloud development tools.
 date: 2020-09-02T16:09:45-04:00
 hide_page_title: true
 hide_sidebar: true
@@ -10,7 +11,7 @@ links: [[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text:
 ---
 {{< grid/section-container>}}
 {{<grid/div class="margin-bottom-30 margin-top-30" isMarkdown="true">}}
-Join industry leaders like [Ericsson](https://www.eclipse.org/membership/showMember.php?member_id=682), [IBM](https://www.eclipse.org/membership/showMember.php?member_id=656), [Red Hat](https://www.eclipse.org/membership/showMember.php?member_id=731), and [SAP](https://www.eclipse.org/membership/showMember.php?member_id=665) as we define and build the future of Web and cloud development tools.  
+## Membership  
 
 Becoming part of the Eclipse Cloud Development Tools (ECD Tools) Working Group demonstrates your commitment to the evolution and sustainability of industry-leading cloud native development tools, while also ensuring the growth and development of a well-governed, vendor-neutral open source ecosystem that benefits all.  
 
@@ -21,7 +22,7 @@ Here are just some of the reasons ECD Tools is trusted by industry leaders:
 - The Foundation’s legal and intellectual property processes enable members to fully comply with antitrust laws and provide members with the legal assurance that they can successfully embed open source technology into their commercial products.
 - The Eclipse Development Process is a set of best practices that guide member organizations during the creation of open source projects.  
 
-## Benefits  
+### Benefits  
 
 ECD Tools Working Group member benefits:  
 
