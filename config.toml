@@ -62,16 +62,6 @@ pluralizeListTitles = false
     weight = 2
 
 [[menu.main]]
-    name = "Testimonials"
-    url = "/#testimonials"
-    weight = 2
-
-[[menu.main]]
-    name = "Join"
-    url = "https://accounts.eclipse.org/contact/membership/ecdtools"
-    weight = 2
-
-[[menu.main]]
     name = "Community"
     url = "/community"
     weight = 3

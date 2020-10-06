@@ -17,4 +17,5 @@ container: "container-fluid"
 {{< home-mission-statement >}}
 {{< home-projects highlight="ecd.che:ecd.codewind:ecd.dirigible:ecd.theia">}}
 {{< home-current-initiatives >}}
+{{< home-members limit="3">}}
 {{< home-faq >}}
