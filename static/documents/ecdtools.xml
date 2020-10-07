@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:planet="http://planet.intertwingly.net/" xmlns:indexing="urn:atom-extension:indexing" indexing:index="no"><access:restriction xmlns:access="http://www.bloglines.com/about/specs/fac-1.0" relationship="deny"/>
   <title>Planet Eclipse</title>
-  <updated>2020-09-18T16:07:21Z</updated>
+  <updated>2020-10-07T16:35:03Z</updated>
   <generator uri="http://intertwingly.net/code/venus/">Venus</generator>
   <author>
     <name>Planet Eclipse Admins</name>
@@ -34,6 +34,6 @@
       <link href="https://eclipsesource.com" rel="alternate" type="text/html"/>
       <subtitle>Technology creators at your service</subtitle>
       <title>Planet Eclipse – EclipseSource</title>
-      <updated>2020-09-16T14:34:28Z</updated>
+      <updated>2020-09-29T10:30:30Z</updated>
     </source></entry>
 </feed>
