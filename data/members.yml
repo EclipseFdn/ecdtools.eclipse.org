@@ -1,16 +1,6 @@
 types:
-  - name: founding
+  - name: strategic
     items:
-       - title: EclipseSource
-         id: "eclipsesource"
-         link: http://eclipsesource.com
-         image: /images/ecdtools/members/eclipse-source.png
-         img_width: 200
-       - title: CA Technologies
-         id: "ca"
-         link: https://www.broadcom.com/
-         image: /images/ecdtools/members/ca-tech.svg
-         img_width: 80
        - title: Ericsson AB
          id: "ericsson"
          link: https://www.ericsson.com/
@@ -31,6 +21,18 @@ types:
          link: https://www.sap.com/index.html
          image: /images/ecdtools/members/sap.svg
          img_width: 130
+  - name: participant
+    items:
+       - title: EclipseSource
+         id: "eclipsesource"
+         link: http://eclipsesource.com
+         image: /images/ecdtools/members/eclipse-source.png
+         img_width: 200
+       - title: CA Technologies
+         id: "ca"
+         link: https://www.broadcom.com/
+         image: /images/ecdtools/members/ca-tech.svg
+         img_width: 80
        - title: TypeFox GmbH
          id: "typefox"
          link: https://www.typefox.io/
@@ -41,3 +43,10 @@ types:
          link: https://www.windriver.com/
          image: /images/ecdtools/members/wind.png
          img_width: 175
+  - name: guest
+    items:
+       - title: Intel
+         id: "intel"
+         link: http://intel.com
+         image: /images/ecdtools/members/intel-logo.png
+         img_width: 120

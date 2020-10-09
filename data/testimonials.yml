@@ -1,16 +1,26 @@
 items:
    - company: EclipseSource
+     name:  Dr. Jonas Helming
+     title: General Manager
      logo: /images/ecdtools/members/eclipse-source.png
-     text: As a service provider for the design and implementation of domain-specific tools, modeling tools, and IDEs, EclipseSource is very excited to actively participate in the ECDT working group,” said Dr. Jonas Helming, principal software architect / general manager of EclipseSource Munich. “In our customer projects around the globe, we can observe an increasing demand for web-based and cloud-based tooling. Quite a number of interesting technologies have already been emerged within the Eclipse ecosystem to support this use case, e.g. Eclipse Theia, Eclipse Che or the Graphical Language Server Protocol (GSLP). Coordinating these efforts in the scope of the working group will help contributors, service providers, and adopters to get the most benefit out of great open source technologies. We believe the Eclipse ecosystem has the potential to be a core ecosystem for web-based tooling in the upcoming decade as it is for desktop-based tools.
+     text: In our customer projects around the globe, we can observe an increasing demand for web-based and cloud-based tooling….We believe the Eclipse ecosystem has the potential to be a core ecosystem for web-based tooling in the upcoming decade.
    - company: IBM
+     name: Danny Mace
+     title: Vice President, Hybrid Cloud App Platform
      logo: /images/ecdtools/members/ibm.svg
-     text: Application development is evolving rapidly to take advantage of the innovation in the multicloud ecosystem. Developer tools are critical in accelerating adoption of new technology and enabling enterprise developers in the modernization journey to the cloud,” said Danny Mace, vice president, Hybrid Cloud App Platform, IBM. “We are proud to join the Eclipse Cloud Development Working Group working to drive the evolution and broad adoption of cloud development tools. Working at Eclipse will expand tools communities for containerized applications on Kubernetes and offer developers the tools needed for cloud-based scenarios. Developers will benefit, as will our customers.
+     text: Developer tools are critical in accelerating adoption of new technology and enabling enterprise developers in the modernization journey to the cloud. Working at Eclipse will expand tools communities for containerized applications on Kubernetes and offer developers the tools needed for cloud-based scenarios. Developers will benefit, as will our customers.
    - company: Red Hat
+     name: Brad Micklea
+     title: VP of Developer Tools and Advocacy
      logo: /images/ecdtools/members/redhat.svg
-     text: Developers today are building applications for the hybrid cloud. They are focused on the speed of collaboration and development in order to out-flank their competitors. However, the hybrid cloud operating environment can be complex, with Kubernetes, containers, microservices and service mesh’s adding a host of new considerations to application design and implementation,” says Brad Micklea, VP of Developer Tools and Advocacy at Red Hat. “Red Hat is working with the Eclipse Cloud Development Working Group to provide new open source alternatives to these technology stacks while giving developers the tools they need to get their software to market faster.
+     text: Developers today are building applications for the hybrid cloud. They are focused on the speed of collaboration and development in order to out-flank their competitors. Red Hat is working with ECD Tools to provide new open source alternatives to these technology stacks while giving developers the tools they need to get their software to market faster.
    - company: SAP
+     name: Michael Wintergerst
+     title: Senior Vice President, head of SAP Cloud Platform Core
      logo: /images/ecdtools/members/sap.svg
-     text: For the past 5 years SAP has provided cloud development tools, while aligning with the latest technologies, standards, and open source trends,” said Michael Wintergerst, senior vice president, head of SAP Cloud Platform Core. “As a strategic member of the Eclipse Foundation, SAP actively participates in Eclipse Cloud Development projects. This participation includes an involvement in the Eclipse Che, Dirigible,Theia, and Orion projects. As a next step, the proposed Eclipse Cloud Development Tools Working Group aims to create a stimulating environment to collaborate on cloud development tools. The working group will increase the synergy between all relevant parties by creating shared concepts and standards, and foster further collaboration in an open environment.
+     text: As a strategic member of the Eclipse Foundation, SAP actively participates in the Eclipse Che, Dirigible,Theia, and Orion projects. The ECD Tools Working Group increases the synergy between all relevant parties by creating shared concepts and standards, and fosters further collaboration in an open environment.
    - company: TypeFox
+     name: Dr. Jan Köhnlein
+     title: Co-founder
      logo: /images/ecdtools/members/typefox.png
-     text: At TypeFox’s, we build software tools and IDEs for experts,” says Dr. Jan Köhnlein, co-founder TypeFox. ”As a response to the growing demand to run these tools in the Cloud, we joined forces with Ericsson and initiated the open-source projects Theia, a framework for cloud-based or rich-client IDEs, and Sprotty for web-based diagramming. Moving these projects under the umbrella of the Eclipse Foundation allowed other big players to join in a common endeavor to build the solid foundation for the next generation of web-based tools. The Eclipse Cloud Development Tools Working Group stands for the commitment to keep these frameworks industrial strength, truly open-source and vendor neutral.
+     text: At TypeFox, we build software tools and IDEs for experts. Moving our projects under the umbrella of the Eclipse Foundation has allowed other big players to join in a common endeavor to build the solid foundation for the next generation of web-based tools. The ECD Tools Working Group stands for the commitment to keep these frameworks industrial strength, truly open-source and vendor neutral.

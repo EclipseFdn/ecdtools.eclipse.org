@@ -14,36 +14,28 @@
 <!-- start: Testimonials -->
 <div id="testimonials" class="row featured-section featured-section-darken featured-section-testimonials text-center">
   <div class="container">
-    <h2>Testimonials</h2>
+    <h2>What Our Members are Saying</h2>
     {{ if .Site.Data.testimonials.items }}
     <div class="row testimonial-container margin-top-30">
       {{ range first 3 .Site.Data.testimonials.items }}
       <div class="col-sm-8 margin-bottom-20 testimonial-item">
-        <div class="padding-20">
-          <div class="testimonial-logo"><img class="img img-responsive" src="{{ .logo }}" width="{{ .logo_width | default 125 }}"></div>
-        <p class="title">
-          <strong>{{ .name }}</strong>
-          <span>{{ .title }}</span>
-          <span>{{ .company }}</span>
-        </p>
-        <p class="content">"{{ .text }}"</p>
+        <div class="flex-column padding-20 match-height-item-by-row">
+          <div class="testimonial-logo"><img class="img img-responsive" src="{{ .logo }}" width="{{ .logo_width | default 125 }}" alt="{{ .name }} logo"></div>
+          <p class="content flex-grow">"{{ .text }}"</p>
+          <p class="pull-right">{{ .name }}, {{.title}} at {{ .company }}</p>
         </div>
       </div>
       {{ end }}
     </div>
     {{if gt (len .Site.Data.testimonials.items) 3}}
-      <div class="collapse" id="featured-more-items" aria-expanded="true" style="">
+      <div class="collapse" id="featured-more-items" aria-expanded="true">
         <div class="row testimonial-container">
         {{ range after 3 .Site.Data.testimonials.items }}
           <div class="col-sm-8 margin-bottom-20 testimonial-item">
-            <div class="padding-20">
+            <div class="flex-column padding-20 match-height-item-by-row">
               <div class="testimonial-logo"><img src="{{ .logo }}" width="{{ .logo_width | default 125 }}" alt="{{ .name }} logo"></div>
-              <p class="title">
-                <strong>{{ .name }}</strong>
-                <span>{{ .title }}</span>
-                <span>{{ .company }}</span>
-              </p>
-            <p class="content">"{{ .text }}"</p>
+              <p class="content flex-grow">"{{ .text }}"</p>
+              <p class="pull-right">{{ .name }}, {{.title}} at {{ .company }}</p>
             </div>
           </div>
         {{ end }}

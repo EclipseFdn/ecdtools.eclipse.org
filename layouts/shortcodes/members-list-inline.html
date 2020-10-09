@@ -7,17 +7,18 @@
     Eric Poirier <eric.poirier@eclipse-foundation.org>
   SPDX-License-Identifier: EPL-2.0
 -->
-
 <!-- start: Founding Members -->
-{{ $data := index (where .Site.Data.members.types "name" "founding") 0 }}
-<div id="members" class="row featured-section featured-section-members text-center">
+{{ $data := .Site.Data.members.types}}
+<div id="members" class="row featured-section text-center">
   <div class="container">
-    <h2>Founding Members</h2>
-    <ul class="list-inline margin-bottom-0">
-      {{ range $data.items }}
+    {{ range $index, $type := .Site.Data.members.types }}
+    <h3 class="h2{{ if ne $index 0 }} margin-top-40{{end}}">{{ $type.name | title }} Members</h3>
+    <ul class="list-inline">
+      {{ range $type.items }}
         <li><a href="{{ .link }}"><img class="founder-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a></li>
       {{ end }}
     </ul>
+    {{ end }}
   </div>
 </div>
 <!-- end: Founding Members -->
