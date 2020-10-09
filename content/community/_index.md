@@ -6,19 +6,17 @@ date: 2020-09-30T14:53:00+02:00
 hide_page_title: true
 hide_sidebar: true
 show_featured_footer: false
-container: "container-fluid"
 ---
-{{< grid/section-container>}}
-{{<grid/div class="margin-bottom-30 margin-top-30" isMarkdown="true">}}
-[Eclipse Cloud Development Tools](https://ecdtools.eclipse.org) (ECD Tools) is a community of members, adopters, developers, and other contributors that collaborate to define, promote and implement Web and Cloud-based development tools and drive the evolution and broad adoption of these tools.
-
-You will find below ways to get involved.
 
 ## Open Source and Open Collaboration
+
+[Eclipse Cloud Development Tools](https://ecdtools.eclipse.org) (ECD Tools) is a community of members, adopters, developers, and other contributors that collaborate to define, promote and implement Web and Cloud-based development tools and drive the evolution and broad adoption of these tools.
 
 The ECD Tools working group is a vendor-neutral community made up of Eclipse Foundation members that wish to freely collaborate on new technology development in the Cloud Dev Tools space.
 
 Membership in the working group brings many [benefits](https://www.eclipse.org/org/workinggroups/), including joint marketing initiatives and direct access to a community of skilled and dedicated open source developers.
+
+You will find below ways to get involved.
 
 ## Communication Channels
 
@@ -75,5 +73,3 @@ Several ECD Tools projects hold calls to keep in touch with their communities. P
 Our virtual Webinar Series is coming soon.
 
 To propose a topic for a virtual event, whether to present yourself or just to suggest, please [fill out this form](https://forms.gle/KJQ7T3a3V5NZPLEdA). Virtual meetups are managed through our [Meetup.com Virtual Eclipse Community Meetup](https://www.meetup.com/Virtual-Eclipse-Community-MeetUp/).
-{{</grid/div>}}
-{{</ grid/section-container >}}

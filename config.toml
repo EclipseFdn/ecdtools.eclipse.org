@@ -69,3 +69,8 @@ pluralizeListTitles = false
     name = "Join"
     url = "https://accounts.eclipse.org/contact/membership/ecdtools"
     weight = 2
+
+[[menu.main]]
+    name = "Community"
+    url = "/community"
+    weight = 3
