@@ -5,7 +5,6 @@ tagline: Join industry leaders like Ericsson, IBM, Red Hat, and SAP as we define
 date: 2020-09-02T16:09:45-04:00
 hide_page_title: true
 hide_sidebar: true
-show_featured_footer: false
 container: "container-fluid"
 links: [[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text: "Contact Us About Membership"]]
 ---
@@ -35,5 +34,7 @@ ECD Tools Working Group member benefits:
 {{<bootstrap/button pClass="d-inline-block margin-right-10" href="https://www.eclipse.org/org/workinggroups/eclipse_cloud_development_charter.php">}}Working Group Charter {{</bootstrap/button>}}
 {{<bootstrap/button pClass="d-inline-block" href="https://www.eclipse.org/org/workinggroups/wpga/eclipse_cloud_development_tools_participation_agreement.pdf">}}Participation Agreement{{</bootstrap/button>}}
 {{</ grid/section-container >}}
+
 {{< members-list-inline >}}
+
 {{< home-testimonials >}}
