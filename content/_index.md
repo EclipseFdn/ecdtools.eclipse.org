@@ -20,5 +20,3 @@ container: "container-fluid"
 {{< home-founding-members >}}
 {{< home-testimonials >}}
 {{< home-faq >}}
-
-{{< home-stay-connected >}}
