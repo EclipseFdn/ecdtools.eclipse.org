@@ -32,3 +32,5 @@ mix.scripts([
     './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.render-rss-feeds.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.js'
 ], './static/js/solstice.js');
+
+mix.scripts('js/projects.js', './static/js/projects.min.js');
