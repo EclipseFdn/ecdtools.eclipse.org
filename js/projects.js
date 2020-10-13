@@ -44,9 +44,6 @@
                         "ellipsis": ' [&hellip;] <br><a href="' + link + '"> Read more&hellip;</a>'
                     });
 
-                    if (id == 'rt.ecf' || id == 'tools.mtj' || id == "technology.koneki" || id == "tools.titan" || id == "iot.tiaki"  || id == "technology.sensinact"  || id == "technology.iottestware"  || id == "iot.krikkit" || id == "technology.uomo" || id == "iot.risev2g")
-                        return true;
-
                     projectInfo = {};
                     projectInfo.link = value.url;
                     if (!validateUrl(projectInfo.link)) {
