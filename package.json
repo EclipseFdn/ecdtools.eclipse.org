@@ -28,6 +28,6 @@
   "dependencies": {
     "js-yaml": "^3.13.1",
     "json-minify": "^1.0.0",
-    "eclipsefdn-hugo-solstice-theme": "0.0.97"
+    "eclipsefdn-hugo-solstice-theme": "0.0.99"
   }
 }
