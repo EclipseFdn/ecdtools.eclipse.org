@@ -7,7 +7,7 @@ description: "The Eclipse Cloud Development Tools Working Group drives the evolu
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
-show_featured_story: false
+show_featured_story: true
 date: 2020-03-01T16:09:45-04:00
 layout: "single"
 links: [[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text: "Become a member"],[href: "https://accounts.eclipse.org/mailing-list/ecd-tools-wg", text: "Join our Mailing List"],[href: "#projects", text: "Contribute to our projects"]]
