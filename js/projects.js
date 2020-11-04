@@ -57,11 +57,6 @@
                     projectInfo.project_state = value.state;
 
                     projectInfo.labels = '';
-                    // for (var k in projectsAssociation) {
-                    //     if (projectsAssociation[k][value.project_id]) {
-                    //         projectInfo.labels += ' ' + ' <span class="badge">' + k + '</span>'
-                    //     }
-                    // }
 
                     projectInfo.description = desc;
                     projectInfo.fullDescription = stringJanitor(value.summary);
@@ -112,6 +107,11 @@
                         'labels', 'project_state'
                     ]
                 };
+
+                var ecd_cft = projectInfos.find(el => el.id === "ecd.cft")
+                var ecd_orion = projectInfos.find(el => el.id === "ecd.orion")
+                projectInfos.push(projectInfos.splice(projectInfos.indexOf(ecd_cft), 1)[0])
+                projectInfos.push(projectInfos.splice(projectInfos.indexOf(ecd_orion), 1)[0])
 
                 var list = new List('project-list', options, projectInfos);
 
