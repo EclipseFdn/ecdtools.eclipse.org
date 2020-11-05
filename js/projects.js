@@ -75,8 +75,8 @@
                 var options = {
                     item: '<li class="col-md-24"><div class="media">\
                               <div class="row"><div class="col-sm-4">\
-                                <a href="#" class="link vertical-align background-white item match-height-item padding-10 margin-bottom-10">\
-                                  <img style="max-height: 120px;" class="media-object img-responsive logo logo_alt center-block" alt="project">\
+                                <a href="#" class="link">\
+                                  <img class="media-object img-responsive logo logo_alt center-block" alt="project">\
                                 </a>\
                               </div>\
                               <div class="col-sm-20">\
