@@ -108,11 +108,11 @@
                     ]
                 };
 
-                var ecd_cft = projectInfos.find(el => el.id === "ecd.cft")
-                var ecd_orion = projectInfos.find(el => el.id === "ecd.orion")
-                projectInfos.push(projectInfos.splice(projectInfos.indexOf(ecd_cft), 1)[0])
-                projectInfos.push(projectInfos.splice(projectInfos.indexOf(ecd_orion), 1)[0])
-
+                var ecd_cft = projectInfos.find(el => el.id === "ecd.cft");
+                var ecd_orion = projectInfos.find(el => el.id === "ecd.orion");
+                projectInfos.push(projectInfos.splice(projectInfos.indexOf(ecd_cft), 1)[0]);
+                projectInfos.push(projectInfos.splice(projectInfos.indexOf(ecd_orion), 1)[0]);
+                
                 var list = new List('project-list', options, projectInfos);
 
                 for (var i in list.visibleItems) {
