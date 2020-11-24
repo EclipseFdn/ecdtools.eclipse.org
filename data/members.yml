@@ -31,8 +31,8 @@ types:
        - title: CA Technologies
          id: "ca"
          link: https://www.broadcom.com/
-         image: /images/ecdtools/members/ca-tech.svg
-         img_width: 80
+         image: /images/ecdtools/members/broadcom.png
+         img_width: 200
        - title: TypeFox GmbH
          id: "typefox"
          link: https://www.typefox.io/
