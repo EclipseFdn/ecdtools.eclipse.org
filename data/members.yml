@@ -28,8 +28,8 @@ types:
          link: http://eclipsesource.com
          image: /images/ecdtools/members/eclipse-source.png
          img_width: 200
-       - title: CA Technologies
-         id: "ca"
+       - title: Broadcom Inc.
+         id: "broadcom"
          link: https://www.broadcom.com/
          image: /images/ecdtools/members/broadcom.png
          img_width: 200
