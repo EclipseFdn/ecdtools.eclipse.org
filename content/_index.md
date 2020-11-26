@@ -10,7 +10,7 @@ hide_breadcrumb: true
 show_featured_story: true
 date: 2020-03-01T16:09:45-04:00
 layout: "single"
-links: [[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text: "Become a member"],[href: "https://accounts.eclipse.org/mailing-list/ecd-tools-wg", text: "Join our Mailing List"],[href: "#projects", text: "Contribute to our projects"]]
+links: [[href: "#statement", text: "Developer Tools"],[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text: "Become a member"],[href: "https://accounts.eclipse.org/mailing-list/ecd-tools-wg", text: "Join our Mailing List"]]
 container: "container-fluid"
 ---
 
