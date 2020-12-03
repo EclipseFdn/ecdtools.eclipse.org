@@ -26,7 +26,7 @@
     "build_netlify": "NODE_ENV=production npm run disallow_robots_txt && npm run production && npm run fetch_blogs && npm run fetch_projects && npm run yaml2json_projects"
   },
   "dependencies": {
-    "eclipsefdn-hugo-solstice-theme": "0.0.102",
+    "eclipsefdn-hugo-solstice-theme": "0.0.107",
     "js-yaml": "^3.13.1",
     "json-minify": "^1.0.0"
   }

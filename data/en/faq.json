@@ -1,0 +1,42 @@
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why was the time right for the Eclipse Foundation to create a Cloud Development Tools Working Group?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Cloud native applications are of critical importance for today’s enterprises. According to a recent Eclipse Foundation survey, more than 80 percent of the developers have plans to create cloud native applications within the next 12-18 months. It is this demand that drove the formation of the Eclipse Cloud Development Tools Working Group (ECD WG), a vendor-neutral open source collaboration that will focus on development tools for and in the cloud. The ECD WG fosters the evolution and broad adoption of emerging standards for cloud-based developer tools, including language support, extensions, marketplaces, and developer workspace definition.</p>"
+      }
+    },{
+      "@type": "Question",
+      "name": "What are some of the key projects the ECD WG encompasses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>The ECD WG encompasses a broad portfolio of open source cloud development projects including <a href='https://www.eclipse.org/che/'>Eclipse Che</a>, <a href='https://theia-ide.org/'>Eclipse Theia</a>, <a href='https://www.eclipse.org/codewind/'>Eclipse CodeWind</a>, <a href='https://www.dirigible.io/'>Eclipse Dirigible</a>, <a href='https://projects.eclipse.org/projects/ecd.sprotty'>Eclipse Sprotty</a>, and many more.</p>"
+      }
+    },{
+      "@type": "Question",
+      "name": "What kind of initial interest have you seen in joining the ECD WG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>We have seen tremendous interest in this initiative. The Founding members the ECD WG include Broadcom, EclipseSource, Ericsson, IBM, Intel, Red Hat, SAP, Software AG, and Typefox among many others. Every one of our founders is a respected leader in their space, and we have a mix of large corporations and smaller companies actively engaged. All of these organizations have a strategic interest in cloud developer tools and want to shape the future of a vibrant and sustainable ecosystem of users, contributors and service providers.</p>"
+      }
+    },{
+      "@type": "Question",
+      "name": "How can interested developers and organizations get involved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>To learn more about getting involved with the ECD WG, view the <a href='https://www.eclipse.org/org/workinggroups/eclipse_cloud_development_charter.php'>Charter</a> and <a href='https://www.eclipse.org/org/workinggroups/wpga/eclipse_cloud_development_tools_participation_agreement.pdf'>ECD Working Group Participation Agreement (WPGA)</a>, or email us at <a href='mailto:membership@eclipse.org'>membership@eclipse.org</a>. You can also join the <a href='https://accounts.eclipse.org/mailing-list/ecd-tools-wg'>ECD Tools</a> mailing list.</p>"
+      }
+    },{
+      "@type": "Question",
+      "name": "What are the overarching goals of the ECD WG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>The ECD WG works to accelerate the adoption of Cloud Integrated Development Environment (IDE) and container-based workspace management through the adoption of standards, the engagement with third party developer tool providers, and through the promotion of Eclipse Foundation projects to cloud developers.</p><p>The working group:</p><ul><li>Engages with the Eclipse and broader developer community to ensure broad adoption of emerging standards for cloud-based developer tools</li><li>Coordinates interoperability work on Language Server Protocol (LSP), Debug Adapter Protocol (DAP), and other developer tool protocols (workspace lifecycle management, source control, continuous integration infrastructure, user management, etc), and propose evolutions to these protocols for additional use-cases</li><li>Defines requirements for running developer workspaces, including runtime environments and developer tools, in a Cloud Development Environment</li><li>Promotes the adoption of developer tool plugins, and plugin marketplaces to Eclipse Cloud Developer projects</li><li>Collaborates on the joint promotion of standards adoption among Eclipse Cloud Developer projects</li></ul>"
+      }
+    }
+    ]
+}
