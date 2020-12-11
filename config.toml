@@ -52,21 +52,26 @@ pluralizeListTitles = false
   hrefTargetBlank = true
 
 [[menu.main]]
+    name = "Adopters"
+    url = "/adopters"
+    weight = 1
+
+[[menu.main]]
     name = "About"
     url = "/about/faq"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     name = "Members"
     url = "/membership"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "Community"
     url = "/community"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Projects"
     url = "/projects"
-    weight = 4
+    weight = 5
