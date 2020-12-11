@@ -10,6 +10,10 @@
 <!-- start: Founding Members -->
 {{ $data := index (where .Site.Data.members.types "name" "strategic") 0 }}
 {{ $items := $data.items }}
+{{ $limit := .Get "limit" }}
+{{ if $limit }}
+  {{ $items = first $limit $items }}
+{{ end }}
 <div id="members" class="row featured-section featured-section-members text-center">
   <div class="container">
     <h2>Members</h2>
@@ -18,7 +22,9 @@
         <li><a href="{{ .link }}"><img class="founder-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a></li>
       {{ end }}
     </ul>
+    {{ if $limit }}
     <a class="btn btn-primary margin-top-20" href="{{ "/membership" | absURL }}" >See all Members</a>
+    {{ end }}
   </div>
 </div>
 <!-- end: Founding Members -->
