@@ -10,8 +10,6 @@ hide_page_title: true
 
 <br />
 
-Do you use Eclipse Cloud Development Tools technologies? Show your support for open source by adding your logo to this page. Please **[create an issue](how-to-be-listed-as-an-adopter)** to add your logo below.  
-
 Our open source projects drive innovation across a broad spectrum of industries and on both private and public clouds -- enabling organizations of all shapes and sizes to accelerate cloud native development with world-class tools. 
 
 Do you use ECD Tools technologies? **[Get Listed](how-to-be-listed-as-an-adopter)**
