@@ -16,6 +16,8 @@ Do you use ECD Tools technologies? **[Get Listed](how-to-be-listed-as-an-adopter
 
 Which ECD Tools Project is right for you? **[Contact Us]()**
 
+## Adopters
+
 Here is a small sampling of adopter organizations that benefit from the Eclipse Cloud Development Tools open source community. 
 
 {{< eclipsefdn_adopters working_group="cloud-development-tools" >}}
