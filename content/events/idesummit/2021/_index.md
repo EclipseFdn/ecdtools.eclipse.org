@@ -29,10 +29,6 @@ Call for Paper Deadline: Mar 28, 2021
 {{</ grid/section-container >}}
 
 <!-- Add user carousel for committee -->
-{{< grid/section-container>}}
-  {{< grid/div class="padding-top-40" isMarkdown="false">}}
-    {{< events/user_display event="idesummit" year="2021" source="committee" useCarousel="false" imageRoot="/events/idesummit/2021/images/" >}}
-
-    {{</ events/user_display >}}
-  {{</ grid/div >}}
+{{< grid/section-container id="program-committee" class="featured-section-row text-center featured-section-row-light-bg eclipsefdn-user-display-circle" >}}
+  {{< events/user_display event="idesummit" year="2021" title="Program Committee" source="committee" imageRoot="/events/idesummit/2021/images/" />}}
 {{</ grid/section-container >}}
