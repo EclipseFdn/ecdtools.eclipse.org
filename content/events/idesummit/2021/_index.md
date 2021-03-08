@@ -10,7 +10,7 @@ header_wrapper_class: "header-default-event"
 hide_breadcrumb: true
 container: "container-fluid"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
-# links: [[href: "cfp.pdf",text: "Call for Papers"],[href: "https://easychair.org/my/conference?conf=esaamm2021#",text: "Submit a Paper"]]
+links: [[href: "#registration",text: "Call for Papers"]]
 layout: single
 ---
 
