@@ -8,6 +8,7 @@ disableKinds = []
 themesDir = "node_modules/"
 enableRobotsTXT = true
 pluralizeListTitles = false
+buildFuture = true # A new event website will always be in the future
 
 [Params]
   google_tag_manager = "GTM-5WLCZXC"
@@ -75,3 +76,8 @@ pluralizeListTitles = false
     name = "Projects"
     url = "/projects"
     weight = 5
+
+[[menu.main]]
+    name = "Events"
+    url = "/events/idesummit/2021"
+    weight = 6

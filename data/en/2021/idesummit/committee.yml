@@ -1,0 +1,10 @@
+items:
+  - name: "Boris Bokowski"
+    title: "Software Engineering Manager - Google"
+    img: "boris-bokowski.jpg"
+  - name: "Chris Laffra"
+    title: "Staff Software Engineer - Uber"
+    img: "chris-laffra.jpg"
+  - name: "Tim deBoer"
+    title: "Senior Principal Software Engineer - Red Hat"
+    img: "tim-deboer.jpg"
