@@ -31,7 +31,8 @@ mix.babel([
     './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.videos.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.cookies.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.js',
-    './node_modules/eclipsefdn-solstice-assets/js/solstice.eventsmodal.js'
+    './node_modules/eclipsefdn-solstice-assets/js/solstice.eventsmodal.js',
+    './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.render-rss-feeds.js'
 ], './static/js/solstice.js');
 
 mix.babel('js/projects.js', './static/js/projects.min.js');
