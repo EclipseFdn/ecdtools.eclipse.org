@@ -1,12 +1,10 @@
 ---
 title: "Cloud IDE Day 2021"
-headline: "Cloud IDE Day 2021"
-subtitle: "An IDE Summit Event"
-tagline: "Guiding the future of IDE development | May 19, 2021 8AM-11AM PST (5PM-8PM CET)"
+custom_jumbotron: "<h1>Cloud IDE Day 2021</h1><h2>An IDE Summit Event</h2><h2>Guiding the Future of IDE Development</h2><p>May 19, 2021 8AM-11AM PST (5PM-8PM CET)</p>"
 date: 2021-03-07T08:00:00-24:00
 hide_page_title: true
 hide_sidebar: true
-header_wrapper_class: "header-default-event"
+header_wrapper_class: "header-idesummit-event"
 hide_breadcrumb: true
 container: "container-fluid"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
