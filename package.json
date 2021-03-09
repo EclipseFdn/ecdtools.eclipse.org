@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.2",
-    "eclipsefdn-hugo-solstice-theme": "https://github.com/flora8984461/hugo-solstice-theme.git#e8047f78926f51b1ea34ff036531a2a187696ef9",
+    "eclipsefdn-hugo-solstice-theme": "0.0.111",
     "js-yaml": "^3.13.1",
     "json-minify": "^1.0.0"
   },
