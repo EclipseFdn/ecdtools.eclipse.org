@@ -6,7 +6,7 @@ hide_page_title: true
 hide_sidebar: true
 header_wrapper_class: "header-idesummit-event"
 hide_breadcrumb: true
-container: "container-fluid"
+container: "container-fluid idesummit-event"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
 links: [[href: "#registration",text: "Call for Papers"]]
 layout: single
@@ -27,6 +27,6 @@ Call for Paper Deadline: Mar 28, 2021
 {{</ grid/section-container >}}
 
 <!-- Add user carousel for committee -->
-{{< grid/section-container id="program-committee" class="featured-section-row text-center featured-section-row-light-bg eclipsefdn-user-display-circle" >}}
+{{< grid/section-container id="program-committee" class="featured-section-row text-center featured-section-row-dark-bg eclipsefdn-user-display-circle" >}}
   {{< events/user_display event="idesummit" year="2021" title="Program Committee" source="committee" imageRoot="/events/idesummit/2021/images/" />}}
 {{</ grid/section-container >}}
