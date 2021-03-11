@@ -230,7 +230,7 @@ section#wg-projects {
 
   .featured-jumbotron{
     h1 {
-      color: @white;
+      color: @brand-tertiary;
       font-weight: 600;
       font-size: 50px;
     }
@@ -243,19 +243,10 @@ section#wg-projects {
 
     p {
       margin-top: 10px;
-      color: @white;
+      color: @brand-tertiary;
       font-size: 24px;
       font-weight: 600;
     }
-  }
-}
-
-.idesummit-event {
-  .featured-section-row-dark-bg {
-    background-image: url('images/alternate.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -268,11 +259,12 @@ section#wg-projects {
 }
 
 .featured-section.featured-idesummit-event {
-  background-image: url('images/alternate.png');
+  background-image: url('images/alternate.jpg');
   background-size: cover;
-  color: #fff;
-  h2 {
-    color: white;
+  color: @brand-tertiary;
+  p, h2, .fa, .feather {
+    stroke: @brand-tertiary;
+    color: @brand-tertiary;
   }
 }
 

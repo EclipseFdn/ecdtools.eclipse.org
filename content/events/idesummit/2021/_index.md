@@ -10,26 +10,27 @@ header_wrapper_class: "header-idesummit-event"
 hide_breadcrumb: true
 container: "container-fluid idesummit-event"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
-links: [[href: "#registration",text: "Call for Papers"]]
+links: [[href: "#registration",text: "Propose a Topic"]]
 layout: single
 featured_section_class: "featured-idesummit-event"
 ---
 
 <!-- Add registration using legacy CSS -->
 {{< grid/section-container id="registration" containerClass="backdrop padding-bottom-40 padding-top-40" >}} {{< grid/div class="container" isMarkdown="false" >}} {{< events/registration event="idesummit" year="2021" >}} 
-Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology. 
+Cloud IDE Day gathers developers, providers and adopters in one place to guide the direction of IDE technology.
 
-The event is open to everyone who is interested in adopting or currently building Cloud IDEs. It’s hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation. This is a vendor-neutral group focused on industry collaboration on open source cloud development tools. For more information, see the FAQ.
-
-Call for Paper Deadline: Mar 28, 2021
-
+Do you have a topic you'd like to discuss or perhaps hear from someone else? Please tell us about it below. We'll arrange all suggested topics into a variety of sessions and reach out to speakers in early April.
 {{</ events/registration >}} {{</ grid/div >}} {{</ grid/section-container >}}
 
 {{< grid/section-container id="organizers" class="featured-section-row featured-section-row-lighter-bg text-center">}}
+{{< grid/div class="container" isMarkdown="false" >}}
   {{< events/sponsors event="idesummit" year="2021" source="organizers" title="Organized by" useMax="false" displayBecomeSponsor="false">}}
+  The event is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration on open source cloud development tools. For more information, see the FAQ.
+  {{</ events/sponsors >}}
+{{</ grid/div >}}
 {{</ grid/section-container >}}
 
 <!-- Add user carousel for committee -->
 {{< grid/section-container id="program-committee" class="featured-section-row text-center featured-section-row-light-bg eclipsefdn-user-display-circle" >}}
-  {{< events/user_display event="idesummit" year="2021" title="Program Committee" source="committee" imageRoot="/events/idesummit/2021/images/" />}}
+  {{< events/user_display event="idesummit" year="2021" title="Advisors" source="committee" imageRoot="/events/idesummit/2021/images/" />}}
 {{</ grid/section-container >}}
