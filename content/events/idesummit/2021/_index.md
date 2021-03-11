@@ -1,6 +1,8 @@
 ---
 title: "Cloud IDE Day 2021"
-custom_jumbotron: "<h1>Cloud IDE Day 2021</h1><h2>An IDE Summit Event</h2><h2>Guiding the Future of IDE Development</h2><p>May 19, 2021 8AM-11AM PST (5PM-8PM CET)</p>"
+headline: "Cloud IDE Day 2021"
+subtitle: "An IDE Summit Event"
+custom_jumbotron: "<h2 class=\"margin-top-10\">Guiding the Future of IDE Development</h2><p class=\"margin-top-20\">May 19, 2021 8AM-11AM PST (5PM-8PM CET)</p>"
 date: 2021-03-07T08:00:00-24:00
 hide_page_title: true
 hide_sidebar: true
