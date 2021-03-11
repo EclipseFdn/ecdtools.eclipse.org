@@ -32,11 +32,11 @@
   <div class="eclipsefdn-sponsors-heading">
     <h2 {{with $headerClass}} class="{{ $headerClass }}"{{ end }}>{{ $title }}</h2>
   </div>
-
+  {{ with .Inner }}
   <div class="eclipsefdn-registration-body">
-    {{ .Inner | markdownify }}
+    {{ . | markdownify }}
   </div>
-
+  {{ end }}
   <div class="eclipsefdn-sponsors-content text-center{{ if eq $useMaxWidth "true"}} with-max{{ end }}">
     {{ if eq $useCarousel "true" }}
       <div class="owl-carousel owl-theme solstice-slider vertical-align" 
