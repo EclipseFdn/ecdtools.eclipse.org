@@ -10,7 +10,6 @@ header_wrapper_class: "header-idesummit-event"
 hide_breadcrumb: true
 container: "container-fluid idesummit-event"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
-links: [[href: "#registration",text: "Propose a Topic"]]
 layout: single
 featured_section_class: "featured-idesummit-event"
 ---
@@ -23,11 +22,9 @@ Do you have a topic you'd like to discuss or perhaps hear from someone else? Ple
 {{</ events/registration >}} {{</ grid/div >}} {{</ grid/section-container >}}
 
 {{< grid/section-container id="organizers" class="featured-section-row featured-section-row-lighter-bg text-center">}}
-{{< grid/div class="container" isMarkdown="false" >}}
   {{< events/sponsors event="idesummit" year="2021" source="organizers" title="Organized by" useMax="false" displayBecomeSponsor="false">}}
   The event is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration on open source cloud development tools. For more information, see the FAQ.
   {{</ events/sponsors >}}
-{{</ grid/div >}}
 {{</ grid/section-container >}}
 
 <!-- Add user carousel for committee -->
