@@ -22,9 +22,12 @@ Do you have a topic you'd like to discuss or perhaps hear from someone else? Ple
 {{</ events/registration >}} {{</ grid/div >}} {{</ grid/section-container >}}
 
 {{< grid/section-container id="organizers" class="featured-section-row featured-section-row-lighter-bg text-center">}}
-  {{< events/sponsors event="idesummit" year="2021" source="organizers" title="Organized by" useMax="false" displayBecomeSponsor="false">}}
+  {{< grid/div isMarkdown="true" >}}
+  ## Organized by  
+  
   The event is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration on open source cloud development tools. For more information, see the FAQ.
-  {{</ events/sponsors >}}
+  {{</ grid/div >}}
+  {{< events/sponsors event="idesummit" year="2021" headerClass="hidden" source="organizers" title=" " useMax="false" displayBecomeSponsor="false" >}}
 {{</ grid/section-container >}}
 
 <!-- Add user carousel for committee -->
