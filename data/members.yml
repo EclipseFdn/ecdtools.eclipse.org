@@ -48,11 +48,6 @@ types:
          link: https://www.typefox.io/
          image: /images/ecdtools/members/typefox.png
          img_width: 100
-       - title: Wind River Systems Inc.
-         id: "wind"
-         link: https://www.windriver.com/
-         image: /images/ecdtools/members/wind.png
-         img_width: 175
   - name: guest
     items:
        - title: Intel
