@@ -23,6 +23,11 @@ types:
          img_width: 130
   - name: participant
     items:
+       - title: Arm
+         id: "arm"
+         link: https://www.arm.com/
+         image: /images/ecdtools/members/arm-logo.svg
+         img_width: 125
        - title: EclipseSource
          id: "eclipsesource"
          link: http://eclipsesource.com
