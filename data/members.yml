@@ -38,6 +38,11 @@ types:
          link: https://www.broadcom.com/
          image: /images/ecdtools/members/broadcom.png
          img_width: 200
+       - title: STMicroelectronics
+         id: "st"
+         link: https://www.st.com/content/st_com/en.html
+         image: /images/ecdtools/members/st-logo.svg
+         img_width: 175
        - title: TypeFox GmbH
          id: "typefox"
          link: https://www.typefox.io/
