@@ -41,7 +41,7 @@ types:
        - title: STMicroelectronics
          id: "st"
          link: https://www.st.com/content/st_com/en.html
-         image: /images/ecdtools/members/st-logo.svg
+         image: /images/ecdtools/members/st-logo.png
          img_width: 175
        - title: TypeFox GmbH
          id: "typefox"
