@@ -80,3 +80,8 @@ pluralizeListTitles = false
     name = "Events"
     url = "/events/idesummit/2021"
     weight = 6
+
+[[menu.main]]
+    name = "Resources"
+    url = "/resources"
+    weight = 7
