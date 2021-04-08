@@ -12,13 +12,30 @@ container: "container-fluid idesummit-event"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
 layout: single
 featured_section_class: "featured-idesummit-event"
+links: [['href':'https://eclipse.zoom.us/webinar/register/WN_ZtvJ8bioQOGhoxhYpn5jsg','text':'Register now']]
 ---
 
 <!-- Add registration using legacy CSS -->
 {{< grid/section-container id="registration" containerClass="backdrop padding-bottom-40 padding-top-40" >}} {{< grid/div class="container" isMarkdown="false" >}} {{< events/registration event="idesummit" year="2021" >}} 
-Cloud IDE Day gathers developers, providers and adopters in one place to guide the direction of IDE technology.
+### What:
 
-Do you have a topic you'd like to discuss or perhaps hear from someone else? Please tell us about it below. We'll arrange all suggested topics into a variety of sessions and reach out to speakers in early April.
+This is an online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020 and aims to guide the future direction of IDE technology.
+
+### Why:
+
+The IDE Summit revealed the need for a deeper dive into Cloud IDEs. What do developers need in the next generation of remote or web-based IDEs? What new IDE tools will best help them build cloud-native applications? How can existing IDEs more efficiently harness the cloud?
+
+### Who:
+
+The event is open to anyone interested in adopting or currently building Cloud IDEs. It’s hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation. This is a vendor-neutral group focused on industry collaboration on open source cloud development tools.
+
+### Topics to be Discussed Include
+
+Challenges of scaling a multi-user IDE
+Changing existing tools to work in the web paradigm
+Lessons learned in building a cloud IDE
+Challenges and opportunities moving developer workspaces to the cloud  
+
 {{</ events/registration >}} {{</ grid/div >}} {{</ grid/section-container >}}
 
 {{< grid/section-container id="organizers" class="featured-section-row featured-section-row-lighter-bg text-center">}}
