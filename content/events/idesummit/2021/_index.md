@@ -31,10 +31,10 @@ The event is open to anyone interested in adopting or currently building Cloud I
 
 ### Topics to be Discussed Include
 
-Challenges of scaling a multi-user IDE
-Changing existing tools to work in the web paradigm
-Lessons learned in building a cloud IDE
-Challenges and opportunities moving developer workspaces to the cloud  
+- Challenges of scaling a multi-user IDE
+- Changing existing tools to work in the web paradigm
+- Lessons learned in building a cloud IDE
+- Challenges and opportunities moving developer workspaces to the cloud  
 
 {{</ events/registration >}} {{</ grid/div >}} {{</ grid/section-container >}}
 
