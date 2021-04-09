@@ -52,11 +52,11 @@ links: [['href':'https://eclipse.zoom.us/webinar/register/WN_ZtvJ8bioQOGhoxhYpn5
     </div>
   </div>
   <div class="row text-center">
-  <h3>Topics to be Discussed Include</h3>
+  <h3 class="padding-bottom-20">Topics to be Discussed Include:</h3>
     <ul style="list-style: none">
-      <li>Challenges of scaling a multi-user IDE
-      <li>Changing existing tools to work in the web paradigm
-      <li>Lessons learned in building a cloud IDE
+      <li class="padding-bottom-10">Challenges of scaling a multi-user IDE
+      <li class="padding-bottom-10">Changing existing tools to work in the web paradigm
+      <li class="padding-bottom-10">Lessons learned in building a cloud IDE
       <li>Challenges and opportunities moving developer workspaces to the cloud  
     </ul>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUa4jPBrmlFBkGzpn_3BzSsVX7nRrU5myr98MiDRDcWYyDrw/viewform?usp=sf_link" class="margin-top-30 btn btn-primary" target="_blank">Propose a Topic</a>
