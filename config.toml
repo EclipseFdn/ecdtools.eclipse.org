@@ -27,6 +27,7 @@ pluralizeListTitles = false
   projects_working_group = "cloud-development-tools"
   news_count = 3
   featured_content_publish_target = "ecd_tools"
+  linkedin_url = "https://www.linkedin.com/showcase/ecd-tools/"
   
 [taxonomies]
   category = "categories"
