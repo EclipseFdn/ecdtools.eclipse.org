@@ -12,29 +12,12 @@
 */
 
 @import '~eclipsefdn-solstice-assets/less/quicksilver/styles.less';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import '_variables.less';
 
-#header-wrapper{
-  background-color: @brand-tertiary;
-  background-size:cover;
-  background-image: url('images/jumbotron-image.jpg');
-  background-position: 0 100%;
-  .featured-jumbotron{
-    padding-top:48px;
+@import '_components/homepage.less';
 
-    .btn {
-      border-radius: @btn-border-radius-base;
-    }
-  }
-}
 
-.btn-primary{
-  .btn-warning;
-}
-
-.btn{
-  border: none;
-}
 .logo-eclipse-default{
   padding-top:9px;
 }
@@ -47,9 +30,6 @@
   float:none;
 }
 
-#members li {
-  padding: 15px;
-}
 
 .news-list{
   .news-list-col {
@@ -77,42 +57,10 @@
   }
 }
 
-.featured-section{
-  padding: 60px 0 60px 0;
-  background-position: 0 100%;
-  font-size:19px;
-  h2{
-    font-size: 34px;
-    margin-bottom: 20px;
-    color: @brand-primary;
-    margin-top:0;
-  }
-  p{
-    margin-bottom:20px;
-    &:last-child{
-      margin-bottom:0;
-    }
-  }
-  .feather {
-    width: 40px;
-    height: 40px;
-  }
-  ul li {
-  	font-size: 14px;
-  }
-}
+
 
 .featured-section-darken{
   background: @brand-tertiary;
-  color: #fff;
-  h2 {
-    color: white;
-  }
-}
-
-.featured-section.featured-section-connected {
-  background-image: url('images/mailing-list-image.jpg');
-  background-size: cover;
   color: #fff;
   h2 {
     color: white;
@@ -123,85 +71,10 @@
   &:extend(.featured-section.featured-section-connected);
 }
 
-.featured-section-testimonials{
-background-color: @brand-tertiary;
-  background-size:cover;
-  background-image: url('images/testimonial-image.jpg');
-  background-position: 0 100%;
-}
-
-.featured-section-members {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  li {
-   padding: 15px;
-  }  
-}
-
 .featured-section-initiatives {
 	background-color: #efefef;
 }
-section#wg-projects {
-  & {
-    margin-top: 20px;
-  }
-  img {max-height: 100px;}
-  .image-container { height: 75px; }
-  li { 
-    & {
-      padding: 10px;
-    }
-    & > div:not(#featured-more-projects) > a { 
-      position: absolute; 
-      bottom: 20px; 
-      margin-left: auto;
-      margin-right: auto; 
-      left: 20px; 
-      right: 20px;
-    }
-    & > div:not(#featured-more-projects) { 
-      border: 1px solid #f0f0f2;
-      padding:10px;
-      padding-bottom: 50px;
-      background-color: #fff;
-    }
-    // required to override inline-list padding
-    &.padding-0 {
-      padding: 0;
-    }
-  }
-  #featured-more-projects ul {
-  	margin-left:0px;
-  }
-}
 
-.testimonial-item {
-  margin-top:120px;
-  .testimonial-logo {
-    background-color: #f9f9f9;
-    border-radius: 150px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    margin: -120px auto 30px;
-    position: relative;
-    img {
-      margin:0 auto;
-    }
-  }
-  .title {
-    font-size:18px;
-    display: flex;
-    flex-direction: column;
-    strong {
-      font-size: larger;
-    }
-  }
-  .content {
-    font-size:16px;
-  }
-}
 
 .mission-circle {
   display:block;
