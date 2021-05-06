@@ -1,11 +1,11 @@
 <div class="row news-item text-center padding-bottom-15">
 {{#events}}
   <div class="col-sm-24">
-    <p class="margin-bottom-0">
-      <a class="fw-700" href="{{ registration }}">{{ title }}</a>
-    </p>
-    <p class="margin-bottom-0">{{ locationName }}</p>
-    <p>{{ date }} - {{ end-date }}</p>
+    <p>{{ date }}</p>
+    <h4 class="whats-new-title">
+      <a href="{{ registration }}">{{ title }}</a>
+    </h4>
+    <p class="whats-new-description">{{ locationName }}</p> 
   </div>
 {{/events}}
 </div>

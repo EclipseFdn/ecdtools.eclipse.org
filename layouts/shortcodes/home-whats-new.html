@@ -1,0 +1,60 @@
+<!-- 
+  Copyright (c) 2021 Eclipse Foundation, Inc.
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  Contributors:
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+<div id="whats-new" class="row featured-section featured-section-whats-new text-center">
+    <div class="container">
+        <h2 class="brand-primary text-center heading-underline">What's new?</h2>
+
+        <div class="row">
+          <div class="col-sm-16 col-sm-offset-4">
+            <div class="row">
+
+              <div class="col-sm-10 col-sm-offset-2 match-height-item-by-row whats-new-item">
+                <div class="whats-new-icon"><img alt="News icon" src="images/ecdtools/home/whats-new-1.png"></div>
+                <div id="news-list-container" class="news-items" data-pagination="false" data-news-count="1" data-publish-target="ecd_tools"></div>
+                <p class="whats-new-view-all"><a href="/resources/news">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+              </div>
+
+              <div class="col-sm-10 match-height-item-by-row whats-new-item">
+                {{ range first 1 (where .Site.Pages "Params.category" "video") }}
+                  <div class="whats-new-icon"><img alt="Videos icon" src="images/ecdtools/home/whats-new-2.png"></div>
+                  <p class="whats-new-date">{{ dateFormat "Monday, January 2, 2006" .Date }}</p>
+                  <h4 class="whats-new-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                  <p class="whats-new-description">{{ .Content }}</p>
+                {{ end }}
+                <p class="whats-new-view-all"><a href="/resources/videos">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-sm-10 col-sm-offset-2 match-height-item-by-row whats-new-item">
+                <div class="whats-new-icon"><img alt="Blogs icon" src="images/ecdtools/home/whats-new-3.png"></div>
+                {{ range first 1 (where .Site.Pages "Params.category" "blog") }}
+                  <p class="whats-new-date">{{ dateFormat "Monday, January 2, 2006" .Date }}</p>
+                  <h4 class="whats-new-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                  <p class="whats-new-description">{{ .Content }}</p>
+                {{ end }}
+                <p class="whats-new-view-all"><a href="/resources/blogs">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+              </div>
+              <div class="col-sm-10 match-height-item-by-row whats-new-item">
+                <div class="whats-new-icon"><img alt="Events icon" src="images/ecdtools/home/whats-new-4.png"></div>
+                <div id="event-list-container" class="news-items" data-template-id="event-short-list" data-upcoming="1" data-count="1" data-publish-target="ecd_tools"></div>
+                <p class="whats-new-view-all"><a href="/resources/events">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+    </div>
+</div>
