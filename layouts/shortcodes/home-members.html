@@ -9,21 +9,27 @@
 -->
 <!-- start: Founding Members -->
 {{ $data := index (where .Site.Data.members.types "name" "strategic") 0 }}
+{{ $data_participant := index (where .Site.Data.members.types "name" "participant") 0 }}
+
 {{ $items := $data.items }}
+{{ $items_participant := $data_participant.items }}
+{{ $items = $items | append ($items_participant) }}
+
 {{ $limit := .Get "limit" }}
 {{ if $limit }}
   {{ $items = first $limit $items }}
 {{ end }}
 <div id="members" class="row featured-section featured-section-members text-center">
   <div class="container">
-    <h2>Members</h2>
-    <ul class="list-inline">
-      {{ range $items }}
-        <li><a href="{{ .link }}"><img class="founder-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a></li>
+    <h2 class="heading-underline text-center">Members</h2>
+    <ul class="list-inline members-items">
+      {{ range first 6 $items }}
+        <li><a href="{{ .link }}"><img class="members-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a><br> {{ .type }}</li>
       {{ end }}
     </ul>
     {{ if $limit }}
-    <a class="btn btn-primary margin-top-20" href="{{ "/membership" | absURL }}" >See all Members</a>
+      <p class="members-description">Being a member has benefits</p>
+      <p><a class="btn btn-primary margin-top-5" href="{{ "/membership" | absURL }}" >Learn more</a></p>
     {{ end }}
   </div>
 </div>

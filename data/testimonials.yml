@@ -2,8 +2,9 @@ items:
    - company: EclipseSource
      name:  Dr. Jonas Helming
      title: General Manager
-     logo: /images/ecdtools/members/eclipse-source.png
+     logo: /images/ecdtools/members/eclipse-source_white.png
      text: In our customer projects around the globe, we can observe an increasing demand for web-based and cloud-based tooling….We believe the Eclipse ecosystem has the potential to be a core ecosystem for web-based tooling in the upcoming decade.
+     picture: /images/ecdtools/members/eclipsesource-headshot.jpg
    - company: IBM
      name: Danny Mace
      title: Vice President, Hybrid Cloud App Platform

@@ -1,0 +1,365 @@
+/*!
+ * Copyright (c) 2021 Eclipse Foundation, Inc.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+#header-wrapper{
+  background-color: @brand-tertiary;
+  background-position: 0 100%;
+  h1 {
+    margin-bottom:0;
+    text-transform: uppercase;
+    &:after {
+      content:none;
+    }
+  }
+  .featured-jumbotron{
+    padding-top:200px;
+    padding-bottom:150px;
+    //background-image: url('../images/jumbotron-image.jpg');
+    background-size:cover;
+  }
+  &.featured-jumbotron-home {
+    .featured-jumbotron {
+      background-image:@featured-jumbotron-home-bg-img;
+    }
+  }
+}
+
+.btn {
+  .button-size(8px; 50px; @btn-font-size; @line-height-base; 0px);
+}
+
+
+#main-menu {
+  li a, .dropdown-menu p {
+    text-transform: uppercase;
+    font-weight:300;
+  }
+}
+
+.eclipse-search {
+  .feather-search {
+    color:@brand-primary;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    top: -7px;
+    position: relative;
+  }
+}
+
+#main-menu li .dropdown-menu:before {
+  border:none;
+  background-color:transparent;
+}
+
+#main-menu li.dropdown.eclipse-more .dropdown-menu {
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+
+.gsib_a {
+  padding:0!important;
+}
+
+.featured-section{
+  padding: 60px 0 60px 0;
+  background-position: 0 100%;
+  h2{
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: @brand-primary;
+    margin-top:0;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  p{
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+  .feather {
+    width: 40px;
+    height: 40px;
+  }
+  ul li {
+      font-size: 14px;
+  }
+}
+
+
+.featured-section-powered-by {
+  .small {
+    color:@brand-primary;
+    text-transform: uppercase;
+    margin-bottom:10px;
+    font-size:14px; 
+  }
+  .powered-by-description {
+    font-size: 24px;
+    margin-bottom:20px;
+  }
+}
+
+.featured-section-webinar-series-1 {
+  background-image:url(../images/webinar-series-1-bg.png);
+  color:@white;
+  .btn {
+    width:200px;
+    padding:8px 35px;
+  }
+  h2, h3 {
+    color:@white;
+    font-weight:400;
+  }
+  h2{
+    margin-top:17px;
+    font-size:34px;
+    text-transform: inherit;
+    margin-bottom:20px;
+  }
+  .featured-section-webinar-series-1-img {
+    margin-bottom:18px;
+  }
+  .webinar-series-1-description {
+    font-size:18px;
+  }
+}
+
+.featured-section-projects {
+  background-color:#f9fafa;
+  .logo {
+    max-height: 65px;
+    max-width: 120px;
+  }
+  p{
+    font-size:12px;
+    &.description {
+      span {
+        color:#222;
+      }
+      a {
+        color:@brand-primary;
+      }
+    }
+    &.project-lead {
+      color:#222;
+      span {
+        color:@brand-primary;
+      }
+    }
+  }
+  
+  .image-container { 
+    height: 75px; 
+  }
+  li { 
+    padding-right: 10px;
+    padding-left: 10px;
+    & > div:not(#featured-more-projects) > a { 
+      position: absolute; 
+      bottom: 20px; 
+      margin-left: auto;
+      margin-right: auto; 
+      left: 20px; 
+      right: 20px;
+    }
+    & > div:not(#featured-more-projects) { 
+      padding:20px;
+      padding-bottom: 0;
+      background-color: #fff;
+      margin-bottom:20px;
+      box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+    }
+    // required to override inline-list padding
+    &.padding-0 {
+      padding: 0;
+    }
+  }
+  #featured-more-projects ul {
+      margin-left:0px;
+  }
+}
+
+.featured-section-whats-new {
+    background-color:@white;
+    p {
+      margin-bottom:10px;
+      font-size:12px;
+    }
+    .whats-new-item {
+      margin-bottom:50px;
+    }
+    .whats-new-icon {
+      height:55px;
+      img {
+        width: 49px;
+      }
+    }
+    .whats-new-date, .whats-new-view-all {
+      margin-bottom: 5px;
+    }
+    .whats-new-title, h4 {
+      font-size:18px;
+      margin-top:0;
+      a {
+          color:@brand-primary;
+      }
+    }
+    .whats-new-description {
+      font-size:12px;
+    }
+    .block-summary-item {
+      padding:0;
+      background-color: transparent;
+      p {
+        color:inherit;
+      }
+      h4 {
+        color:@brand-primary;
+        font-weight: 300;
+        a {
+          color:@brand-primary;
+          &:hover {
+            color:@brand-primary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+}
+.featured-section-highlights-prefix {
+    background-image:url(../images/highlights-prefix-bg.jpg);
+    background-size:cover;
+    p {
+        font-size: 50px;
+        color: @white;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+}
+.featured-section-highlights {
+    background-color:#fafafb;
+    margin-bottom:30px;
+    .featured-stats-item {
+        border-right:1px solid lighten(@text-color, 25%);
+        &:last-child {
+            border-right:none;
+        }
+    }
+    a.featured-stats-link {
+        &:hover {
+            text-decoration: none;
+            .featured-stats-text-container {
+                color:darken(@text-color, 15%);
+            }
+            .featured-stats-number {
+                color:darken(@brand-primary, 15%);
+            }
+        }
+    }
+    .featured-stats-text-container {
+        text-transform: uppercase;
+        color:@text-color;
+        font-size: 16px;
+        font-weight: 400;
+        .featured-stats-number {
+            color:@brand-primary;
+            font-size:40px;
+            font-weight: 600;
+        }
+    }
+}
+
+.featured-section-members {
+    background-color:@white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .members-items {
+        margin-bottom: 20px;
+        li {
+          padding: 0 25px 15px;
+        }
+    }
+    .members-description {
+        color:@brand-primary;
+        font-size: 16px;
+    }
+    .members-logo {
+      margin-bottom:10px;
+    }
+
+}
+
+.featured-section-webinar-series-2 {
+  background-color:#f8f9f9;
+  .webinar-series-2-date {
+    color:@brand-primary;
+    font-size:24px;
+  }
+  .webinar-series-2-description {
+    font-size: 16px;
+    margin-bottom:25px;
+  }
+  .webinar-series-2-buttons {
+    li a {
+      width:225px;
+    }
+  }
+}
+
+.featured-section-testimonials{
+  background-color: @brand-primary;
+  color: @white;
+  .testimonials-quote {
+    font-size: 300px;
+    line-height: 1;
+    margin-bottom: 0;
+    height: 117px;
+    margin-top: -35px;
+  }
+  .testimonial-picture, .testimonial-logo {
+    margin:0 auto;
+  }
+  .testimonial-picture {
+    background-color: @white;
+    border-radius: 80px;
+    margin-bottom:15px;
+    overflow: hidden;
+    width:60px;
+    height:60px;
+  }
+  .testimonial-logo {
+    margin-top:10px;
+  }
+  .testimonial-content {
+    font-size:24px;
+    margin-bottom:20px;
+  }
+}
+
+.featured-section-connected {
+  background-color:#f9fafa;
+  color: #fff;
+  .btn {
+    margin-right:10px;
+  }
+  .connected-icon {
+    color:#828283;
+    .fa {
+      font-size: 24px;
+      top: 5px;
+      position: relative;
+      padding:0 10px;
+    }
+  }
+}

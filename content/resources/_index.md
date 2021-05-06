@@ -1,5 +1,6 @@
 ---
 title: "Resources"
+<<<<<<< HEAD
 description: ""
 layout: "single"
 ---
@@ -79,3 +80,11 @@ layout: "single"
 ### Videos
 - [Web-based modeling tools with EMF.cloud](https://www.youtube.com/watch?v=qjris1CdJow)
 - [Ecore tools in the cloud - behind the scenes](https://www.youtube.com/watch?v=YQyaCR_V5zc)
+=======
+seo_title: "Resources - ECDtools"
+description: ""
+keywords: ["ECDtools"]
+---
+
+#### Below are some useful links to articles and other resources about ECDtools.
+>>>>>>> Create the redesign of the home page

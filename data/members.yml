@@ -4,50 +4,59 @@ types:
        - title: Ericsson AB
          id: "ericsson"
          link: https://www.ericsson.com/
-         image: /images/ecdtools/members/ericsson.png
-         img_width: 220
+         image: /images/ecdtools/members/ericsson_black.png
+         type: "strategic"
+         #img_width: 220
        - title: IBM
          id: "ibm"
          link: https://www.ibm.com/ca-en
-         image: /images/ecdtools/members/ibm.svg
-         img_width: 100
+         image: /images/ecdtools/members/ibm.png
+         type: "strategic"
+         #img_width: 100
        - title: Red Hat
          id: "redhat"
          link: https://www.redhat.com/en
-         image: /images/ecdtools/members/redhat.svg
-         img_width: 200
+         image: /images/ecdtools/members/redhat.png
+         type: "strategic"
+         #img_width: 200
        - title: SAP SE
          id: "sap"
          link: https://www.sap.com/index.html
-         image: /images/ecdtools/members/sap.svg
-         img_width: 130
+         image: /images/ecdtools/members/sap_black.png
+         type: "strategic"
+         #img_width: 130
   - name: participant
     items:
+       - title: EclipseSource
+         id: "eclipsesource"
+         link: http://eclipsesource.com
+         image: /images/ecdtools/members/eclipse-source_black.png
+         #img_width: 200
+         type: "participant"
+       - title: Broadcom Inc.
+         id: "broadcom"
+         link: https://www.broadcom.com/
+         image: /images/ecdtools/members/broadcom_black.png
+         #img_width: 200
+         type: "participant"
        - title: Arm
          id: "arm"
          link: https://www.arm.com/
          image: /images/ecdtools/members/arm-logo.svg
+         type: "participant"
          img_width: 125
-       - title: EclipseSource
-         id: "eclipsesource"
-         link: http://eclipsesource.com
-         image: /images/ecdtools/members/eclipse-source.png
-         img_width: 200
-       - title: Broadcom Inc.
-         id: "broadcom"
-         link: https://www.broadcom.com/
-         image: /images/ecdtools/members/broadcom.png
-         img_width: 200
        - title: STMicroelectronics
          id: "st"
          link: https://www.st.com/content/st_com/en.html
          image: /images/ecdtools/members/st-logo.png
          img_width: 175
+         type: "participant"
        - title: TypeFox GmbH
          id: "typefox"
          link: https://www.typefox.io/
          image: /images/ecdtools/members/typefox.png
          img_width: 100
+         type: "participant"
   - name: guest
     items:
        - title: Intel
