@@ -26,76 +26,10 @@
   max-width:260px;
 }
 
-.featured-ad a{
-  float:none;
-}
-
-
-.news-list{
-  .news-list-col {
-    margin-bottom:0;
+@media (max-width: @screen-xs-max) {
+  #header-row {
     padding-bottom:0;
-    h2.heading-line {
-      text-align:center;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
   }
-  .media-link:hover {
-    .box-shadow(3px 3px 3px #cecece);
-    background-color: white;
-  }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-}
-
-.event-list {
-  a:visited{
-    color: @brand-tertiary;
-  }
-}
-
-
-
-.featured-section-darken{
-  background: @brand-tertiary;
-  color: #fff;
-  h2 {
-    color: white;
-  }
-}
-
-.featured-footer.featured-story-dark {
-  &:extend(.featured-section.featured-section-connected);
-}
-
-.featured-section-initiatives {
-	background-color: #efefef;
-}
-
-
-.mission-circle {
-  display:block;
-  width:300px;
-  height:300px;
-  padding:37px 26px 34px 40px;
-  background-color:@white;
-  border-radius:150px;
-  margin:0px auto 0;
-  img{
-    margin-top:-20px;
-    padding:30px;
-    margin-left:-4px;
-  }
-}
-
-.featured-section-statement {
-  background-size:cover;
-  background-image: url('images/mission-statement-image.jpg');
-  background-position: 0 50%;
-  font-size: 24px;
 }
 
 //== For event page
@@ -177,6 +111,7 @@
 .events-container a.btn-secondary:nth-child(2) {
   margin-left: 10px;
 }
+//== END: For event page
 
 .d-inline-block {
   display: inline-block;
