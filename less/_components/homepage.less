@@ -112,26 +112,36 @@
 
 .featured-section-webinar-series-1 {
   background-image:url(../images/webinar-series-1-bg.png);
+  background-size: cover;
   color:@white;
   .btn {
     width:200px;
     padding:8px 35px;
-  }
-  h2, h3 {
-    color:@white;
-    font-weight:400;
+    margin-top: 10px;
   }
   h2{
     margin-top:17px;
     font-size:34px;
     text-transform: inherit;
     margin-bottom:20px;
+    text-align: right;
+  }
+  h2, h3 {
+    color:@white;
+    font-weight:400;
+    @media (max-width: @screen-xs-max) {
+      text-align: center;
+    }
   }
   .featured-section-webinar-series-1-img {
     margin-bottom:18px;
+    margin: 0 auto;
   }
   .webinar-series-1-description {
     font-size:18px;
+    @media (max-width: @screen-xs-max) {
+      text-align: center;
+    }
   }
 }
 
@@ -192,6 +202,7 @@
 
 .featured-section-whats-new {
     background-color:@white;
+    padding: 60px 0 10px;
     p {
       margin-bottom:10px;
       font-size:12px;
@@ -251,10 +262,17 @@
     background-color:#fafafb;
     margin-bottom:30px;
     .featured-stats-item {
+      @media (min-width: @screen-xs-min) {
         border-right:1px solid lighten(@text-color, 25%);
         &:last-child {
             border-right:none;
         }
+      }
+      @media (max-width: @screen-xs-max) {
+        &:nth-child(odd) {
+          border-right:1px solid lighten(@text-color, 25%);
+        }
+      }
     }
     a.featured-stats-link {
         &:hover {
@@ -288,6 +306,10 @@
         margin-bottom: 20px;
         li {
           padding: 0 25px 15px;
+          @media (max-width: @screen-xs-max) {
+            width:100%;
+            margin-bottom:20px;
+          }
         }
     }
     .members-description {
@@ -313,6 +335,9 @@
   .webinar-series-2-buttons {
     li a {
       width:225px;
+      @media (max-width: @screen-xs-max) {
+        margin-bottom:10px;
+      }
     }
   }
 }
@@ -352,6 +377,14 @@
   color: #fff;
   .btn {
     margin-right:10px;
+  }
+  li {
+    @media (max-width: @screen-xs-max) {
+      &:nth-child(1) {
+        width:100%;
+        margin-bottom:10px;
+      }
+    }
   }
   .connected-icon {
     color:#828283;
