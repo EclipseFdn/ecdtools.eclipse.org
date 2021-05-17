@@ -52,14 +52,23 @@ links: [['href':'https://eclipse.zoom.us/webinar/register/WN_ZtvJ8bioQOGhoxhYpn5
     </div>
   </div>
 {{</ grid/div >}} 
+{{</ grid/section-container >}}
 
-{{< grid/div class="container" isMarkdown="false" >}}
+{{< grid/section-container id="agenda" class="featured-section-row featured-section-row-lighter-bg">}}
+{{< grid/div class="padding-bottom-20" isMarkdown="false" >}}
+<style>
+#agenda h2 { text-align:center; }
+</style>
 {{< events/agenda year="2021" event="idesummit" >}}
 {{</ grid/div >}}
 
+{{< grid/div class="text-center margin-top-50" isMarkdown="false" >}}
+{{< events/user_display event="idesummit" year="2021" title="Speakers" source="speakers" imageRoot="/events/idesummit/2021/images/" />}}
+{{</ grid/div >}}
 {{</ grid/section-container >}}
 
-{{< grid/section-container id="organizers" class="featured-section-row featured-section-row-lighter-bg text-center">}}
+
+{{< grid/section-container id="organizers" class="featured-section-row text-center">}}
   {{< grid/div isMarkdown="true" >}}
   ## Organized by  
   
@@ -69,6 +78,6 @@ links: [['href':'https://eclipse.zoom.us/webinar/register/WN_ZtvJ8bioQOGhoxhYpn5
 {{</ grid/section-container >}}
 
 <!-- Add user carousel for committee -->
-{{< grid/section-container id="program-committee" class="featured-section-row text-center featured-section-row-light-bg eclipsefdn-user-display-circle" >}}
+{{< grid/section-container id="program-committee" class="featured-section-row text-center featured-section-row-lighter-bg eclipsefdn-user-display-circle" >}}
   {{< events/user_display event="idesummit" year="2021" title="Advisors" source="committee" imageRoot="/events/idesummit/2021/images/" />}}
 {{</ grid/section-container >}}
