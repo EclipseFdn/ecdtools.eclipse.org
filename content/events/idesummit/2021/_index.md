@@ -51,17 +51,13 @@ links: [['href':'https://eclipse.zoom.us/webinar/register/WN_ZtvJ8bioQOGhoxhYpn5
       <p>The event is open to anyone interested in adopting or currently building Cloud IDEs. It’s hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation. This is a vendor-neutral group focused on industry collaboration on open source cloud development tools.</p>
     </div>
   </div>
-  <div class="row text-center">
-  <h3 class="padding-bottom-20">Topics to be Discussed Include:</h3>
-    <ul style="list-style: none">
-      <li class="padding-bottom-10">Challenges of scaling a multi-user IDE
-      <li class="padding-bottom-10">Changing existing tools to work in the web paradigm
-      <li class="padding-bottom-10">Lessons learned in building a cloud IDE
-      <li>Challenges and opportunities moving developer workspaces to the cloud  
-    </ul>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUa4jPBrmlFBkGzpn_3BzSsVX7nRrU5myr98MiDRDcWYyDrw/viewform?usp=sf_link" class="margin-top-30 btn btn-primary" target="_blank">Propose a Topic</a>
-  </div>
-{{</ grid/div >}} {{</ grid/section-container >}}
+{{</ grid/div >}} 
+
+{{< grid/div class="container" isMarkdown="false" >}}
+{{< events/agenda year="2021" event="idesummit" >}}
+{{</ grid/div >}}
+
+{{</ grid/section-container >}}
 
 {{< grid/section-container id="organizers" class="featured-section-row featured-section-row-lighter-bg text-center">}}
   {{< grid/div isMarkdown="true" >}}

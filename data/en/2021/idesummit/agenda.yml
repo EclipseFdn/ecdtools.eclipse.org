@@ -1,0 +1,33 @@
+items:
+    - name: Introduction
+      presenters: 
+        - Tim deBoer
+        - Brian King
+      time: 08:00 / 11:00 / 17:00
+    - name: The Future of Cloud Development is Editor Neutral (and why development has remained local for so long)
+      presenter: Kyle Carberry
+      time: 08:10 / 11:10 / 17:10
+    - name: Simplifying and Standardizing Developer Environments for the Cloud
+      presenters: 
+        - Serhii Leshchenko
+        - Elson Yuen
+      time: 08:40 / 11:40 / 17:40
+    - name: Web-based Diagram Editors with GLSP
+      presenter: Philip Langer
+      time: 09:10 / 12:10 / 18:10
+    - name: 20 min break
+      type: break
+      time: 09:40 / 12:40 / 18:40
+    - name: Achieving Economies of Scale in Cloud IDEs
+      presenter: Thomas Mäder
+      time: 10:00 / 13:00 / 19:00
+    - name: "Build it and You'll Learn: A Discussion About Lessons Learned Building Cloud Tools"
+      presenters: 
+        - Marc Dumais
+        - Jessielaine Punongbayan
+        - Ammar Bandukwala
+        - Sven Efftinge
+      time: 10:30 / 13:30 / 19:30
+    - name: Breakouts Social Hour with Wonder
+      time: 11:15 / 14:15 / 20:15
+      
