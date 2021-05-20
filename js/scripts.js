@@ -18,5 +18,4 @@
             });
         }
     }
-
 }(window.jQuery, window, document));
