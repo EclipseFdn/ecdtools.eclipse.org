@@ -249,14 +249,16 @@
     }
 }
 .featured-section-highlights-prefix {
+  @media (max-width: @screen-sm-max) {
     background-image:url(../images/highlights-prefix-bg.jpg);
     background-size:cover;
-    p {
-        font-size: 50px;
-        color: @white;
-        font-weight: 600;
-        line-height: 1.2;
-    }
+  }
+  p {
+    font-size: 50px;
+    color: @white;
+    font-weight: 600;
+    line-height: 1.2;
+  }
 }
 .featured-section-highlights {
     background-color:#fafafb;
@@ -336,7 +338,7 @@
     li a {
       width:225px;
       @media (max-width: @screen-xs-max) {
-        margin-bottom:10px;
+        margin-bottom:30px;
       }
     }
   }

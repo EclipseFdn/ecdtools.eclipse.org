@@ -27,6 +27,8 @@ mix.babel([
     './node_modules/feather-icons/dist/feather.min.js',
     './node_modules/cookieconsent/src/cookieconsent.js',
     './node_modules/owl.carousel/dist/owl.carousel.min.js',
+    './node_modules/jquery-parallax.js/parallax.min.js',
+    './js/scripts.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.cookieconsent.js',
     './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.videos.js',
     './node_modules/eclipsefdn-solstice-assets/js/solstice.cookies.js',
