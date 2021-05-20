@@ -77,50 +77,10 @@
           </li>
           {{ end }}
         {{ end }}
-        {{if gt (len ($.Scratch.GetSortedMapValues "wg_projects")) 3}}
-          <li class="padding-0">
-          <div class="collapse" id="featured-more-projects" aria-expanded="true" style="">
-          <ul class="list-inline">
-            {{ range after 4 ($.Scratch.GetSortedMapValues "wg_projects") }}
-              {{ if not (in $highlights .project_id) }}
-              <li class="col-xs-12 col-sm-8">
-                <div class=" ">
-                  <h3 class="h4">
-                    <span class="image-container vertical-align margin-bottom-20 text-center">
-                      {{ if .logo }}
-                        <img class="logo img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
-                      {{ else }}
-                      <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
-                      {{ end }}
-                    </span>
-                  </h3>
-                  <p class="match-height-item-by-row description"><span>The Project:</span> {{ .summary | safeHTML }}
-                    <br><a href="{{ .website_url | default .url }}" target="_blank" title="Learn more about {{ .name }}">Learn more&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-                    <div class="row">
-                      <div class="col-sm-12 padding-right-0">
-                        <img class="img-responsive" src="images/ecdtools/home/silhouette.jpg">
-                      </div>
-                      <div class="col-sm-12 padding-left-0 padding-top-20">
-                        {{ range first 1 .project_leads }}
-                          <p class="project-lead"><span>Project Lead:</span><br>
-                            {{ .username }}</p>
-                        {{ end }}
-                      </div>
-                    </div>
-                </div>
-              </li>
-              {{ end }}
-            {{ end }}
-            </ul>
-          </div>
-          </li>
-        {{ end }}
       </ul>
     </div>
   </div>
-  {{ if gt (len ($.Scratch.GetSortedMapValues "wg_projects")) 3 }}
   <p class="text-center margin-top-30">
-    <a data-toggle-text="Close" role="button" data-toggle="collapse" href="#featured-more-projects" aria-expanded="true" aria-controls="featured-more-projects" class="btn btn-primary toggle-text">View All Projects</a>
+    <a href="/projects" class="btn btn-primary">View All Projects</a>
   </p>
-  {{ end }}
 </section>
