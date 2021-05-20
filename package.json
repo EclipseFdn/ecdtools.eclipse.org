@@ -28,6 +28,7 @@
   "dependencies": {
     "core-js": "^3.8.2",
     "eclipsefdn-hugo-solstice-theme": "0.0.122",
+    "jquery-parallax.js": "^1.5.0",
     "js-yaml": "^3.13.1",
     "json-minify": "^1.0.0",
     "list.js": "^1.2.0",
