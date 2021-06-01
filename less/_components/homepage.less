@@ -248,16 +248,21 @@
       }
     }
 }
+
+.parallax-mirror {
+  background-color:#022247;
+}
 .featured-section-highlights-prefix {
-  @media (max-width: @screen-sm-max) {
-    background-image:url(../images/highlights-prefix-bg.jpg);
-    background-size:cover;
-  }
   p {
     font-size: 50px;
     color: @white;
     font-weight: 600;
     line-height: 1.2;
+  }
+  &:not(.initialized) {
+    background-image:url(../images/highlights-prefix-bg.jpg);
+    background-size:cover;
+    background-color:#022247;
   }
 }
 .featured-section-highlights {
