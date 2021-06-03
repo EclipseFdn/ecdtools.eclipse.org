@@ -71,6 +71,7 @@ pluralizeListTitles = false
     name = "Community"
     url = "/community"
     weight = 4
+    parent = "resources"
 
 [[menu.main]]
     name = "Projects"
@@ -81,8 +82,10 @@ pluralizeListTitles = false
     name = "Events"
     url = "/events/idesummit/2021"
     weight = 6
+    parent = "resources"
 
 [[menu.main]]
     name = "Resources"
     url = "/resources"
     weight = 7
+    identifier = "resources"
