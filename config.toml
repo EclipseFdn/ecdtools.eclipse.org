@@ -85,7 +85,13 @@ pluralizeListTitles = false
     parent = "resources"
 
 [[menu.main]]
-    name = "Resources"
+    name = "Project Resources"
     url = "/resources"
+    weight = 6
+    parent = "resources"
+
+[[menu.main]]
+    name = "Resources"
+    url = "#"
     weight = 7
     identifier = "resources"
