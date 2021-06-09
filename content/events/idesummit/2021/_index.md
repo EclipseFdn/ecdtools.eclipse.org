@@ -12,7 +12,7 @@ container: "container-fluid idesummit-event"
 summary: "Cloud IDE Day is a half-day online event for IDE developers, with an emphasis on tools and best practices for development in the Cloud. It is an extension of the IDE Summit that debuted in October 2020.  This event takes a deep dive into Cloud IDE development. Gathering developers, providers and adopters in one place, the Cloud IDE Summit aims to guide the future direction of IDE technology."
 layout: single
 featured_section_class: "featured-idesummit-event"
-links: [['href':'https://eclipse.zoom.us/webinar/register/WN_ZtvJ8bioQOGhoxhYpn5jsg','text':'Register now']]
+links: [['href':'https://youtube.com/playlist?list=PLy7t4z5SYNaTYvCpxIlPqpzZ8C0rSIeey','text':'Watch the Recordings']]
 ---
 
 <!-- Add registration using legacy CSS -->
