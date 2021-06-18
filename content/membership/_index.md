@@ -36,5 +36,3 @@ ECD Tools Working Group member benefits:
 {{</ grid/section-container >}}
 
 {{< members-list-inline >}}
-
-{{< home-testimonials >}}
