@@ -7,18 +7,16 @@ description: "The Eclipse Cloud Development Tools Working Group drives the evolu
 hide_page_title: true
 hide_sidebar: true
 hide_breadcrumb: true
-show_featured_story: true
+show_featured_story: false
 date: 2020-03-01T16:09:45-04:00
 layout: "single"
 #links: [[href: "#statement", text: "Developer Tools"],[href: "https://accounts.eclipse.org/contact/membership/ecdtools", text: "Become a member"],[href: "https://accounts.eclipse.org/mailing-list/ecd-tools-wg", text: "Join our Mailing List"]]
 container: "container-fluid"
 header_wrapper_class: "featured-jumbotron-home"
 ---
-{{< home-powered-by >}}
-{{< home-webinar-series-1 >}}
-{{< home-projects highlight="ecd.openvsx:ecd.theia:ecd.jkube">}}
-{{< home-whats-new >}}
-{{< home-highlights >}}
-{{< home-members limit="50" >}}
-{{< home-webinar-series-2 >}}
-{{< home-testimonials >}}
+{{< home/powered-by >}}
+{{< home/webinar-series-1 >}}
+{{< home/projects highlight="ecd.openvsx:ecd.theia:ecd.jkube">}}
+{{< home/whats-new >}}
+{{< home/highlights >}}
+{{< home/members limit="50" >}}
