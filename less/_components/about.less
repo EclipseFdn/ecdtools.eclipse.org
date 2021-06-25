@@ -19,17 +19,31 @@
     background-color:@white;
 }
 
+.featured-content-about-img {
+    margin:0 auto;
+    @media (max-width: @screen-xs-min) {
+        width:200px;
+    }
+}
+
 .featured-content-faq {
     padding-top: 0;
     background-color: @white;
+    position:relative;
 }
 
 .featured-content-faq-bg {
+    position:absolute;
     background-image:@about-faq-bg-img;
     background-repeat: no-repeat;
-    background-size: 1600px;
-    background-position: center;
-    @media (max-width: @screen-sm-max) {
-        background-size: 2000px;
+    width: 100%;
+    height: 90%;
+    top: 50px;
+    background-size: cover;
+    @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
+        height: 84%;
+    }
+    @media (min-width: @screen-md-min) {
+        height: 81%;
     }
 }
