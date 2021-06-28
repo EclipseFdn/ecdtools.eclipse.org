@@ -1,0 +1,49 @@
+/*!
+ * Copyright (c) 2021 Eclipse Foundation, Inc.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+.header-about-bg-img {
+    background-image:@featured-jumbotron-about-bg-img; 
+}
+
+.featured-content-about {
+    background-color:@white;
+}
+
+.featured-content-about-img {
+    margin:0 auto;
+    @media (max-width: @screen-xs-min) {
+        width:200px;
+    }
+}
+
+.featured-content-faq {
+    padding-top: 0;
+    background-color: @white;
+    position:relative;
+}
+
+.featured-content-faq-bg {
+    position:absolute;
+    background-image:@about-faq-bg-img;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+    top: 50px;
+    background-size: cover;
+    @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
+        height: 84%;
+    }
+    @media (min-width: @screen-md-min) {
+        height: 81%;
+    }
+}

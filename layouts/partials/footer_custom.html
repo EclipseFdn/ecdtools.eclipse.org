@@ -1,3 +1,47 @@
+
+<div id="webinar-series-1" class="featured-section featured-section-webinar-series-2 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-14 col-sm-offset-5">
+        <h2 class="heading-underline text-center">Webinar series</h2>
+        <p><img class="Cloud ToolTime" width="120" src="/images/ecdtools/home/cloud-tool-time-logo.svg"></p>
+        <p class="webinar-series-2-date">December 1, 2020</p>
+        <p class="webinar-series-2-description">Join us for our new webinar series, featuring interactive talks by ECD Tools
+          community members! Join the conversation, propose a talk.</p>
+        <ul class="list-inline webinar-series-2-buttons">
+          <li><a class="btn btn-primary" href="#">Register Now</a></li>
+          <li><a class="btn btn-primary" href="#">Join the Conversation</a></li>
+        </ul>
+      </div>
+    </div>
+      
+  </div>
+
+</div>
+
+<div id="testimonials" class="featured-section featured-section-testimonials text-center">
+  <div class="container">
+    <p class="testimonials-quote">“</p>
+    {{ if .Site.Data.testimonials.items }}
+      <div class="row testimonial-container margin-top-30">
+        {{ range first 1 .Site.Data.testimonials.items }}
+        <div class="col-sm-16 col-sm-offset-4 testimonial-item">
+          <div class="flex-column">
+            
+            <p class="testimonial-content flex-grow">"{{ .text }}"</p>
+            {{ if .picture }}
+              <div class="testimonial-picture"><img class="img" src="{{ .picture }}" width="{{ .picture_width | default 60 }}" alt="{{ .name }} logo"></div>
+            {{ end }}
+            <p class="pull-right">{{ .name }}, {{.title}} at {{ .company }}</p>
+            <p><img class="testimonial-logo img img-responsive" src="{{ .logo }}" width="{{ .logo_width | default 125 }}" alt="{{ .company }} logo"></p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>
+
 {{ $FeaturedSectionClass := .Page.Params.featured_section_class | default "featured-section-connected" }}
 
 <div class="featured-section {{ $FeaturedSectionClass }} text-center">
