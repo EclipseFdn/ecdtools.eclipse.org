@@ -67,33 +67,35 @@
                     
                     projectInfo.downloadUrl = value.url;
 
+                    projectInfo.category = getCategory(id);
+
                     projectInfos.push(projectInfo);
 
                     i++;
                 });
 
                 var options = {
-                    item: '<li class="col-md-24"><div class="media">\
-                              <div class="row"><div class="col-sm-4">\
+                    item: '<li class="col-md-8 col-sm-12"><div class="featured-projects-item">\
+                                <div class="featured-projects-item-category category"> </div>\
+                                <div class="featured-projects-item-content match-height-item">\
                                 <a href="#" class="link">\
-                                  <img class="media-object img-responsive logo logo_alt center-block" alt="project">\
+                                <img class="featured-projects-item-img img-responsive logo logo_alt" alt="project">\
                                 </a>\
-                              </div>\
-                              <div class="col-sm-20">\
-                                 <h4 class="media-heading name"> </h4><span class="labels"></span>\
-                                   <div class="row">\
-                                    <p class="fullDescription" style="display:none;"></p>\
-                                    <p class="description col-md-16"></p>\
-                                    <div class="col-md-8 details"><div class="row">\
-                                        <p class="downloads" style="display:none;"></p>\
-                                        <div class="col-md-24"><p>Latest release: <span class="badge version">1.4</span></p></div>\
-                                        <div class="col-md-24 margin-bottom-10"><p>Project status: <span class="badge project_state">Incubating</span></p></div>\
-                                        <div class="col-md-24"><p><a class="btn btn-sm btn-primary downloadUrl" href="#">Get Started</a></p></div>\
-                                    </div></div>\
+                                <div class="featured-projects-item-text">\
+                                <p class="featured-projects-item-heading name"> </p><span class="labels"></span>\
+                                <p class="fullDescription" style="display:none;"></p>\
+                                <p class="description"></p>\
+                                <p><a class="downloadUrl" href="#">Get Started ></a></p>\
                                 </div>\
-                              </div></div>\
-                            </div><hr></li>',
-                    valueNames: ['name', 'description', 'fullDescription', {
+                                </div>\
+                                <hr>\
+                                <div class="details">\
+                                    <p class="downloads" style="display:none;"></p>\
+                                    <p>Latest release: <strong>1.4</strong></p>\
+                                    <p>Project status: <strong>Incubating</strong></p>\
+                                </div>\
+                                </li>',
+                    valueNames: ['name', 'description', 'fullDescription', 'category', {
                             name: 'logo',
                             attr: 'src'
                         }, 'version', {
@@ -171,6 +173,26 @@
         }
         return text;
     };
+
+    var getCategory = function(project_id) {
+        var categories = {
+            "ecd.che": "Cloud IDE",
+            "ecd.che.che4z": "Extension Marketplace",
+            "ecd.codewind": "IDE-Agnostic Library",
+            "ecd.dirigible": "Service (IDEAAS)",
+            "ecd.emfcloud": "Cloud IDE",
+            "ecd.glsp": "Disagram Editors",
+            "ecd.jkube": "Cloud IDE",
+            "ecd.openvsx": "Extension Marketplace",
+            "ecd.sprotty": "Framework",
+            "ecd.theia": "Cloud IDE",
+            "ecd.cft": "Cloud IDE",
+            "ecd.orion": "Extension Marketplace"
+        };
+        return categories[project_id];
+    }
+
+    
 
 }(window.jQuery, window, document));
 // The global jQuery object is passed as a parameter
