@@ -17,6 +17,10 @@ layout: "single"
 ### Videos
 - [Overview: Eclipse Theia vs Che vs VS Code](https://www.youtube.com/watch?v=XWDArhNOXRo)
 
+### White Papers
+- [Open VSX Registry: A Vendor Neutral, Open Source Marketplace for VS Code Extensions](https://outreach.eclipse.foundation/openvsx)
+- [The Eclipse Cloud DevTools Ecosystem: Defining the Future of Cloud Native Software Development](https://outreach.eclipse.foundation/cloud-software-development-tools)
+
 ---
 
 ## Eclipse Theia
