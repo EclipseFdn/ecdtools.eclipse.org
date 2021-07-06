@@ -69,10 +69,21 @@ pluralizeListTitles = false
     weight = 3
 
 [[menu.main]]
-    name = "Members"
+    name = "Membership"
     url = "/membership"
     weight = 4
-    parent = "resources"
+
+[[menu.main]]
+    name = "Join Us"
+    url = "/membership"
+    weight = 4
+    parent = "Membership"
+
+[[menu.main]]
+    name = "Our Members"
+    url = "/membership#members"
+    weight = 5
+    parent = "Membership"
 
 [[menu.main]]
     name = "Resources"

@@ -16,7 +16,7 @@
     background-position: 0 100%;
     h2{
       font-size: 18px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       color: @brand-primary;
       margin-top:0;
       text-transform: uppercase;
@@ -50,10 +50,17 @@
     }
 }
 
-.offwhite-bg-shadow {
-  background-color:#f1f1f1;
+.offwhite-bg-shadow, .white-bg-shadow {
   padding: 40px;
   box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.25);
+}
+
+.offwhite-bg-shadow {
+  background-color:#f9f9f9;
+}
+
+.white-bg-shadow {
+  background-color:#fff;
 }
 
 .featured-section-webinar-series-2 {
@@ -118,4 +125,62 @@
 
 .featured-content-white-bg {
   background-color:@white;
+}
+
+#main-menu {
+  ul {
+    li{
+      position:relative;
+    }
+  }
+  li.dropdown {
+    .dropdown-menu {
+      text-align: center;
+      font-size: 12px;
+      padding: 15px 0;
+      left: -20%;
+      right: -20%;
+    }
+  }
+}
+
+// 5 column grid
+.col-xs-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5th {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5th {
+        width: 20%;
+        float: left;
+    }
+}
+
+.img-center {
+  margin:0 auto;
 }
