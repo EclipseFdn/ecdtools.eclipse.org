@@ -16,7 +16,7 @@
                 <p class="small">MEMBERSHIP</p>
                 <p class="powered-by-description">Join industry leaders like Ericsson, IBM, Red Hat, and
                     SAP as we define and build the future of web and
-                    cloud development tools.</p>
+                    cloud development&nbsp;tools.</p>
                 <p><a class="btn btn-primary" href="https://accounts.eclipse.org/contact/membership/ecdtools">Join
                         Now</a></p>
             </div>
@@ -31,7 +31,7 @@
                 <div class="offwhite-bg-shadow text-center">
                     <h2 class="heading-underline text-center">MEMBERSHIP</h2>
                     <h3>Here are just some of the reasons
-                        ECD Tools is trusted by industry leaders:</h3>
+                        Cloud&nbsp;DevTools is trusted by industry leaders:</h3>
 
                     <div class="row margin-bottom-60">
                         <div class="col-sm-5th col-xs-12 match-height-item-by-row margin-bottom-20">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
 
-                    <h3>ECD Tools Working Group member benefits:</h3>
+                    <h3>Cloud&nbsp;DevTools Working Group member benefits:</h3>
                     <div class="row margin-bottom-60">
                         <div class="col-sm-5th col-xs-12 match-height-item-by-row margin-bottom-20">
                             <p><img class="img-responsive img-center" src="/images/ecdtools/membership/check.jpg"></p>
@@ -94,7 +94,7 @@
                                 defining
                                 strategic
                                 priorities for
-                                ECD Tools.</p>
+                                Cloud&nbsp;DevTools.</p>
                         </div>
                         <div class="col-sm-5th col-xs-12 match-height-item-by-row margin-bottom-20">
                             <p><img class="img-responsive img-center" src="/images/ecdtools/membership/check.jpg"></p>
@@ -140,7 +140,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-16 col-sm-offset-4">
-                <p class="featured-section-members-text">Becoming part of the Eclipse Cloud Development Tools (ECD Tools) Working Group
+                <p class="featured-section-members-text">Becoming part of the Eclipse Cloud DevTools Working Group
                     demonstrates your commitment to the evolution and sustainability of industry-leading cloud
                     native development tools, while also ensuring the growth and development of a well-governed,
                     vendor-neutral open source ecosystem that benefits all.</p>
@@ -167,12 +167,12 @@
 <div class="row featured-section featured-section-members-testimonials">
     <div class="container">
         <div class="row">
-            <div class="col-sm-18 col-sm-offset-3">
+            <div class="col-lg-18 col-lg-offset-3">
                 <h2 class="heading-underline text-center">WHAT OUR MEMBERS ARE SAYING</h2>
                 {{ if .Site.Data.testimonials.items }}
                     <div class="row testimonial-container margin-top-30">
                         {{ range first 3 .Site.Data.testimonials.items }}
-                        <div class="col-sm-8">  
+                        <div class="col-md-8">  
                             <div class="white-bg-shadow margin-bottom-20 match-height-item-by-row">
                                 <p><img class="testimonial-logo img img-responsive" src="{{ .logo }}" width="{{ .logo_width | default 125 }}" alt="{{ .company }} logo"></p>
                                 <p class="testimonial-content flex-grow">"{{ .text }}"</p>
@@ -184,7 +184,7 @@
                         <div class="collapse" id="featured-more-items" aria-expanded="false">
                             <ul class="list-inline">
                               {{ range after 3 .Site.Data.testimonials.items }}
-                                <div class="col-sm-8">
+                                <div class="col-md-8">
                                     <div class="white-bg-shadow margin-bottom-20 match-height-item-by-row">
                                         <p><img class="testimonial-logo img img-responsive" src="{{ .logo }}" width="{{ .logo_width | default 125 }}" alt="{{ .company }} logo"></p>
                                         <p class="testimonial-content flex-grow">"{{ .text }}"</p>
@@ -199,7 +199,7 @@
                 {{ end }}
                 {{ if gt (len (.Site.Data.testimonials.items)) 3 }}
                 <p class="text-center margin-top-30">
-                    <a data-toggle-text="Close" role="button" data-toggle="collapse" href="#featured-more-items" aria-expanded="false" aria-controls="featured-more-items" class="btn btn-primary toggle-text">View More</a>
+                    <a data-toggle-text="View Less" role="button" data-toggle="collapse" href="#featured-more-items" aria-expanded="false" aria-controls="featured-more-items" class="btn btn-primary toggle-text">View More</a>
                 </p>
                 
                 {{ end }}
