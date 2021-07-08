@@ -1,0 +1,43 @@
+items:
+   - date: "2020-05-27"
+     title:  "Semantic Modelling in Action - Eclipse Vorto"
+     link: "https://www.youtube.com/watch?v=Ybk10IaqZgY"
+     link_class: "eclipsefdn-video"
+     tags: [ "video","modelling", "vorto", "iot", "solution"]
+     category: "video"
+     description: "In this video, you'll gain insights into semantic modelling with Eclipse Vorto. Julian Feinauer and Kevin Olotu from Bosch will guide you through."
+   - date: "2020-06-18"
+     title:  "Eclipse Hawkbit - Update Over the Air Made Easy"
+     link: "https://www.youtube.com/watch?v=5kCl-PnOK2Q"
+     link_class: "eclipsefdn-video"
+     tags: [ "video", "ota", "over the air", "hawkbit", "iot", "solution"]
+     category: "video"
+     description: "For each (I)IoT solution, it is important to have an update path set in place. One reason is of course security but usually these solutions evolve so you also need to ship feature updates to your clients \"over the air\". Eclipse hawkBit™ provides a full backend system for update and release management including conditional updates based on attributes for each device like a version or operating system and allows to define rollout campaings that are especially important if a large set of devices should be updated."
+   - date: "2020-11-05"
+     title:  "Scale-ing Inventory Management | Intern @ Eclipse IoT"
+     link: "https://www.youtube.com/watch?v=IVMpqHTuV_I"
+     link_class: "eclipsefdn-video"
+     tags: [ "video", "scale", "inventory", "management", "Inventory Management", "intern", "iot"]
+     category: "video"
+     description: "In this video, you will learn more about the benefits of Scaling Inventory Management and how to apply it to real use case scenarios."
+   - date: "2020-11-17"
+     title:  "Code Free Smart Agriculture | Part 1 | Intern @ Eclipse IoT"
+     link: "https://youtu.be/CnQNCAju9J4"
+     link_class: "eclipsefdn-video"
+     tags: [ "video", "code free", "smart agriculture", "code", "free", "smart", "agriculture", "intern", "iot"]
+     category: "video"
+     description: "In this video, you will learn how Eclipse IoT technologies can optimize smart agriculture."
+   - date: "2020-11-17"
+     title:  "Code Free Smart Agriculture | Part 2 | Intern @ Eclipse IoT"
+     link: "https://youtu.be/hoymreceTes"
+     link_class: "eclipsefdn-video"
+     tags: [ "video", "code free", "smart agriculture", "code", "free", "smart", "agriculture", "intern", "iot"]
+     category: "video"
+     description: "In this video, you will learn how Eclipse IoT technologies can optimize smart agriculture."
+   - date: "2020-12-15"
+     title:  "Robotic Courier Network (RCN) | Intern @ Eclipse IoT"
+     link: "https://www.youtube.com/watch?v=2TMpfq9qHdA"
+     link_class: "eclipsefdn-video"
+     tags: [ "video", "robotic", "courier", "network", "Robotic Courier Network (RCN)", "Eclipse", "intern", "iot"]
+     category: "video"
+     description: "Eclipse IoT Intern Gregory Ivo showcases his latest project, the Robotic Courier Network."
