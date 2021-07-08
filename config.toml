@@ -89,3 +89,21 @@ pluralizeListTitles = false
     name = "Resources"
     url = "/resources"
     weight = 5
+
+[[menu.main]]
+    name = "News & Events"
+    url = "/resources/news_events"
+    weight = 1
+    parent = "Resources"
+
+[[menu.main]]
+    name = "Videos & Webinars"
+    url = "/resources/videos"
+    weight = 2
+    parent = "Resources"
+
+[[menu.main]]
+    name = "Community"
+    url = "/resources/community"
+    weight = 3
+    parent = "Resources"
