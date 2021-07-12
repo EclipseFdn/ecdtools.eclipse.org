@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Copyright (c) 2020 Eclipse Foundation, Inc.
 
   This program and the accompanying materials are made available under the
@@ -36,7 +36,7 @@
     <ul class="list-inline margin-top-30">
       {{ range $highlights }}
         {{ $id:=.}}
-        {{ range first 1 (where ($.Scratch.GetSortedMapValues "wg_projects") "project_id" $id) }} 
+        {{ range first 1 (where ($.Scratch.GetSortedMapValues "wg_projects") "project_id" $id) }}
         <li class="col-xs-12 col-sm-8 col-md-6 ">
           <div class="match-height-item-by-row text-center">
             <h3 class="h4">

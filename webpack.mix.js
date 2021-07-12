@@ -20,6 +20,12 @@ mix.setResourceRoot('../');
 
 mix.less('./less/styles.less', 'static/css/styles.css');
 
-mix.js('./node_modules/eclipsefdn-solstice-assets/js/main.js', './static/js/solstice.js');
+mix.webpackConfig({
+  resolve: {
+    alias: {
+      jquery: 'jquery/src/jquery',
+    },
+  },
+});
 
-mix.scripts('js/projects.js', './static/js/projects.min.js');
+mix.js('js/main.js', './static/js/solstice.js');
