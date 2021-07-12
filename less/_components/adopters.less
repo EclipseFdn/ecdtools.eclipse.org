@@ -1,0 +1,40 @@
+.header-adopters-bg-img {
+    background-image:@featured-jumbotron-adopters-bg-img; 
+}
+
+.featured-section-adopters-sidebar {
+    position:relative;
+    a {
+        position:relative;
+        &:hover {
+            text-decoration: none;
+            &:after {
+                content:"";
+                display:block;
+                width:25px;
+                height:3px;
+                background-color:@white;
+                position:absolute;
+                left: -40px;
+                top: 8px;
+            }
+        }
+    }
+}
+
+.featured-adopters-img {
+    max-width:200px;
+    max-height:40px;
+}
+
+.featured-adopters-project-img {
+    float:left;
+}
+
+.featured-adopters-adopter-img {
+    float:right;
+}
+
+.featured-adopters-p-logo {
+    margin-bottom:0;
+}

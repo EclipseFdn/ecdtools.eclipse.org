@@ -38,3 +38,5 @@ mix.babel([
 ], './static/js/solstice.js');
 
 mix.babel('js/projects.js', './static/js/projects.min.js');
+
+mix.babel('js/ecdtools.adopters.js', './static/js/ecdtools.adopters.js');
