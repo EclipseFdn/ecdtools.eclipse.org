@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:planet="http://planet.intertwingly.net/" xmlns:indexing="urn:atom-extension:indexing" indexing:index="no"><access:restriction xmlns:access="http://www.bloglines.com/about/specs/fac-1.0" relationship="deny"/>
   <title>Planet Eclipse</title>
-  <updated>2021-03-11T19:07:03Z</updated>
+  <updated>2021-07-12T20:02:46Z</updated>
   <generator uri="http://intertwingly.net/code/venus/">Venus</generator>
   <author>
     <name>Planet Eclipse Admins</name>
@@ -10,42 +10,14 @@
   <id>http://planeteclipse.org/rss20.xml</id>
   <link href="http://planeteclipse.org/rss20.xml" rel="self" type="application/rss+xml"/>
   <link href="http://planeteclipse.org/" rel="alternate"/><entry xml:lang="en-US">
-    <id>https://eclipsesource.com/?p=44275</id>
-    <link href="https://eclipsesource.com/blogs/2021/03/10/a-property-view-for-eclipse-theia/" rel="alternate" type="text/html"/>
-    <title>A property view for Eclipse Theia</title>
-    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>In this article, we introduce the new, extensible property view that has recently been contributed to Eclipse Theia, the open platform...</p>
-<p>The post <a href="https://eclipsesource.com/blogs/2021/03/10/a-property-view-for-eclipse-theia/" rel="nofollow">A property view for Eclipse Theia</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
+    <id>https://eclipsesource.com/?p=44785</id>
+    <link href="https://eclipsesource.com/blogs/2021/07/07/web-based-modeling-tools-with-emf-cloud-2/" rel="alternate" type="text/html"/>
+    <title>Web-based modeling tools with EMF.cloud</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Do you want to build a domain-specific tool running in the browser? Do you require features such as form-based editors, tree...</p>
+<p>The post <a href="https://eclipsesource.com/blogs/2021/07/07/web-based-modeling-tools-with-emf-cloud-2/" rel="nofollow">Web-based modeling tools with EMF.cloud</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
     </summary>
-    <updated>2021-03-10T09:33:05Z</updated>
-    <published>2021-03-10T09:33:05Z</published>
-    <category term="Planet Eclipse"/>
-    <category term="ECDTools"/>
-    <category term="eclipse che"/>
-    <category term="Eclipse Theia"/>
-    <category term="emf.cloud"/>
-    <category term="Theia"/>
-    <category term="VS Code"/>
-    <category term="web-based Tools"/>
-    <author>
-      <name>Jonas Helming and Maximilian Koegel</name>
-    </author>
-    <source>
-      <id>https://eclipsesource.com</id>
-      <logo>https://eclipsesource.com/wp-content/uploads/2017/03/cropped-es-logo-square-32x32.png</logo>
-      <link href="http://eclipsesource.com/blogs/author/helming_koegel?category_name=syndicate&amp;feed=rss2" rel="self" type="application/rss+xml"/>
-      <link href="https://eclipsesource.com" rel="alternate" type="text/html"/>
-      <subtitle>Technology creators at your service</subtitle>
-      <title>Planet Eclipse – EclipseSource</title>
-      <updated>2021-03-10T09:56:43Z</updated>
-    </source></entry><entry xml:lang="en-US">
-    <id>https://eclipsesource.com/?p=44198</id>
-    <link href="https://eclipsesource.com/blogs/2021/03/03/building-diagram-editors-in-eclipse-theia-with-glsp/" rel="alternate" type="text/html"/>
-    <title>Building diagram editors in Eclipse Theia with GLSP</title>
-    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Do you want to implement a diagram editor in Eclipse Theia? The Eclipse Graphical Language Server Platform (GLSP) allows you to...</p>
-<p>The post <a href="https://eclipsesource.com/blogs/2021/03/03/building-diagram-editors-in-eclipse-theia-with-glsp/" rel="nofollow">Building diagram editors in Eclipse Theia with GLSP</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
-    </summary>
-    <updated>2021-03-03T10:00:03Z</updated>
-    <published>2021-03-03T10:00:03Z</published>
+    <updated>2021-07-07T11:30:38Z</updated>
+    <published>2021-07-07T11:30:38Z</published>
     <category term="Planet Eclipse"/>
     <category term="ECDTools"/>
     <category term="eclipse che"/>
@@ -61,10 +33,39 @@
     <source>
       <id>https://eclipsesource.com</id>
       <logo>https://eclipsesource.com/wp-content/uploads/2017/03/cropped-es-logo-square-32x32.png</logo>
-      <link href="http://eclipsesource.com/blogs/author/helming_koegel?category_name=syndicate&amp;feed=rss2" rel="self" type="application/rss+xml"/>
+      <link href="https://eclipsesource.com/blogs/author/helming_koegel?category_name=syndicate&amp;feed=rss2" rel="self" type="application/rss+xml"/>
       <link href="https://eclipsesource.com" rel="alternate" type="text/html"/>
       <subtitle>Technology creators at your service</subtitle>
       <title>Planet Eclipse – EclipseSource</title>
-      <updated>2021-03-10T09:56:43Z</updated>
+      <updated>2021-07-07T10:28:26Z</updated>
+    </source></entry><entry xml:lang="en-US">
+    <id>https://eclipsesource.com/?p=44635</id>
+    <link href="https://eclipsesource.com/blogs/2021/05/27/migrating-eclipse-plugins-to-eclipse-theia-or-vs-code/" rel="alternate" type="text/html"/>
+    <title>Migrating Eclipse plugins to Eclipse Theia or VS Code</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>In this article, we provide a guideline on how to approach a migration of existing desktop Eclipse plugins to Eclipse Theia...</p>
+<p>The post <a href="https://eclipsesource.com/blogs/2021/05/27/migrating-eclipse-plugins-to-eclipse-theia-or-vs-code/" rel="nofollow">Migrating Eclipse plugins to Eclipse Theia or VS Code</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
+    </summary>
+    <updated>2021-05-27T09:35:47Z</updated>
+    <published>2021-05-27T09:35:47Z</published>
+    <category term="Planet Eclipse"/>
+    <category term="ECDTools"/>
+    <category term="eclipse che"/>
+    <category term="Eclipse Theia"/>
+    <category term="emf.cloud"/>
+    <category term="GLSP"/>
+    <category term="Theia"/>
+    <category term="VS Code"/>
+    <category term="web-based Tools"/>
+    <author>
+      <name>Jonas Helming and Maximilian Koegel</name>
+    </author>
+    <source>
+      <id>https://eclipsesource.com</id>
+      <logo>https://eclipsesource.com/wp-content/uploads/2017/03/cropped-es-logo-square-32x32.png</logo>
+      <link href="https://eclipsesource.com/blogs/author/helming_koegel?category_name=syndicate&amp;feed=rss2" rel="self" type="application/rss+xml"/>
+      <link href="https://eclipsesource.com" rel="alternate" type="text/html"/>
+      <subtitle>Technology creators at your service</subtitle>
+      <title>Planet Eclipse – EclipseSource</title>
+      <updated>2021-07-07T10:28:26Z</updated>
     </source></entry>
 </feed>
