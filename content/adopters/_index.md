@@ -1,5 +1,5 @@
 ---
-title: "Eclipse Cloud Development Tools Adopters"
+title: "Adopters"
 headline: Adopters
 seo_title: "Adopters - Eclipse Cloud Development Tools"
 layout: "single"
