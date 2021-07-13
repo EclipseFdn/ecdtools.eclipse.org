@@ -6,7 +6,7 @@
  * http://www.eclipse.org/org/documents/epl-v10.php
  */
 
-const EclipseProjectList = (function ($, window, document) {
+const EclipseProjectList = (function ($) {
   if ($('.eclipsefdn-project-list').length) {
     $.ajax({
       type: 'GET',
@@ -193,7 +193,7 @@ const EclipseProjectList = (function ($, window, document) {
     }
     return text;
   };
-})(window.jQuery, window, document);
+})(jQuery);
 // The global jQuery object is passed as a parameter
 
 export default EclipseProjectList;

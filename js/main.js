@@ -1,12 +1,4 @@
 import 'eclipsefdn-solstice-assets'
 import './src/projects'
+import './src/eclipseApi'
 
-(function($, document) {
-  // Eclipse News and events
-  $("#news-list-container").eclipseFdnApi({
-    type: "newsItems"
-  });
-  $("#event-list-container").eclipseFdnApi({
-    type: "filteredEvents"
-  });
-})(jQuery, document);
