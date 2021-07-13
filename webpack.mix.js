@@ -28,4 +28,11 @@ mix.webpackConfig({
   },
 });
 
+
 mix.js('js/main.js', './static/js/solstice.js');
+
+mix.js('js/projects.js', './static/js/projects.min.js');
+
+mix.js([
+    './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.adopters.js'
+], './static/js/eclipsefdn.adopters.js');
