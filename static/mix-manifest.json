@@ -1,4 +1,9 @@
 {
     "/js/solstice.js": "/js/solstice.js",
+<<<<<<< HEAD
     "/css/styles.css": "/css/styles.css"
+=======
+    "/js/projects.min.js": "/js/projects.min.js",
+    "/js/eclipsefdn.adopters.js": "/js/eclipsefdn.adopters.js"
+>>>>>>> Adopters - Using the old design
 }
