@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:planet="http://planet.intertwingly.net/" xmlns:indexing="urn:atom-extension:indexing" indexing:index="no"><access:restriction xmlns:access="http://www.bloglines.com/about/specs/fac-1.0" relationship="deny"/>
   <title>Planet Eclipse</title>
-  <updated>2021-04-23T17:28:26Z</updated>
+  <updated>2021-07-12T18:43:14Z</updated>
   <generator uri="http://intertwingly.net/code/venus/">Venus</generator>
   <author>
     <name>Planet Eclipse Admins</name>
@@ -10,14 +10,14 @@
   <id>http://planeteclipse.org/rss20.xml</id>
   <link href="http://planeteclipse.org/rss20.xml" rel="self" type="application/rss+xml"/>
   <link href="http://planeteclipse.org/" rel="alternate"/><entry xml:lang="en-US">
-    <id>https://eclipsesource.com/?p=44463</id>
-    <link href="https://eclipsesource.com/blogs/2021/04/16/a-diagram-editor-framework-for-vs-code/" rel="alternate" type="text/html"/>
-    <title>A diagram editor framework for VS Code</title>
-    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Do you want to extend VS Code with a custom diagram editor? In this article we will introduce you to Eclipse...</p>
-<p>The post <a href="https://eclipsesource.com/blogs/2021/04/16/a-diagram-editor-framework-for-vs-code/" rel="nofollow">A diagram editor framework for VS Code</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
+    <id>https://eclipsesource.com/?p=44785</id>
+    <link href="https://eclipsesource.com/blogs/2021/07/07/web-based-modeling-tools-with-emf-cloud-2/" rel="alternate" type="text/html"/>
+    <title>Web-based modeling tools with EMF.cloud</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Do you want to build a domain-specific tool running in the browser? Do you require features such as form-based editors, tree...</p>
+<p>The post <a href="https://eclipsesource.com/blogs/2021/07/07/web-based-modeling-tools-with-emf-cloud-2/" rel="nofollow">Web-based modeling tools with EMF.cloud</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
     </summary>
-    <updated>2021-04-16T07:28:51Z</updated>
-    <published>2021-04-16T07:28:51Z</published>
+    <updated>2021-07-07T11:30:38Z</updated>
+    <published>2021-07-07T11:30:38Z</published>
     <category term="Planet Eclipse"/>
     <category term="ECDTools"/>
     <category term="eclipse che"/>
@@ -37,20 +37,22 @@
       <link href="https://eclipsesource.com" rel="alternate" type="text/html"/>
       <subtitle>Technology creators at your service</subtitle>
       <title>Planet Eclipse – EclipseSource</title>
-      <updated>2021-04-16T07:26:21Z</updated>
+      <updated>2021-07-07T10:28:26Z</updated>
     </source></entry><entry xml:lang="en-US">
-    <id>https://eclipsesource.com/?p=44418</id>
-    <link href="https://eclipsesource.com/blogs/2021/04/08/a-custom-dashboard-for-eclipse-che/" rel="alternate" type="text/html"/>
-    <title>A custom dashboard for Eclipse Che</title>
-    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Do you want a workspace management server for your cloud development environment such as Eclipse Che, but also require a custom...</p>
-<p>The post <a href="https://eclipsesource.com/blogs/2021/04/08/a-custom-dashboard-for-eclipse-che/" rel="nofollow">A custom dashboard for Eclipse Che</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
+    <id>https://eclipsesource.com/?p=44635</id>
+    <link href="https://eclipsesource.com/blogs/2021/05/27/migrating-eclipse-plugins-to-eclipse-theia-or-vs-code/" rel="alternate" type="text/html"/>
+    <title>Migrating Eclipse plugins to Eclipse Theia or VS Code</title>
+    <summary type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>In this article, we provide a guideline on how to approach a migration of existing desktop Eclipse plugins to Eclipse Theia...</p>
+<p>The post <a href="https://eclipsesource.com/blogs/2021/05/27/migrating-eclipse-plugins-to-eclipse-theia-or-vs-code/" rel="nofollow">Migrating Eclipse plugins to Eclipse Theia or VS Code</a> appeared first on <a href="https://eclipsesource.com" rel="nofollow">EclipseSource</a>.</p></div>
     </summary>
-    <updated>2021-04-08T09:44:30Z</updated>
-    <published>2021-04-08T09:44:30Z</published>
+    <updated>2021-05-27T09:35:47Z</updated>
+    <published>2021-05-27T09:35:47Z</published>
     <category term="Planet Eclipse"/>
     <category term="ECDTools"/>
     <category term="eclipse che"/>
     <category term="Eclipse Theia"/>
+    <category term="emf.cloud"/>
+    <category term="GLSP"/>
     <category term="Theia"/>
     <category term="VS Code"/>
     <category term="web-based Tools"/>
@@ -64,6 +66,6 @@
       <link href="https://eclipsesource.com" rel="alternate" type="text/html"/>
       <subtitle>Technology creators at your service</subtitle>
       <title>Planet Eclipse – EclipseSource</title>
-      <updated>2021-04-16T07:26:21Z</updated>
+      <updated>2021-07-07T10:28:26Z</updated>
     </source></entry>
 </feed>
