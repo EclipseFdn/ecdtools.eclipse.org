@@ -38,3 +38,7 @@ mix.babel([
 ], './static/js/solstice.js');
 
 mix.babel('js/projects.js', './static/js/projects.min.js');
+
+mix.babel([
+    './node_modules/eclipsefdn-solstice-assets/js/eclipsefdn.adopters.js'
+], './static/js/eclipsefdn.adopters.js');
