@@ -1,17 +1,3 @@
 <script id="event-short-list" type="text/html">
 {{ readFile ("/js/templates/event-list-format.mustache") | safeHTML}}
 </script>
-<script>
-(function($, document) {
-  // Eclipse News and events
-  $("#news-list-container").eclipseFdnApi({
-    type: "newsItems"
-  });
-  $("#event-list-container").eclipseFdnApi({
-    type: "filteredEvents"
-  });
-})(jQuery, document);
-</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
-<script src="/js/projects.min.js"></script>
