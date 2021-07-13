@@ -29,7 +29,9 @@
     "core-js": "^3.8.2",
     "eclipsefdn-hugo-solstice-theme": "0.0.122",
     "js-yaml": "^3.13.1",
-    "json-minify": "^1.0.0"
+    "json-minify": "^1.0.0",
+    "list.js": "^1.2.0",
+    "numeral": "^1.4.5"
   },
   "browserslist": "last 5 version, > 0.2%, not dead, IE 11"
 }

@@ -6,6 +6,9 @@
  * http://www.eclipse.org/org/documents/epl-v10.php
  */
 
+import "list.js";
+import "numeral";
+
 const EclipseProjectList = (function ($) {
   if ($('.eclipsefdn-project-list').length) {
     $.ajax({
