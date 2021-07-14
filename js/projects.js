@@ -67,6 +67,10 @@
                     
                     projectInfo.downloadUrl = value.url;
 
+                    if ( value.project_id === "ecd.openvsx") {
+                        projectInfo.projectLink = "<a href='/projects/ecd.openvsx'>Project Page</a>";
+                    }
+                    
                     projectInfo.category = getCategory(id);
 
                     projectInfos.push(projectInfo);
@@ -86,6 +90,7 @@
                                 <p class="fullDescription" style="display:none;"></p>\
                                 <p class="description"></p>\
                                 <p><a class="downloadUrl" href="#">Get Started ></a></p>\
+                                <span class="projectLink"></span>\
                                 </div>\
                                 </div>\
                                 <hr>\
@@ -95,7 +100,7 @@
                                     <p>Project status: <strong>Incubating</strong></p>\
                                 </div>\
                                 </li>',
-                    valueNames: ['name', 'description', 'fullDescription', 'category', {
+                    valueNames: ['name', 'projectLink', 'description', 'fullDescription', 'category', {
                             name: 'logo',
                             attr: 'src'
                         }, 'version', {
