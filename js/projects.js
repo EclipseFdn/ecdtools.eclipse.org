@@ -68,7 +68,7 @@
                     projectInfo.downloadUrl = value.url;
 
                     if ( value.project_id === "ecd.openvsx") {
-                        projectInfo.projectLink = "<a href='/projects/ecd.openvsx'>Project Page</a>";
+                        projectInfo.projectLink = "<a href='/projects/open-vsx'>Project Page</a>";
                     }
                     
                     projectInfo.category = getCategory(id);
