@@ -16,6 +16,9 @@
   {{ end }}
 {{ end }}
 
+{{ $container_id := .Get "container_id" | default "" }}
+{{ $class := .Get "class" | default "eclipsefdn-userprofile" }}
+
 
 <div class="row featured-section featured-section-open-vsx-features">
     <div class="container">
@@ -104,6 +107,8 @@
     </div>
 </div>
 
+<script src="{{ "js/eclipsefdn.userprofile.js" | absURL}}"></script>
+
 <div class="row featured-section featured-section-committers">
     <div class="container">
         <h2 class="heading-underline text-center">COMMITTERS</h2>
@@ -114,14 +119,10 @@
                         {{ range $scratch.GetSortedMapValues "projects" }}
                             {{ range .committers }}
                                 <div class="col-sm-24 item">
-                                    <img src="/images/ecdtools/home/silhouette.jpg">
-                                    <h3>{{ .full_name }}</h3>
-                                    <h4>Committer</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercita on ullamco laboris.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad mini.</p>
+                                    <div id="{{ .username }}"></div>
+                                    <script>
+                                        eclipseFdnUserProfile.getData({src_root: "https://api.eclipse.org/account/profile", username: "{{ .username }}"})
+                                    </script>
                                 </div>
                             {{ end }}
                         {{ end }}  
@@ -159,3 +160,5 @@
         
     </div>
 </div>
+
+
