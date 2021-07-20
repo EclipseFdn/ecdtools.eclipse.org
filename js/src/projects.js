@@ -6,7 +6,6 @@
  * http://www.eclipse.org/org/documents/epl-v10.php
  */
 
-//import "list.js";
 import "numeral";
 import List from 'list.js';
 
@@ -74,6 +73,11 @@ const EclipseProjectList = (function ($) {
               
               projectInfo.downloadUrl = value.url;
 
+              projectInfo.projectUrl = "";
+              if (projectInfo.id === "ecd.openvsx") {
+                projectInfo.projectUrl = '<a href="/projects/open-vsx">Project page</a>';
+              }
+
               projectInfo.category = getCategory(id);
 
               projectInfos.push(projectInfo);
@@ -93,6 +97,7 @@ const EclipseProjectList = (function ($) {
                           <p class="fullDescription" style="display:none;"></p>\
                           <p class="description"></p>\
                           <p><a class="downloadUrl" href="#">Get Started ></a></p>\
+                          <span class="projectUrl"></span>\
                           </div>\
                           </div>\
                           <hr>\
@@ -106,6 +111,7 @@ const EclipseProjectList = (function ($) {
                 'name', 
                 'description', 
                 'fullDescription', 
+                'projectUrl',
                 'category', 
                 {
                       name: 'logo',

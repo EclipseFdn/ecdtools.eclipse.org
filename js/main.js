@@ -12,5 +12,6 @@
  */
 
 import 'eclipsefdn-solstice-assets'
+import './src/userprofile'
 import './src/projects'
 import './src/eclipseApi'

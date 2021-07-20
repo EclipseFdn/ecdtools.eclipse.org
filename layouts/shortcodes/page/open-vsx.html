@@ -80,34 +80,19 @@
 <div class="row featured-section featured-section-team-leads-container">
     <div class="container">
         <div class="row">
-            <div class="col-sm-16 col-md-12 featured-section-team-leads">
+            <div class="col-sm-18 col-md-16 col-lg-12 featured-section-team-leads">
                 <h2 class="heading-underline heading-underline-width-30">TEAM LEADS</h2>
-                <div class="featured-section-team-leads-items">
-                    <img src="/images/ecdtools/open-vsx/team-leads/miro.png">
-                    <h3>Miro Spoenemann</h3>
-                    <h4>Software Engineer, Typefox</h4>
-                    <p>Miro is a software engineer and consultant at TypeFox and a committer
-                        and project lead for several Eclipse projects. He started to get involved
-                        into open source development while researching graph layout algorithms
-                        and their application to graphical modeling at the University of Kiel.</p>
-                </div>
-
-                <div class="featured-section-team-leads-items">
-                    <img src="/images/ecdtools/open-vsx/team-leads/sven.png">
-                    <h3>Sven Efftinge</h3>
-                    <h4>CEO, TypeFox</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercita on ullamco laboris.Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad mini.</p>
-                </div>
+                {{ range $scratch.GetSortedMapValues "projects" }}
+                    {{ range .project_leads }}
+                        <div class="featured-section-team-leads-items">
+                            <div class="eclipsefdn-userprofile" data-username="{{ .username }}"></div>
+                        </div>
+                    {{ end }}
+                {{ end }}
             </div>
         </div>
     </div>
 </div>
-
-<script src="{{ "js/eclipsefdn.userprofile.js" | absURL}}"></script>
 
 <div class="row featured-section featured-section-committers">
     <div class="container">
@@ -119,10 +104,7 @@
                         {{ range $scratch.GetSortedMapValues "projects" }}
                             {{ range .committers }}
                                 <div class="col-sm-24 item">
-                                    <div id="{{ .username }}"></div>
-                                    <script>
-                                        eclipseFdnUserProfile.getData({src_root: "https://api.eclipse.org/account/profile", username: "{{ .username }}"})
-                                    </script>
+                                    <div class="eclipsefdn-userprofile" data-username="{{ .username }}"></div>
                                 </div>
                             {{ end }}
                         {{ end }}  

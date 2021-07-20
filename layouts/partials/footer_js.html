@@ -19,7 +19,6 @@
 <!-- Initialize any newsroom components on the page -->
 <script>
 (function($, document) {
-  console.log("12312313");
   {{ range (.Page.Scratch.Get "events-container-ids") }}
     $("#{{ . }}").eclipseFdnApi({
       type: "filteredEvents"
@@ -48,5 +47,5 @@
       }
     })(eclipseFdnAdopters, eclipsefdn_adopters_configs);
   }
-  
 </script>
+
