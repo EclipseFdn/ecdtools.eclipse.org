@@ -1,14 +1,4 @@
 {
     "/js/solstice.js": "/js/solstice.js",
-<<<<<<< HEAD
     "/css/styles.css": "/css/styles.css"
-=======
-    "/js/projects.min.js": "/js/projects.min.js",
-<<<<<<< HEAD
-    "/js/eclipsefdn.adopters.js": "/js/eclipsefdn.adopters.js"
->>>>>>> Adopters - Using the old design
-=======
-    "/js/eclipsefdn.adopters.js": "/js/eclipsefdn.adopters.js",
-    "/js/eclipsefdn.userprofile.js": "/js/eclipsefdn.userprofile.js"
->>>>>>> Update list of committer on Open VSX page
 }
