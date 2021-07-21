@@ -12,20 +12,23 @@
 */
 
 @import '~eclipsefdn-solstice-assets/less/quicksilver/styles.less';
+@import '~eclipsefdn-solstice-assets/less/_components/quicksilver/event-timeline.less';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import '_variables.less';
 
-@import '_components/commons.less';
-@import '_components/homepage.less';
+@import '_components/_commons.less';
 @import '_components/about.less';
 @import '_components/adopters.less';
-@import '_components/projects.less';
+@import '_components/homepage.less';
 @import '_components/membership.less';
+@import '_components/open-vsx.less';
+@import '_components/projects.less';
 @import '_components/resources.less';
+@import '_components/featured-news.less';
 
 
 .logo-eclipse-default{
-  padding-top:9px;
+  padding-top:22px;
 }
 
 .logo-eclipse-default-mobile{
@@ -36,6 +39,10 @@
   #header-row {
     padding-bottom:0;
   }
+}
+
+#header-row {
+  padding-bottom: 10px;
 }
 
 //== For event page
