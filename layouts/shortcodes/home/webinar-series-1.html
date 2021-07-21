@@ -14,7 +14,7 @@
 <div id="webinar-series-1" class="row featured-section featured-section-webinar-series-1">
     <div class="container">
 
-        <div class="owl-carousel owl-theme solstice-slider" data-slider-lg-count="1">
+        <div class="owl-carousel owl-theme solstice-slider" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
             {{ range $.Site.Data.webinarseries.items }}
             <div class="item padding-40">
                 <div class="row">
@@ -27,7 +27,7 @@
                     <div class="col-sm-9">
                         <h3>{{.date}}</h3>
                         <p class="webinar-series-1-description">{{.description}}</p>
-                        <p><strong>Presenter:</strong> {{.presenter}}</p>
+                        <p class="webinar-series-1-presenter"><strong>Presenter:</strong> {{.presenter}}</p>
                     </div>
                 </div>
             </div>

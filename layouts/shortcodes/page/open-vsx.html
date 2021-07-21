@@ -1,0 +1,146 @@
+<!-- 
+  Copyright (c) 2021 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  Contributors:
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
+    
+  SPDX-License-Identifier: EPL-2.0
+-->
+{{ $scratch := newScratch }}
+{{ range sort $.Site.Data.eclipsefdn_projects "name" "asc" }}
+
+  {{ if eq .project_id "ecd.openvsx"}}
+    {{ $scratch.SetInMap "projects" (lower .project_id) . }}
+  {{ end }}
+{{ end }}
+
+{{ $container_id := .Get "container_id" | default "" }}
+{{ $class := .Get "class" | default "eclipsefdn-userprofile" }}
+
+
+<div class="row featured-section featured-section-open-vsx-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-18 col-sm-offset-3">
+                <div class="row">
+                    <div class="col-sm-12 col-sm-push-12 col-xs-12 col-xs-offset-6 col-sm-offset-0">
+                        <img class="img-responsive" src="/images/ecdtools/open-vsx/1.jpg">
+                    </div>
+                    <div class="col-sm-12 col-sm-pull-12 col-xs-18 col-xs-offset-3 col-sm-offset-0 featured-section-open-vsx-features-text">
+                        <p>The Open VSX Registry offers a community driven,
+                            fully open platform for publishing and consuming VS
+                            Code extensions. It is built on Eclipse Open VSX,
+                            which is an open source project hosted at the
+                            Eclipse Foundation.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-xs-18 col-xs-offset-3 col-sm-offset-0">
+                        <img class="img-responsive" src="/images/ecdtools/open-vsx/2.jpg">
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-xs-offset-6 col-sm-offset-0 featured-section-open-vsx-features-text">
+                        <p>The primary purpose of this project is to provide a
+                            marketplace for VS Code extensions that can be used
+                            with Eclipse Theia and other IDEs. Another important
+                            goal is to allow self-hosting the Marketplace, e.g. within
+                            a company network. None of this is currently possible
+                            with the Visual Studio Marketplace, which is proprietary
+                            and may be accessed only from Visual Studio products.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-sm-push-12 col-xs-12 col-xs-offset-6 col-sm-offset-0">
+                        <img class="img-responsive" src="/images/ecdtools/open-vsx/3.jpg">
+                    </div>
+                    <div class="col-sm-12 col-sm-pull-12 col-xs-18 col-xs-offset-3 col-sm-offset-0 featured-section-open-vsx-features-text">
+                        <p>Open VSX is integrated into multiple software
+                            applications that support VS Code extensions. There is
+                            strong demand for a fully open alternative to the Visual
+                            Studio Marketplace, and with hundreds of great
+                            extensions already available, it is the intent of the Eclipse
+                            Foundation to enable continued and accelerated growth.</p>
+                    </div>
+                    
+                </div>
+                <ul class="list-inline text-center">
+                    <li><a class="btn btn-primary btn-fix-width" href="https://open-vsx.org/">Open VSX Registry</a></li>
+                    <li><a class="btn btn-primary btn-fix-width btn-align-custom" href="https://open-vsx.org/">Downloads <i class="fa fa-download"></i></a></li>
+                    <li><a class="btn btn-primary btn-fix-width btn-align-custom" href="https://github.com/eclipse/openvsx/wiki">Resources  <i class="fa fa-code"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row featured-section featured-section-team-leads-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-18 col-md-16 col-lg-12 featured-section-team-leads">
+                <h2 class="heading-underline heading-underline-width-30">TEAM LEADS</h2>
+                {{ range $scratch.GetSortedMapValues "projects" }}
+                    {{ range .project_leads }}
+                        <div class="featured-section-team-leads-items">
+                            <div class="eclipsefdn-userprofile" data-username="{{ .username }}"></div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row featured-section featured-section-committers">
+    <div class="container">
+        <h2 class="heading-underline text-center">COMMITTERS</h2>
+        <div class="row">
+            <div class="col-sm-24">
+                <div class="row">
+                    <div class="owl-carousel owl-theme solstice-slider" data-slider-lg-count="3">
+                        {{ range $scratch.GetSortedMapValues "projects" }}
+                            {{ range .committers }}
+                                <div class="col-sm-24 item">
+                                    <div class="eclipsefdn-userprofile" data-username="{{ .username }}"></div>
+                                </div>
+                            {{ end }}
+                        {{ end }}  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row featured-section featured-section-contribution-activity">
+    <div class="container">
+        <div class="row margin-bottom-60">
+            <div class="col-sm-14 col-sm-offset-3">
+                <h2 class="heading-underline heading-underline-width-30">CONTRIBUTION ACTIVITY</h2>
+                <img class="img-responsive" src="/images/ecdtools/open-vsx/chart.png" alt="Last 12 months contributions">
+            </div>
+            <div class="col-sm-4">
+                <h2 class="heading-underline heading-underline-width-30">WHO IS INVOLVED</h2>
+                <h3>MEMBER COMPANIES</h3>
+                <p>Member companies supporting this
+                    project over the last three months.</p>
+                <p><img src="/images/ecdtools/members/typefox.png" alt="TypeFox"></p>
+                <p>License</p>
+                <p><a href="https://www.eclipse.org/legal/epl-2.0/">Eclipse Public License 2.0</a></p>
+            </div>
+        </div>
+        <div class="text-center">
+            <p><a class="btn btn-primary" href="">Get Involved</a></p>
+            <ul class="list-inline">
+                <li><a href="/">Governance</a></li>
+                <li><a href="https://www.eclipse.org/legal/open-vsx-registry-faq/">FAQs</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+

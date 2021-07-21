@@ -92,7 +92,7 @@ pluralizeListTitles = false
 
 [[menu.main]]
     name = "News & Events"
-    url = "/resources/news_events"
+    url = "/resources/news"
     weight = 1
     parent = "Resources"
 

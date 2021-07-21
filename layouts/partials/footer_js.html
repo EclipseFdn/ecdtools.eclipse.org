@@ -1,0 +1,51 @@
+
+<!-- Placed at the end of the document so the pages load faster -->
+{{- with .Site.Params.js | default "https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/main.min.js"}}
+<script src="{{ . | relURL }}"></script>
+{{ end }}
+
+{{- with .Site.Params.hugo_js }}
+  <script src="{{ . | relURL }}"></script>
+{{ end }}
+
+
+<!-- Read in mustache templates registered in page scratch -->
+{{ range $key, $value := (.Page.Scratch.Get "mustache-templates") }}
+<script id="{{ $key }}" type="text/html">
+{{ readFile $value | safeHTML}}
+</script>
+{{ end }}
+
+<!-- Initialize any newsroom components on the page -->
+<script>
+(function($, document) {
+  {{ range (.Page.Scratch.Get "events-container-ids") }}
+    $("#{{ . }}").eclipseFdnApi({
+      type: "filteredEvents"
+    });
+  {{ end }}
+  {{ range (.Page.Scratch.Get "news-container-ids") }}
+    $("#{{ . }}").eclipseFdnApi({
+      type: "newsItems"
+    });
+  {{ end }}
+})(jQuery, document);
+</script>
+
+<script>
+  if (typeof eclipsefdn_adopters_configs !== "undefined") {
+    (function (eclipseFdnAdopters, eclipsefdn_adopters_configs) {
+      if (
+        eclipsefdn_adopters_configs.working_group &&
+        eclipsefdn_adopters_configs.ul_classes
+      ) {
+        eclipseFdnAdopters.getWGList({
+          src_root: 'https://api.eclipse.org/adopters',
+          working_group: eclipsefdn_adopters_configs.working_group,
+          ul_classes: eclipsefdn_adopters_configs.ul_classes,
+        });
+      }
+    })(eclipseFdnAdopters, eclipsefdn_adopters_configs);
+  }
+</script>
+
