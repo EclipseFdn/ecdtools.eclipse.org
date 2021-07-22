@@ -24,12 +24,19 @@
         line-height: 1.6;
         font-weight: 400;
     }
+    @media (max-width: @screen-sm-max) {
+        text-align:center;
+    }
 }
 
 #header-wrapper .featured-jumbotron.featured-jumbotron-sub-pages.header-open-vsx-bg-img {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    min-height:465px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (min-width: @screen-sm-min) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        min-height:465px;
+    }
 }
 
 .featured-section-open-vsx-features {

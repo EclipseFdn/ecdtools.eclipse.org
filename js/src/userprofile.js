@@ -9,7 +9,7 @@
 const UserProfile = (function ($) {
 
     $('.eclipsefdn-userprofile').each(function(index, user_block){
-        var username = $(this).attr("data-username");
+        const username = $(this).attr("data-username");
         
         $.ajax({
             type: 'GET',
@@ -18,15 +18,13 @@ const UserProfile = (function ($) {
             cache: true,
             success: function (user_profile) {
 
-                const div = document.createElement('div');
-
                 if (typeof user_profile.picture !== 'undefined' && user_profile.picture !== null) {
                     let img = document.createElement('img');
                     img.setAttribute('src', user_profile.picture);
                     user_block.append(img);
                 }
     
-                var fullName = "";
+                let fullName = "";
                 if (typeof user_profile.full_name !== 'undefined' && user_profile.full_name !== null) {
                     fullName = document.createTextNode(user_profile.full_name);
                 }
@@ -39,7 +37,7 @@ const UserProfile = (function ($) {
                     user_block.append(h3);
                 }
     
-                var job_org = "";
+                let job_org = "";
                 if (typeof user_profile.job_title !== 'undefined' && user_profile.job_title !== null && user_profile.job_title !== "") {
                     job_org = user_profile.job_title + ", ";
                 }
@@ -54,8 +52,8 @@ const UserProfile = (function ($) {
                 }
     
                 if (typeof user_profile.bio !== 'undefined' && user_profile.bio !== null) {
-                    let p = document.createElement('p');
                     const bio = document.createTextNode(user_profile.bio);
+                    let p = document.createElement('p');
                     p.appendChild(bio);
                     user_block.append(p);
                 }
