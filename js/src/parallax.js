@@ -1,11 +1,9 @@
 (function($, window, document) {
     $(function() {
-console.log("TEST");
         parallax();
-        $( window ).resize(function() {
+        $(window).resize(function() {
             parallax();    
         });
-        
     });
 
     function parallax() {
