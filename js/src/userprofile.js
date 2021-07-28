@@ -52,11 +52,27 @@ const UserProfile = (function ($) {
                 }
     
                 if (typeof user_profile.bio !== 'undefined' && user_profile.bio !== null) {
-                    const bio = document.createTextNode(user_profile.bio);
                     let p = document.createElement('p');
+
+                    // truncate the bio to 20 words
+                    let num_words = 20;
+                    const array = user_profile.bio.trim().split(' ');
+                    const ellipsis = array.length > num_words ? '...' : '';
+                    const truncate = array.slice(0, num_words).join(' ') + ellipsis;
+                    const bio = document.createTextNode(truncate);
+                    
                     p.appendChild(bio);
                     user_block.append(p);
                 }
+
+                let a_text = document.createTextNode("Read More");
+                let a = document.createElement('a');
+                a.appendChild(a_text);
+                a.setAttribute('href', "https://accounts.eclipse.org/users/" + user_profile.name);
+                let p_read_more = document.createElement('p');
+                p_read_more.appendChild(a);
+                user_block.append(p_read_more);
+
             },
         });
     });

@@ -75,10 +75,13 @@ const EclipseProjectList = (function ($) {
 
               projectInfo.projectUrl = "";
               if (projectInfo.id === "ecd.openvsx") {
-                projectInfo.projectUrl = '<a href="/projects/open-vsx">Project page</a>';
+                projectInfo.projectUrl = '<a href="/projects/open-vsx">Project Page ></a>';
               }
 
               projectInfo.category = getCategory(id);
+
+              projectInfo.release = title;
+              projectInfo.status = title;
 
               projectInfos.push(projectInfo);
 
@@ -103,8 +106,8 @@ const EclipseProjectList = (function ($) {
                           <hr>\
                           <div class="details">\
                               <p class="downloads" style="display:none;"></p>\
-                              <p>Latest release: <strong>1.4</strong></p>\
-                              <p>Project status: <strong>Incubating</strong></p>\
+                              <p>Latest release: <strong class="version"></strong></p>\
+                              <p>Project status: <strong class="project_state"></strong></p>\
                           </div>\
                           </li>',
               valueNames: [
@@ -112,6 +115,7 @@ const EclipseProjectList = (function ($) {
                 'description', 
                 'fullDescription', 
                 'projectUrl',
+                'status',
                 'category', 
                 {
                       name: 'logo',

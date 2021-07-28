@@ -1,7 +1,7 @@
 ---
-title: "How to be Listed as an Adopter"
+title: "Get Listed"
 description: ""
-headline: Adopters
+headline: Get Listed
 layout: "single"
 hide_sidebar: true
 hide_page_title: true

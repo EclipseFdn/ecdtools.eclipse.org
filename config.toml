@@ -74,18 +74,6 @@ pluralizeListTitles = false
     weight = 4
 
 [[menu.main]]
-    name = "Join Us"
-    url = "/membership"
-    weight = 4
-    parent = "Membership"
-
-[[menu.main]]
-    name = "Our Members"
-    url = "/membership#members"
-    weight = 5
-    parent = "Membership"
-
-[[menu.main]]
     name = "Resources"
     url = "/resources"
     weight = 5
@@ -97,7 +85,7 @@ pluralizeListTitles = false
     parent = "Resources"
 
 [[menu.main]]
-    name = "Videos & Webinars"
+    name = "Videos"
     url = "/resources/videos"
     weight = 2
     parent = "Resources"
