@@ -4,45 +4,45 @@ types:
        - title: Ericsson AB
          id: "ericsson"
          link: https://www.ericsson.com/
-         image: /images/ecdtools/members/ericsson_black.png
+         image: /images/ecdtools/members/ericsson.png
          type: "strategic"
-         #img_width: 220
+         img_width: 155
        - title: IBM
          id: "ibm"
          link: https://www.ibm.com/ca-en
-         image: /images/ecdtools/members/ibm.png
+         image: /images/ecdtools/members/ibm.svg
          type: "strategic"
-         #img_width: 100
+         img_width: 100
        - title: Red Hat
          id: "redhat"
          link: https://www.redhat.com/en
-         image: /images/ecdtools/members/redhat.png
+         image: /images/ecdtools/members/redhat.svg
          type: "strategic"
-         #img_width: 200
+         img_width: 155
        - title: SAP SE
          id: "sap"
          link: https://www.sap.com/index.html
-         image: /images/ecdtools/members/sap_black.png
+         image: /images/ecdtools/members/sap.svg
          type: "strategic"
-         #img_width: 130
+         img_width: 100
   - name: participant
     items:
        - title: EclipseSource
          id: "eclipsesource"
          link: http://eclipsesource.com
-         image: /images/ecdtools/members/eclipse-source_black.png
-         #img_width: 200
+         image: /images/ecdtools/members/eclipse-source.png
+         img_width: 155
          type: "participant"
        - title: Broadcom Inc.
          id: "broadcom"
          link: https://www.broadcom.com/
-         image: /images/ecdtools/members/broadcom_black.png
-         #img_width: 200
+         image: /images/ecdtools/members/broadcom.png
+         img_width: 155
          type: "participant"
        - title: Arm
          id: "arm"
          link: https://www.arm.com/
-         image: /images/ecdtools/members/arm-logo_black.svg
+         image: /images/ecdtools/members/arm-logo.svg
          type: "participant"
          img_width: 125
        - title: STMicroelectronics
@@ -62,5 +62,5 @@ types:
        - title: Intel
          id: "intel"
          link: http://intel.com
-         image: /images/ecdtools/members/intel-logo_black.png
+         image: /images/ecdtools/members/intel-logo.png
          img_width: 75
