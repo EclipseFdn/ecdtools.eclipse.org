@@ -103,7 +103,6 @@
 }
 
 .featured-section-team-leads-items, .featured-section-committers {
-    margin-bottom:40px;
     @media (max-width: @screen-sm-max) {
         text-align:center;
     }
@@ -124,9 +123,16 @@
     
 }
 
+.featured-section-team-leads-items {
+    margin-bottom:40px;
+}
+
 .featured-section-committers {
     background-color:@white;
-    padding-top:0;
+    padding-top:0px;
+    @media (min-width: @screen-lg-min) {
+        padding-top:60px;
+    }
     .item {
         img {
             width:60px;
