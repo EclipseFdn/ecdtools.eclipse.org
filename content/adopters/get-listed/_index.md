@@ -1,7 +1,7 @@
 ---
 title: "Get Listed"
 description: ""
-headline: SHOWCASE YOUR WORK
+headline: Showcase your work
 layout: "single"
 hide_sidebar: true
 hide_page_title: true
