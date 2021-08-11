@@ -1,14 +1,13 @@
 {{#events}}
   <div class="timeline-item">
-    <p>{{ date }}</p>
-    <h4>
+    <p class="margin-bottom-0">
       {{#infoLink}}
         <a href="{{infoLink}}">{{ title }}</a>
       {{/infoLink}}
       {{^infoLink}}
         {{ title }}
       {{/infoLink}}
-    </h4>
-    <p>{{ description }}</p>
+    </p>
+    <p class="timeline-date">{{ date }}</p>
   </div>
 {{/events}}

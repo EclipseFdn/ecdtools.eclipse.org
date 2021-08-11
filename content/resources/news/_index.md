@@ -25,7 +25,7 @@ keywords: ["ECDtools"]
           class="col-sm-24"
           containerClass="event-timeline"
           upcoming="1"
-          templateId="custom-events-template" templatePath="/js/templates/event-list-format.mustache"
+          templateId="custom-events-template" templatePath="/js/templates/event-list-timeline.mustache"
           count="4"  includeList="true" >}}
     {{</ grid/div >}}
    {{</ grid/div >}}
