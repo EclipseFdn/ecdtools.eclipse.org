@@ -15,8 +15,8 @@ container: "container-fluid"
 header_wrapper_class: "featured-jumbotron-home"
 ---
 {{< home/powered-by >}}
-{{< home/webinar-series-1 >}}
+{{< home/highlights >}}
 {{< home/projects highlight="ecd.openvsx:ecd.theia:ecd.jkube">}}
 {{< home/whats-new >}}
-{{< home/highlights >}}
+{{< home/stats >}}
 {{< home/members limit="50" >}}

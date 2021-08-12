@@ -18,7 +18,7 @@ pluralizeListTitles = false
   styles = "css/styles.css"
   favicon = "images/ecdtools/favicon/favicon.ico"
   share_img = "images/ecdtools/social-share-image.png"
-  gcse = "011805775785170369411:p3ec0igo0qq"
+  gcse = ""
   js = "js/solstice.js"
   header_wrapper_class = " featured-section-darken"
   logo_width = "150"
@@ -94,4 +94,10 @@ pluralizeListTitles = false
     name = "Community"
     url = "/resources/community"
     weight = 3
+    parent = "Resources"
+
+[[menu.main]]
+    name = "Blogs"
+    url = "/resources/blogs"
+    weight = 4
     parent = "Resources"
