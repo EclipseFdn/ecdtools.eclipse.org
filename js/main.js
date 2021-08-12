@@ -17,3 +17,14 @@ import './src/projects'
 import './src/eclipseApi'
 import 'jquery-parallax.js/parallax.min.js'
 import './src/parallax'
+
+
+var owl = $('.solstice-slider');
+owl.owlCarousel({
+    items:1,
+    autoplay:true,
+    autoplayTimeout:6000,
+    autoplayHoverPause:true,
+    autoplaySpeed: 2000,
+    loop:true,
+});
