@@ -8,7 +8,6 @@
 
 import "numeral";
 import List from 'list.js';
-import "jquery-match-height"
 
 const EclipseProjectList = (function ($) {
   if ($('.eclipsefdn-project-list').length) {
