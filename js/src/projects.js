@@ -170,7 +170,8 @@ const EclipseProjectList = (function ($) {
           }, 10);
         });
 
-        $.fn.matchHeight._applyDataApi();
+        // Making sure each projects have the same height using match-height
+        $('.eclipsefdn-project-list').trigger('shown.ef.news');
       }
     });
   }
