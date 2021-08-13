@@ -1,7 +1,7 @@
 +++
 date = "2021-06-25"
 title = "Cloud IDE Day 2021 - A Great Success!"
-link = "https://blogs.eclipse.org/post/brian-king/cloud-ide-day-2021-great-success"
+redirect_url = "https://blogs.eclipse.org/post/brian-king/cloud-ide-day-2021-great-success"
 category = "blog"
 +++
 
