@@ -101,3 +101,9 @@ pluralizeListTitles = false
     url = "/resources/blogs"
     weight = 4
     parent = "Resources"
+
+[[menu.main]]
+    name = "Other Resources"
+    url = "/resources/other-resources"
+    weight = 5
+    parent = "Resources"
