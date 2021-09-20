@@ -20,14 +20,14 @@
             <div class="row">
 
               <div class="col-sm-10 col-sm-offset-2 match-height-item-by-row whats-new-item">
-                <div class="whats-new-icon"><img alt="News icon" src="images/ecdtools/home/whats-new-1.png"></div>
+                <div class="whats-new-icon"><img alt="News icon" src="images/ecdtools/home/news.svg"></div>
                 <div id="news-list-container" class="news-items" data-pagination="false" data-news-count="1" data-publish-target="ecd_tools"></div>
                 <p class="whats-new-view-all"><a href="/resources/news">View All News <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
               </div>
 
               <div class="col-sm-10 match-height-item-by-row whats-new-item">
                 {{ range first 1 (.Site.Data.videos.items) }}
-                  <div class="whats-new-icon"><img alt="Videos icon" src="images/ecdtools/home/whats-new-2.png"></div>
+                  <div class="whats-new-icon"><img alt="Videos icon" src="images/ecdtools/home/videos.svg"></div>
                   <p class="whats-new-date">{{ dateFormat "Monday, January 2, 2006" .date }}</p>
                   <h4 class="whats-new-title"><a href="{{ .link }}">{{ .title }}</a></h4>
                   <p class="whats-new-description">{{ .description }}</p>
@@ -39,7 +39,7 @@
             <div class="row">
 
               <div class="col-sm-10 col-sm-offset-2 match-height-item-by-row whats-new-item">
-                <div class="whats-new-icon"><img alt="Blogs icon" src="images/ecdtools/home/whats-new-3.png"></div>
+                <div class="whats-new-icon"><img alt="Blogs icon" src="images/ecdtools/home/blogs.svg"></div>
                 {{ range first 1 (where .Site.Pages "Params.category" "blog") }}
                   <p class="whats-new-date">{{ dateFormat "Monday, January 2, 2006" .Date }}</p>
                   <h4 class="whats-new-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
@@ -48,7 +48,7 @@
                 <p class="whats-new-view-all"><a href="/resources/blogs">View All Blogs Posts <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
               </div>
               <div class="col-sm-10 match-height-item-by-row whats-new-item">
-                <div class="whats-new-icon"><img alt="Events icon" src="images/ecdtools/home/whats-new-4.png"></div>
+                <div class="whats-new-icon"><img alt="Events icon" src="images/ecdtools/home/events.svg"></div>
                 <div id="event-list-container" class="news-items" data-template-id="event-short-list" data-upcoming="1" data-count="1" data-publish-target="ecd_tools"></div>
                 <p class="whats-new-view-all"><a href="/resources/events">View All Events <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
               </div>
