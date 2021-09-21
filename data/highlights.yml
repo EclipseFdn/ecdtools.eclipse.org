@@ -7,11 +7,3 @@ items:
          text: "Register Now"
        - url: "#"
          text: "Join the Conversation"
-   - title: WEBINAR SERIES:<br> CLOUD TOOLTIME
-     image: /images/ecdtools/home/cloud-tool-time-logo-white.png
-     body: <h3>December 1, 2020</h3><p>Join us for our new webinar series, featuring interactive talks by ECD Tools community members! Join the conversation, propose a talk.</p><p><strong>Presenter</strong> John Doe</p>
-     links:
-       - url: "#"
-         text: "Link 1"
-       - url: "#"
-         text: "Link 2"
