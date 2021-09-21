@@ -1,5 +1,5 @@
 ---
-title: "Eclipse Cloud Development Tools Working Group"
+title: "Eclipse Cloud DevTools"
 seo_title: "Eclipse Cloud Development Tools Working Group"
 headline: "THE COMMUNITY FOR INDUSTRY-BEST OPEN&nbsp;SOURCE&nbsp;CLOUD DEVELOPMENT TOOLS"
 #tagline: "Industry collaboration on open source cloud development tools "

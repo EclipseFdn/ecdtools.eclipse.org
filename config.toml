@@ -21,9 +21,9 @@ pluralizeListTitles = false
   gcse = ""
   js = "js/solstice.js"
   header_wrapper_class = " featured-section-darken"
-  logo_width = "150"
+  logo_width = "250"
   header_left_classes = "col-sm-7"
-  main_menu_wrapper_classes = "col-sm-17 margin-top-25"
+  main_menu_wrapper_classes = "col-sm-17 margin-top-30"
   projects_working_group = "cloud-development-tools"
   news_count = 3
   featured_content_publish_target = "ecd_tools"
@@ -100,4 +100,10 @@ pluralizeListTitles = false
     name = "Blogs"
     url = "/resources/blogs"
     weight = 4
+    parent = "Resources"
+
+[[menu.main]]
+    name = "Other Resources"
+    url = "/resources/other-resources"
+    weight = 5
     parent = "Resources"

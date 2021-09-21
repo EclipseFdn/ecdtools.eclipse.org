@@ -19,7 +19,7 @@ import 'jquery-parallax.js/parallax.min.js'
 import './src/parallax'
 
 
-var owl = $('.solstice-slider');
+var owl = $('.solstice-slider-home');
 owl.owlCarousel({
     items:1,
     autoplay:true,

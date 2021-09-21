@@ -134,12 +134,17 @@
     }
   }
   li.dropdown {
+    @media (min-width: @screen-sm-min) {
+      &:hover {
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
     .dropdown-menu {
       text-align: center;
-      font-size: 12px;
+      font-size: 14px;
       padding: 15px 0;
-      left: -20%;
-      right: -20%;
     }
   }
 }
@@ -199,3 +204,20 @@
     position: relative;
   }
 }
+
+.icon-primary {
+  border-color: @brand-primary;
+}
+
+@media screen and (min-width: 768px) {
+  .event-timeline .timeline-item:nth-of-type(2n):before {
+    left: -17%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .event-timeline .timeline-item:before {
+    right: -17%;
+  }
+}
+
