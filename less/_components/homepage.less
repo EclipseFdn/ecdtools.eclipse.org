@@ -83,11 +83,15 @@
     margin-top: 10px;
   }
   h2{
-    margin-top:17px;
     font-size:34px;
     text-transform: inherit;
-    margin-bottom:20px;
-    text-align: right;
+    margin-bottom:10px;
+    @media (max-width: @screen-xs-max) {
+      font-size:28px;
+    }
+  }
+  h3 {
+    margin-top:10px;
   }
   h2, h3 {
     color:@white;
@@ -98,18 +102,16 @@
   }
   .featured-section-webinar-series-1-img {
     margin-bottom:18px;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
+    width: 100%!important;
+    @media (min-width: @screen-xs-min) {
+      width: fit-content!important;
+    }
   }
-  .webinar-series-1-description {
+  p {
     font-size:18px;
     @media (max-width: @screen-xs-max) {
       text-align: center;
-    }
-  }
-
-  .webinar-series-1-presenter {
-    @media (max-width: @screen-xs-max) {
-      text-align:center;
     }
   }
 }

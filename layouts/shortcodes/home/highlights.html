@@ -14,18 +14,20 @@
 <div id="webinar-series-1" class="row featured-section featured-section-webinar-series-1">
     <div class="container">
 
-        <div class="owl-carousel owl-theme solstice-slider-home" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
+        <div class="owl-carousel owl-theme solstice-slider" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
             {{ range $.Site.Data.highlights.items }}
-                <div class="item padding-40">
+                <div class="item">
                     <div class="row">
-                        <div class="col-sm-10">
-                            <h2 class="webinar-series-1-title">{{.title | safeHTML }}</h2>
+                        <div class="col-sm-12 match-height-item-by-row vertical-align-container">
+                            <div>
+                            <img alt="{{.title}}" class="featured-section-webinar-series-1-img" src="{{.image}}">
                         </div>
-                        <div class="col-sm-4 text-center">
-                            <img alt="{{.title}}" class="img-responsive featured-section-webinar-series-1-img" src="{{.image}}">
                         </div>
-                        <div class="col-sm-9">
-                            {{ .body | safeHTML }}
+                        <div class="col-sm-12 match-height-item-by-row vertical-align-container">
+                            <div>
+                                <h2 class="webinar-series-1-title">{{.title | safeHTML }}</h2>
+                                {{ .body | safeHTML }}
+                            </div>
                         </div>
                     </div>
                     <ul class="list-inline text-center margin-top-20">
