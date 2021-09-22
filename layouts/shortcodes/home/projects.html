@@ -62,9 +62,9 @@
                     {{ $scratch.Add "user_picture" ".png" }}
                     {{ $user_picture := $scratch.Get "user_picture" }}    
                     {{ if (fileExists $user_picture) }}
-                      <img class="img-responsive" src="images/ecdtools/projects/{{ .username }}.png" alt="{{ .full_name }}">
+                      <img class="img-responsive featured-section-projects-picture" src="images/ecdtools/projects/{{ .username }}.png" alt="{{ .full_name }}">
                     {{ else }}
-                    <img class="img-responsive" src="images/ecdtools/home/silhouette.jpg" alt="{{ .full_name }}">
+                    <img class="img-responsive featured-section-projects-picture" src="images/ecdtools/home/silhouette.jpg" alt="{{ .full_name }}">
                     {{ end }}
                   </div>
                   <div class="col-xs-12 padding-left-0 padding-top-20">
