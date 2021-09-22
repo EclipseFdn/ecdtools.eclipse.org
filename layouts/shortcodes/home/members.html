@@ -9,11 +9,7 @@
 -->
 <!-- start: Founding Members -->
 {{ $data := index (where .Site.Data.members.types "name" "strategic") 0 }}
-{{ $data_participant := index (where .Site.Data.members.types "name" "participant") 0 }}
-
 {{ $items := $data.items }}
-{{ $items_participant := $data_participant.items }}
-{{ $items = $items | append ($items_participant) }}
 
 {{ $limit := .Get "limit" }}
 {{ if $limit }}
