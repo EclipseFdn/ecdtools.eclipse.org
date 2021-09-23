@@ -51,11 +51,11 @@
 }
 
 .offwhite-bg-shadow {
-  background-color:#f9f9f9;
+  background-color:@offwhite;
 }
 
 .white-bg-shadow {
-  background-color:#fff;
+  background-color:@white;
 }
 
 .featured-section-webinar-series-2 {
@@ -73,18 +73,17 @@
     margin-bottom:25px;
     margin-top:20px;
   }
-  .webinar-series-2-buttons {
-    li a {
-      width:225px;
-      @media (max-width: @screen-xs-max) {
-        margin-bottom:30px;
-      }
+  .webinar-series-2-buttons li a {
+    width:225px;
+    margin-bottom:30px;
+    @media (min-width: @screen-xs-min) {
+      margin-bottom:0px;
     }
   }
 }
 
 .featured-section-webinar-series-2-home {
-  background-color:#f9f9f9;
+  background-color:@offwhite;
 }
 
 .featured-section-testimonials{

@@ -12,20 +12,20 @@
 */
 
 .header-open-vsx-bg-img {
-    background-image:@featured-jumbotron-open-vsx-bg-img; 
-    text-align:left;
-    background-color:@white;
+    background-image: @featured-jumbotron-open-vsx-bg-img; 
+    text-align: center;
+    background-color: @white;
+    @media (min-width: @screen-sm-min) {
+        text-align: left;
+    }
     h1, h2 {
-        color:@text-color;
+        color: @text-color;
     }
     h2 {
         font-size: 16px;
         margin-bottom: 30px;
         line-height: 1.6;
         font-weight: 400;
-    }
-    @media (max-width: @screen-sm-max) {
-        text-align:center;
     }
 }
 
@@ -60,13 +60,13 @@
 
 .featured-section-team-leads-container {
     background-color:@white;
+    overflow: hidden;
     @media (min-width: @screen-sm-min) {
         background-image:url('../images/team-lead-bg.jpg');
         background-repeat: no-repeat;
         background-position: top right;
         background-size:60%;
     }
-    overflow: hidden;
 }
 
 .featured-section-team-leads {
@@ -133,20 +133,16 @@
     @media (min-width: @screen-lg-min) {
         padding-top:60px;
     }
-    .item {
-        img {
-            width:60px;
-            @media (max-width: @screen-sm-max) {
-                margin: 0 auto;
-            }
+    .item img {
+        width:60px;
+        @media (max-width: @screen-sm-max) {
+            margin: 0 auto;
         }
     }
 }
 
-.heading-underline-width-30 {
-    &:after {
-        width: 30px;
-    }
+.heading-underline-width-30:after {
+    width: 30px;
 }
 
 .featured-section-contribution-activity {

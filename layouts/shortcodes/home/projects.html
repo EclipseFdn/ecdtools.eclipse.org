@@ -60,7 +60,7 @@
                     {{ $scratch.Set "user_picture" "static/images/ecdtools/projects/" }}
                     {{ $scratch.Add "user_picture" .username }}
                     {{ $scratch.Add "user_picture" ".png" }}
-                    {{ $user_picture := $scratch.Get "user_picture" }}    
+                    {{ $user_picture := $scratch.Get "user_picture" }}   
                     {{ if (fileExists $user_picture) }}
                       <img class="img-responsive featured-section-projects-picture" src="images/ecdtools/projects/{{ .username }}.png" alt="{{ .full_name }}">
                     {{ else }}

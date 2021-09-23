@@ -9,7 +9,7 @@
 const UserProfile = (function ($) {
 
     $('.eclipsefdn-userprofile').each(function(index, user_block){
-        const username = $(this).attr("data-username");
+        const username = $(this).attr('data-username');
         
         $.ajax({
             type: 'GET',
@@ -24,27 +24,27 @@ const UserProfile = (function ($) {
                     user_block.append(img);
                 }
     
-                let fullName = "";
+                let fullName = '';
                 if (typeof user_profile.full_name !== 'undefined' && user_profile.full_name !== null) {
                     fullName = document.createTextNode(user_profile.full_name);
                 }
                 else {
                     fullName = document.createTextNode(user_profile.name);
                 }
-                if (fullName !== "") {
+                if (fullName !== '') {
                     let h3 = document.createElement('h3');
                     h3.appendChild(fullName);
                     user_block.append(h3);
                 }
     
-                let job_org = "";
-                if (typeof user_profile.job_title !== 'undefined' && user_profile.job_title !== null && user_profile.job_title !== "") {
-                    job_org = user_profile.job_title + ", ";
+                let job_org = '';
+                if (typeof user_profile.job_title !== 'undefined' && user_profile.job_title !== null && user_profile.job_title !== '') {
+                    job_org = user_profile.job_title + ', ';
                 }
                 if (typeof user_profile.org !== 'undefined' && user_profile.org !== null) {
                     job_org += user_profile.org;
                 }
-                if (job_org !== "") {
+                if (job_org !== '') {
                     const org = document.createTextNode(job_org);
                     let h4 = document.createElement('h4');
                     h4.appendChild(org);
@@ -65,10 +65,10 @@ const UserProfile = (function ($) {
                     user_block.append(p);
                 }
 
-                let a_text = document.createTextNode("Read More");
+                let a_text = document.createTextNode('Read More');
                 let a = document.createElement('a');
                 a.appendChild(a_text);
-                a.setAttribute('href', "https://accounts.eclipse.org/users/" + user_profile.name);
+                a.setAttribute('href', 'https://accounts.eclipse.org/users/' + user_profile.name);
                 let p_read_more = document.createElement('p');
                 p_read_more.appendChild(a);
                 user_block.append(p_read_more);

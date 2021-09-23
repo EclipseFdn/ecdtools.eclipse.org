@@ -24,7 +24,6 @@
   .featured-jumbotron{
     padding-top:200px;
     padding-bottom:150px;
-    //background-image: url('../images/jumbotron-image.jpg');
     background-size:cover;
   }
   &.featured-jumbotron-home {
@@ -71,10 +70,8 @@
   padding:0!important;
 }
 
-
-
 .featured-section-webinar-series-1 {
-  background-image:url(../images/webinar-series-1-bg.png);
+  background-image:url(../images/webinar-series-1-bg.jpg);
   background-size: cover;
   color:@white;
   .btn {
@@ -83,11 +80,11 @@
     margin-top: 10px;
   }
   h2{
-    font-size:34px;
+    font-size:28px;
     text-transform: inherit;
     margin-bottom:10px;
-    @media (max-width: @screen-xs-max) {
-      font-size:28px;
+    @media (min-width: @screen-xs-min) {
+      font-size:34px;
     }
   }
   h3 {
@@ -96,8 +93,9 @@
   h2, h3 {
     color:@white;
     font-weight:400;
-    @media (max-width: @screen-xs-max) {
-      text-align: center;
+    text-align: center;
+    @media (min-width: @screen-xs-min) {
+      text-align: left;
     }
   }
   .featured-section-webinar-series-1-img {
@@ -110,14 +108,15 @@
   }
   p {
     font-size:18px;
-    @media (max-width: @screen-xs-max) {
-      text-align: center;
+    text-align: center;
+    @media (min-width: @screen-xs-min) {
+      text-align: left;
     }
   }
 }
 
-.owl-carousel .owl-item img.featured-section-webinar-series-1-img {
-  @media (max-width: @screen-xs-max) {
+@media (max-width: @screen-xs-max) {
+  .owl-carousel .owl-item img.featured-section-webinar-series-1-img {
     width:150px;
   }
 }
@@ -148,8 +147,7 @@
 
   .featured-section-projects-picture {
       max-width:116px;
-      max-height:116px;
-      min-height:116px;
+      height:116px;
   }
   
   .image-container { 
