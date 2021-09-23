@@ -221,6 +221,8 @@
 }
 
 .vertical-align-container {
-  align-items: center;
-  display: inline-grid;
+  @media (min-width: @screen-xs-min) {
+    align-items: center;
+    display: inline-grid;
+  }
 }
