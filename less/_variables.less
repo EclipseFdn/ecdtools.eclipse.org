@@ -12,17 +12,29 @@
 */
 
 //== Typography
-@font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@text-color: #505050;
+@heading-underline-border: @heading-underline-thickness solid @brand-primary;
+@heading-underline-width:50px;
 
 //== Colors
-@brand-primary: #F89521; // Light orange
-@brand-secondary: #B15B27; // Dark Orange
-@brand-tertiary: #2C2255; // Dark Purple
-@brand-quaternary: #efefef; // Light Gray
+@brand-primary: #1f7da9;
+@brand-secondary: #2addf7;
+@brand-tertiary: #022247;
+@brand-quaternary: #6e6e6e; // Light Gray
 @brand-quinary: @brand-quaternary; // Light Gray (Breadcrumbs)
 @brand-info: @brand-tertiary;
 @brand-info-light: lighten(@brand-info, 20%);
 @brand-warning: @brand-primary;
+@offwhite:#f9f9f9;
+
+//== Links
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 10%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
 
 //== Featured Story
 @featured-story-h2-color: #4c4d4e;
@@ -35,3 +47,45 @@
 
 // border button radius
 @btn-border-radius-base: 1em;
+@btn-font-size: 14px;
+
+@header-toolbar-color:@text-color; 
+@main-menu-link-color:@text-color; 
+@main-menu-link-active-color:darken(@main-menu-link-color, 15%);
+@main-menu-link-size:14px;
+@mobile-menu-color:@main-menu-link-color;
+@navbar-toggle-icon-background:#000;
+@mobile-menu-nav-background:@white;
+@mobile-main-menu-link-border-bottom:1px solid #ececec;
+
+//== Jumbotron background images
+@jumbotron-h1-size:36px;
+@jumbotron-h1-weight:400;
+@featured-jumbotron-home-bg-img:url('images/jumbotron-home-bg.jpg');
+@featured-jumbotron-about-bg-img:url('images/banners/jumbotron-about-bg.jpg');
+@featured-jumbotron-projects-bg-img:url('images/banners/jumbotron-projects-bg.jpg');
+@featured-jumbotron-membership-bg-img:url('images/banners/jumbotron-membership-bg.jpg');
+@featured-jumbotron-resources-bg-img:url('images/banners/jumbotron-resources-bg.jpg');
+@featured-jumbotron-adopters-bg-img:url('images/banners/jumbotron-adopters-bg.jpg');
+@featured-jumbotron-open-vsx-bg-img:url('images/banners/jumbotron-open-vsx-bg.jpg');
+
+//== Background images
+@featured-membership-bg-img:url('images/banners/membership-bg.jpg');
+
+//== About Us
+@about-faq-bg-img:url('images/banners/about-faq-bg.jpg');
+
+//== Footer
+@footer-background: no-repeat center center @white;
+@footer-color: @text-color;
+@footer-h2-color: #000000;
+
+@footer-link-color: @text-color;
+@footer-link-font-weight:400;
+@footer-link-hover: darken(@text-color, 20%);
+
+@featured-footer-h2-color:#000;
+
+@breadcrumb-background:#e2e2e2;
+
+@timeline-link-color:@brand-primary;

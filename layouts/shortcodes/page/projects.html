@@ -1,0 +1,44 @@
+<!--
+  Copyright (c) 2020 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  Contributors:
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
+    Yi Liu <yi.liu@eclipse-foundation.org>
+
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+<div id="prowered-by" class="row featured-section featured-section-prefix text-center featured-content-white-bg">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-14 col-md-offset-5 col-sm-18 col-sm-offset-3">
+              <p class="small">PROJECTS</p>
+              <p class="powered-by-description">The Eclipse Cloud DevTools Working Group serves to
+                advance, promote, and drive community participation in a
+                broad porfolio of Eclipse projects.</p>
+              <p><a class="btn btn-primary" href="https://projects.eclipse.org/projects/ecd">Learn More</a></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<section class="eclipsefdn-project-list first container" id="projects">
+    <div class="row" id="project-list">
+      <div class="col-sm-16 col-sm-offset-4 search-and-sort margin-top-30 margin-bottom-30">
+        <input aria-label="Search for a project" type="text" class="form-control search center-block" placeholder="Start typing to filter projects…">
+      </div>
+      <div class="col-sm-20 col-sm-offset-2">
+        <ul class="list list-unstyled"></ul>
+      </div>
+      <div class="loading col-sm-18 col-sm-offset-3" id="update-project">
+        Loading projects list...
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>

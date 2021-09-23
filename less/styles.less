@@ -12,217 +12,37 @@
 */
 
 @import '~eclipsefdn-solstice-assets/less/quicksilver/styles.less';
+@import '~eclipsefdn-solstice-assets/less/_components/quicksilver/event-timeline.less';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import '_variables.less';
 
-#header-wrapper{
-  background-color: @brand-tertiary;
-  background-size:cover;
-  background-image: url('images/jumbotron-image.jpg');
-  background-position: 0 100%;
-  .featured-jumbotron{
-    padding-top:48px;
+@import '_components/_commons.less';
+@import '_components/about.less';
+@import '_components/adopters.less';
+@import '_components/homepage.less';
+@import '_components/membership.less';
+@import '_components/open-vsx.less';
+@import '_components/projects.less';
+@import '_components/resources.less';
+@import '_components/featured-news.less';
 
-    .btn {
-      border-radius: @btn-border-radius-base;
-    }
-  }
-}
 
-.btn-primary{
-  .btn-warning;
-}
-
-.btn{
-  border: none;
-}
 .logo-eclipse-default{
-  padding-top:9px;
+  padding-top:22px;
 }
 
 .logo-eclipse-default-mobile{
   max-width:260px;
 }
 
-.featured-ad a{
-  float:none;
-}
-
-#members li {
-  padding: 15px;
-}
-
-.news-list{
-  .news-list-col {
-    margin-bottom:0;
+@media (max-width: @screen-xs-max) {
+  #header-row {
     padding-bottom:0;
-    h2.heading-line {
-      text-align:center;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-  }
-  .media-link:hover {
-    .box-shadow(3px 3px 3px #cecece);
-    background-color: white;
-  }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
   }
 }
 
-.event-list {
-  a:visited{
-    color: @brand-tertiary;
-  }
-}
-
-.featured-section{
-  padding: 60px 0 60px 0;
-  background-position: 0 100%;
-  font-size:19px;
-  h2{
-    font-size: 34px;
-    margin-bottom: 20px;
-    color: @brand-primary;
-    margin-top:0;
-  }
-  p{
-    margin-bottom:20px;
-    &:last-child{
-      margin-bottom:0;
-    }
-  }
-  .feather {
-    width: 40px;
-    height: 40px;
-  }
-  ul li {
-  	font-size: 14px;
-  }
-}
-
-.featured-section-darken{
-  background: @brand-tertiary;
-  color: #fff;
-  h2 {
-    color: white;
-  }
-}
-
-.featured-section.featured-section-connected {
-  background-image: url('images/mailing-list-image.jpg');
-  background-size: cover;
-  color: #fff;
-  h2 {
-    color: white;
-  }
-}
-
-.featured-footer.featured-story-dark {
-  &:extend(.featured-section.featured-section-connected);
-}
-
-.featured-section-testimonials{
-background-color: @brand-tertiary;
-  background-size:cover;
-  background-image: url('images/testimonial-image.jpg');
-  background-position: 0 100%;
-}
-
-.featured-section-members {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  li {
-   padding: 15px;
-  }  
-}
-
-.featured-section-initiatives {
-	background-color: #efefef;
-}
-section#wg-projects {
-  & {
-    margin-top: 20px;
-  }
-  img {max-height: 100px;}
-  .image-container { height: 75px; }
-  li { 
-    & {
-      padding: 10px;
-    }
-    & > div:not(#featured-more-projects) > a { 
-      position: absolute; 
-      bottom: 20px; 
-      margin-left: auto;
-      margin-right: auto; 
-      left: 20px; 
-      right: 20px;
-    }
-    & > div:not(#featured-more-projects) { 
-      border: 1px solid #f0f0f2;
-      padding:10px;
-      padding-bottom: 50px;
-      background-color: #fff;
-    }
-    // required to override inline-list padding
-    &.padding-0 {
-      padding: 0;
-    }
-  }
-  #featured-more-projects ul {
-  	margin-left:0px;
-  }
-}
-
-.testimonial-item {
-  margin-top:120px;
-  .testimonial-logo {
-    background-color: #f9f9f9;
-    border-radius: 150px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    margin: -120px auto 30px;
-    position: relative;
-    img {
-      margin:0 auto;
-    }
-  }
-  .title {
-    font-size:18px;
-    display: flex;
-    flex-direction: column;
-    strong {
-      font-size: larger;
-    }
-  }
-  .content {
-    font-size:16px;
-  }
-}
-
-.mission-circle {
-  display:block;
-  width:300px;
-  height:300px;
-  padding:37px 26px 34px 40px;
-  background-color:@white;
-  border-radius:150px;
-  margin:0px auto 0;
-  img{
-    margin-top:-20px;
-    padding:30px;
-    margin-left:-4px;
-  }
-}
-
-.featured-section-statement {
-  background-size:cover;
-  background-image: url('images/mission-statement-image.jpg');
-  background-position: 0 50%;
-  font-size: 24px;
+#header-row {
+  padding-bottom: 20px;
 }
 
 //== For event page
@@ -272,54 +92,16 @@ section#wg-projects {
   }
 }
 
-
-@media (max-width: @screen-xs-max) {
-  .featured-section-faq,
-  .featured-section-statement{
-    text-align:center;
-  }
-  .mission-circle{
-    margin-top: 50px;
-  }
-}
 .featured-jumbotron h1 sup {
   font-size: 0.66em;
   position: relative;
   top: -0.34em;
 }
 
-.initiative-summary {
-	& {
-		margin-top: 30px;
-		margin-bottom: 50px;
-	}
-	& h4 {
-		margin-top: 20px;
-	}
-	& ul.list-inline li {
-		padding: 0 15px;
-	}
-}
-
 .events-container a.btn-secondary:nth-child(2) {
   margin-left: 10px;
 }
-
-.d-inline-block {
-  display: inline-block;
-}
-
-.adopters-page {
-  p {
-    font-size: 16px;
-  }
-}
-
-.stay-connected {
-  .fa-stack{
-    color: @white;
-  }
-}
+//== END: For event page
 
 // events display, aligns presenters (should be moved to solstice-assets)
 .eclipsefdn-agenda-schedule ul { padding-left: 0px; }

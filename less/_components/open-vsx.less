@@ -1,0 +1,160 @@
+/*!
+ * Copyright (c) 2021 Eclipse Foundation, Inc.
+ * 
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v. 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ * 
+ * Contributors:
+ *   Eric Poirier <eric.poirier@eclipse-foundation.org>
+ * 
+ * SPDX-License-Identifier: EPL-2.0
+*/
+
+.header-open-vsx-bg-img {
+    background-image: @featured-jumbotron-open-vsx-bg-img; 
+    text-align: center;
+    background-color: @white;
+    @media (min-width: @screen-sm-min) {
+        text-align: left;
+    }
+    h1, h2 {
+        color: @text-color;
+    }
+    h2 {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+}
+
+#header-wrapper .featured-jumbotron.featured-jumbotron-sub-pages.header-open-vsx-bg-img {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (min-width: @screen-sm-min) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        min-height:465px;
+    }
+}
+
+.featured-section-open-vsx-features {
+    background-color:@white;
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 200;
+    }
+}
+
+.featured-section-open-vsx-features-text {
+    padding-bottom:30px;
+    @media (min-width: @screen-sm-min) {
+        padding-top:30px;
+    }
+    @media (max-width: @screen-sm-max) {
+        text-align:center;
+    }
+}
+
+.featured-section-team-leads-container {
+    background-color:@white;
+    overflow: hidden;
+    @media (min-width: @screen-sm-min) {
+        background-image:url('../images/team-lead-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size:60%;
+    }
+}
+
+.featured-section-team-leads {
+    background-color:@offwhite;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (max-width: @screen-md-max) and (min-width: @screen-sm-min) {
+        padding-left: 100px;
+    }
+    @media (min-width: @screen-sm-min) {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        padding-right: 100px;
+        position:relative;
+        &:before {
+            content:"";
+            height:100%;
+            width:1000px;
+            position:absolute;
+            background-color:@offwhite;
+            top:0;
+            left: -1000px;
+        }
+    }
+    h2 {
+        @media (max-width: @screen-sm-max) {
+            text-align:center;
+            &:after {
+                margin: 10px auto 0;
+            }
+        }
+        
+    }
+}
+
+.featured-section-team-leads-items, .featured-section-committers {
+    @media (max-width: @screen-sm-max) {
+        text-align:center;
+    }
+    h3 {
+        font-size:16px;
+        font-weight:500;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    h4 {
+        font-size:16px;
+        font-weight:300;
+        margin-top: 5px;
+    }
+    img {
+        max-width:60px;
+    }
+    
+}
+
+.featured-section-team-leads-items {
+    margin-bottom:40px;
+}
+
+.featured-section-committers {
+    background-color:@white;
+    padding-top:0px;
+    @media (min-width: @screen-lg-min) {
+        padding-top:60px;
+    }
+    .item img {
+        width:60px;
+        @media (max-width: @screen-sm-max) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.heading-underline-width-30:after {
+    width: 30px;
+}
+
+.featured-section-contribution-activity {
+    padding-bottom:40px;
+    @media (max-width: @screen-sm-max) {
+        text-align:center;
+        padding-top:0px;
+        h2 {
+            margin-top:80px;
+            &:after {
+                margin: 10px auto 0;
+            }
+        }
+    }
+}

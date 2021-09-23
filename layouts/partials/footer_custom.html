@@ -1,39 +1,75 @@
+
+<div id="webinar-series-1" class="featured-section featured-section-webinar-series-2 text-center {{ if eq .Page.RelPermalink "/" }}featured-section-webinar-series-2-home{{ end }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-14 col-sm-offset-5">
+        <h2 class="heading-underline text-center">Webinar series</h2>
+        <p><img class="Cloud ToolTime" width="120" src="/images/ecdtools/home/cloud-tool-time-logo.svg"></p>
+        <p class="webinar-series-2-description">Join us for this fun, educational and interactive webinar series, featuring a variety of cloud development topics from community members!</p>
+        <ul class="list-inline webinar-series-2-buttons">
+          <li><a class="btn btn-primary" href="https://www.crowdcast.io/e/cloud-tool-time-nov23">Register Now</a></li>
+          <li><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScudzvlUVfXehmz-Jkivv_BkJdljSjtZLENkT16jSxTzwzwkQ/viewform">Propose a Talk</a></li>
+        </ul>
+      </div>
+    </div>
+      
+  </div>
+
+</div>
+
+<div id="testimonials" class="featured-section featured-section-testimonials text-center">
+  <div class="container">
+    <p class="testimonials-quote">“</p>
+    {{ if .Site.Data.testimonials.items }}
+      <div class="row testimonial-container margin-top-30">
+        {{ range first 1 .Site.Data.testimonials.items }}
+        <div class="col-sm-16 col-sm-offset-4 testimonial-item">
+          <div class="flex-column">
+            
+            <p class="testimonial-content flex-grow">"{{ .text }}"</p>
+            {{ if .picture }}
+              <div class="testimonial-picture"><img class="img" src="{{ .picture }}" width="{{ .picture_width | default 60 }}" alt="{{ .name }} logo"></div>
+            {{ end }}
+            <p class="pull-right">{{ .name }}, {{.title}} at {{ .company }}</p>
+            <p><img class="testimonial-logo img img-responsive" src="{{ .logo_white | default .logo }}" width="{{ .logo_width | default 125 }}" alt="{{ .company }} logo"></p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</div>
+
 {{ $FeaturedSectionClass := .Page.Params.featured_section_class | default "featured-section-connected" }}
 
-<div class="featured-section featured-section-darken {{ $FeaturedSectionClass }} text-center">
+<div class="featured-section {{ $FeaturedSectionClass }} text-center">
     <div class="container">
       <div class="row">
         <div class="col-sm-24">
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline> 
-            </svg>
-          </p>
-          <h2>Stay Connected</h2>
-          <ul class="list-inline stay-connected">
+          <ul class="list-inline">
+
+            <li><a class="btn btn-primary" href="https://accounts.eclipse.org/mailing-list/ecd-tools-wg">Join our Mailing List</a></li>
             <li>
-              <a class="fa-stack fa-xl" href="https://www.linkedin.com/showcase/ecd-tools/">
-                <i class="fa fa-linkedin-square fa-1x" aria-label="Linkedin profile for Eclipse Cloud Development Tools"></i>
+              <a class="connected-icon" href="https://www.linkedin.com/showcase/ecd-tools/">
+                <i class="fa fa-linkedin-square" aria-label="Linkedin profile for Eclipse Cloud Development Tools"></i>
               </a>
             </li>
             <li>
-              <a class="fa-stack fa-xl" href="https://twitter.com/ecdtools?lang=en">
-                <i class="fa fa-twitter fa-1x" aria-label="Twitter profile for Eclipse Cloud Development Tools"></i>
+              <a class="connected-icon" href="https://twitter.com/ecdtools">
+                <i class="fa fa-twitter" aria-label="Twitter profile for Eclipse Cloud Development Tools"></i>
               </a>
             </li>
             <li>
-              <a class="fa-stack fa-xl" href="https://youtube.com/playlist?list=PLy7t4z5SYNaQi-Tg57o1b3iYmxCxHxY0C">
-                <i class="fa fa-youtube-play fa-1x" aria-label="Youtube channel for Eclipse Cloud Development Tools"></i>
+              <a class="connected-icon" href="https://youtube.com/playlist?list=PLy7t4z5SYNaQi-Tg57o1b3iYmxCxHxY0C">
+                <i class="fa fa-youtube-play" aria-label="Youtube channel for Eclipse Cloud Development Tools"></i>
               </a>
             </li>
             <li>
-              <a class="fa-stack fa-xl" href="https://www.twitch.tv/cloudchat_">
-                <i class="fa fa-twitch fa-1x" aria-label="Twitch channel for Eclipse Cloud Development Tools"></i>
+              <a class="connected-icon" href="https://www.twitch.tv/cloudchat_">
+                <i class="fa fa-twitch" aria-label="Twitch channel for Eclipse Cloud Development Tools"></i>
               </a>
             </li>
           </ul>
-          <span><a class="btn btn-primary" href="https://accounts.eclipse.org/mailing-list/ecd-tools-wg">Join our Mailing List</a> <a class="btn btn-primary" href="https://accounts.eclipse.org/contact/membership/ecdtools">Contact Us</a></span>
         </div>
       </div>
     </div>

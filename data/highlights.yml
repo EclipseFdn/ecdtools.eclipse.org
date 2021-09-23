@@ -1,0 +1,33 @@
+items:
+   - title: "Register for EclipseCon"
+     image: /images/ecdtools/highlights/eclipsecon2021.png
+     body: <h3>October 25-28</h3> <p>Don't miss the Web and Desktop Tools & IDEs and Modeling Tools and Technologies tracks at EclipseCon 2021!</p>
+     links:
+       - url: "https://www.eclipsecon.org/2021/registration"
+         text: "REGISTER TODAY"
+   - title: "Cloud Tool Time"
+     image: /images/ecdtools/highlights/cloud-tool-time.jpg
+     body: <p>Join us for this fun and educational webinar series, featuring interactive talks by Eclipse Cloud DevTools community members! Register for “Strategies for migrating Eclipse based applications to the Web” with Jonas Helming on November 23!</p>
+     links:
+       - url: "https://www.crowdcast.io/e/cloud-tool-time-nov23"
+         text: "REGISTER"
+       - url: "https://docs.google.com/forms/d/e/1FAIpQLScudzvlUVfXehmz-Jkivv_BkJdljSjtZLENkT16jSxTzwzwkQ/viewform"
+         text: "PROPOSE A TALK"
+   - title: "TheiaCon Call For Presentations"
+     image: /images/ecdtools/highlights/theiacon.png
+     body: <p>Submit your proposal today to be a speaker at the largest Eclipse Theia event of the year!</p>
+     links:
+       - url: "https://docs.google.com/forms/d/e/1FAIpQLSeGtLyd3ZYflIdo7n6sfCSpp65m6Ya9l9hhbeGqLvUakOUUBA/viewform"
+         text: "PROPOSE A TALK"
+   - title: "Watch the Latest Cloud Chat!"
+     image: /images/ecdtools/highlights/cloud-chat.jpg
+     body: <p>Join Jesse Williams as he discusses key trends and projects in open source cloud development.</p>
+     links:
+       - url: "https://www.twitch.tv/cloudchat_"
+         text: "WATCH EPISODES"
+   - title: "White Paper: The Eclipse Cloud DevTools Ecosystem"
+     image: /images/ecdtools/highlights/white-paper.png
+     body: <p>Learn more about our working group's vendor-neutral, community-based approach to cloud development.</p>
+     links:
+       - url: "https://outreach.eclipse.foundation/cloud-software-development-tools"
+         text: "DOWNLOAD TODAY"

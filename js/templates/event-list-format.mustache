@@ -1,11 +1,14 @@
-<div class="row news-item text-center padding-bottom-15">
 {{#events}}
-  <div class="col-sm-24">
-    <p class="margin-bottom-0">
-      <a class="fw-700" href="{{ registration }}">{{ title }}</a>
-    </p>
-    <p class="margin-bottom-0">{{ locationName }}</p>
-    <p>{{ date }} - {{ end-date }}</p>
+  <div class="timeline-item">
+    <p class="whats-new-date">{{ date }}</p>
+    <h4>
+      {{#infoLink}}
+        <a href="{{infoLink}}">{{ title }}</a>
+      {{/infoLink}}
+      {{^infoLink}}
+        {{ title }}
+      {{/infoLink}}
+    </h4>
+    <p>{{ description }}</p>
   </div>
 {{/events}}
-</div>

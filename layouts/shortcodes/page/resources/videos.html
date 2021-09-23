@@ -1,0 +1,55 @@
+<!-- 
+  Copyright (c) 2021 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  Contributors:
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
+    
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+<div id="prowered-by" class="row featured-section featured-section-prefix text-center featured-content-white-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-14 col-md-offset-5 col-sm-18 col-sm-offset-3">
+                <p class="small">VIDEOS</p>
+                <p class="powered-by-description">The Eclipse Cloud DevTools community is changing the
+                    world of application development. Learn more about our
+                    work with these helpful video resources.</p>
+                <p><a class="btn btn-primary" href="https://www.youtube.com/user/EclipseFdn/playlists?view=50&sort=dd&shelf_id=3">Learn More</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row featured-section featured-section-resources">
+    <div class="container">
+        <div class="row">
+
+            {{ if .Site.Data.videos.items }}
+                <div class="col-sm-18 col-sm-offset-3">
+                    {{ range .Site.Data.videos.items }}
+                        <div class="row featured-section-resources-video-item">
+                            <div class="col-sm-12">
+                                <a class="{{.link_class}}" href="{{.link}}"></a>
+                            </div>
+                            <div class="col-sm-12">
+                                <p class="featured-section-resources-video-date">{{ .date }}</p>
+                                <h3 class="featured-section-resources-video-heading"><a href="{{.link}}">{{ .title }}</a></h3>
+                                <p class="featured-section-resources-video-description">{{ .description }}</p>
+                                <p><a class="btn btn-primary" href="{{.link}}">Watch Now</a></p>
+                                <ul class="list-inline featured-section-resources-video-tags">
+                                    {{ range .tags }}
+                                        <li class="featured-section-resources-video-tag">{{.}}</li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+            <p class="text-center"><a class="btn btn-primary" href="https://www.youtube.com/user/EclipseFdn/playlists?view=50&sort=dd&shelf_id=3">Go to the full playlist</a></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<!-- 
+  Copyright (c) 2019 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  Contributors:
+    Eric Poirier <eric.poirier@eclipse-foundation.org>
+  SPDX-License-Identifier: EPL-2.0
+-->
+<!-- start: Founding Members -->
+{{ $data := index (where .Site.Data.members.types "name" "strategic") 0 }}
+{{ $items := $data.items }}
+
+{{ $limit := .Get "limit" }}
+{{ if $limit }}
+  {{ $items = first $limit $items }}
+{{ end }}
+<div id="members" class="row featured-section featured-section-members text-center">
+  <div class="container">
+    <h2 class="heading-underline text-center">Members</h2>
+    <ul class="list-inline members-items">
+      {{ range first 6 $items }}
+        <li><a href="{{ .link }}"><img class="members-logo" width="{{ .img_width }}" alt="{{ .title }}" src="{{ .image }}"></a><br> {{ .type }}</li>
+      {{ end }}
+    </ul>
+    {{ if $limit }}
+      <p class="members-description">See all members and member benefits</p>
+      <p><a class="btn btn-primary margin-top-5" href="{{ "/membership" | absURL }}" >Learn more</a></p>
+    {{ end }}
+  </div>
+</div>
+<!-- end: Founding Members -->
