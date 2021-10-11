@@ -1,6 +1,6 @@
 ---
 title: "Blogs"
-description: "Useful resources to learn more about Eclipse IoT"
+description: "Useful resources to learn more about Eclipse Cloud DevTools"
 headline: "Blogs"
 jumbotron_bg_class: "featured-jumbotron-sub-pages header-projects-bg-img"
 icon: "file-text"

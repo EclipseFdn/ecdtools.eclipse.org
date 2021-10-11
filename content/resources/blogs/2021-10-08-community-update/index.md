@@ -14,7 +14,7 @@ Learn more about the working group by reading about our [members](https://ecdtoo
 # Website
 We recently completed a major overhaul of the working group website: [https://ecdtools.eclipse.org](https://ecdtools.eclipse.org). This new resource is designed to be more visually appealing, easier to navigate, and a platform that better highlights and drives traffic to our projects.  Accompanying the website is the launch of our new logo. Both were collaborations of designers, the foundation team, and the working group members. We’re very happy with the results. If you find anything that seems out of place, or have ideas for further content, please [open a Github issue](https://github.com/EclipseFdn/ecdtools.eclipse.org/issues).
 
-![New website design](/content/resources/blogs/2021-10-08-community-update/images/website-2021-09-29.png)
+![New website design](images/website-2021-09-29.png)
 
 # Events
 It’s event season and we are participating in a number of upcoming virtual and live events. Here’s a quick overview:
@@ -30,10 +30,10 @@ EclipseCon is the leading conference for developers, architects, and open source
 Like last year, we are having a virtual [Community Day](https://www.eclipsecon.org/2021/community-day) before the main conference, on October 25. Come and join our [Cloud DevTools session](https://www.eclipsecon.org/2021/eclipse-cloud-devtools-community-day), which is extended to 2.5 hours this year.
 
 ## Open Source Experience (OSXP)
-The goal of [Open Source Experience](https://www.opensource-experience.com/en/) is to bring together the entire open source expert community for two days for a new dynamic in a sector that is constantly innovating. On-site this year in Paris and with a focus on European open source, the Eclipse Foundation is delighted to be participating. You can visit our booth throughout, and our session titled ‘Open-Source Tools and Platforms: From the Cloud to the Edge and Beyond’ will focus on why open source enables innovation at an industrial scale.
+The goal of [Open Source Experience](https://www.opensource-experience.com/en/) is to bring together the entire open source expert community for two days for a new dynamic in a sector that is constantly innovating. On-site this year in Paris and with a focus on European open source, the Eclipse Foundation is delighted to be participating. You can visit our booth throughout, and our session titled ‘*Open-Source Tools and Platforms: From the Cloud to the Edge and Beyond*’ will focus on why open source enables innovation at an industrial scale.
 
 ## TheiaCon
-![TheiaCon banner](/content/resources/blogs/2021-10-08-community-update/images/theiacon-image.jpg)
+![TheiaCon banner](images/theiacon-image.jpg)
 
 Save the date! The annual TheiaCon 2021 will be taking place starting November 17th, 2021. Join us to get to know the community, learn about the latest developments, and share your ideas live with Theia ecosystem leaders and innovators.
 
@@ -47,8 +47,8 @@ Both of our Cloud DevTools event series continue to gain momentum. Check out the
 
 We’re also in the process of booking 2022 episodes of both of these series. Be sure to sign up to share your projects, ideas and tips with the community.
 
-[Cloud Tool Time Sign up](https://docs.google.com/forms/d/e/1FAIpQLScudzvlUVfXehmz-Jkivv_BkJdljSjtZLENkT16jSxTzwzwkQ/viewform?usp=sf_link).
-[Cloud Chat Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdnERYGVMow4RV9AE4F3h_r6nfFambOY2Cg_mGaykDZ08yoiw/viewform?usp=sf_link).
+- [Cloud Tool Time Sign up](https://docs.google.com/forms/d/e/1FAIpQLScudzvlUVfXehmz-Jkivv_BkJdljSjtZLENkT16jSxTzwzwkQ/viewform?usp=sf_link)
+- [Cloud Chat Sign up](https://docs.google.com/forms/d/e/1FAIpQLSdnERYGVMow4RV9AE4F3h_r6nfFambOY2Cg_mGaykDZ08yoiw/viewform?usp=sf_link)
 
 # Projects
 ## Che
@@ -100,8 +100,5 @@ The Cloud DevTools community is growing faster than ever. and there are many way
 - Author blog posts that mention Cloud DevTools or related projects
   - Write a post about your experience as a member of the community
 - [Fill out this handy form](https://docs.google.com/forms/d/e/1FAIpQLSeUxVsVRWT0xSsw2jyIwzYRlZvPiFPq8jCyrDICY-fnT2MF5w/viewform) to share your case studies and success stories with us
-- Volunteer to give a webinar / host a virtual meetup
-  - [Fill out this form](https://forms.gle/KJQ7T3a3V5NZPLEdA)
-  - All Foundation virtual events are managed through [Meetup.com](https://www.meetup.com/Virtual-Eclipse-Community-MeetUp/) 
 - Submit talks to conference CFPs for Cloud DevTools awareness
 - Add our community calendar to your calendar to hear about upcoming events. More details on how to subscribe are on our [community page](https://ecdtools.eclipse.org/resources/community/).
