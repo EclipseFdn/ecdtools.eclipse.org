@@ -1,6 +1,7 @@
 +++
 date = "2021-10-08"
 title = "Cloud DevTools Community Update - October 2021"
+summary = "In this post we talk about the latest happenings in the Cloud DevTools community. Included is information about our new website design, upcoming events, project updates, the Embedded SIG, our developer survey, and more."
 category = "blog"
 +++
 # About Us
