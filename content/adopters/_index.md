@@ -9,6 +9,4 @@ container: "container-fluid"
 jumbotron_bg_class: "featured-jumbotron-sub-pages header-adopters-bg-img"
 ---
 
-{{< page/adopters >}}
-
-{{< eclipsefdn_adopters working_group="cloud-development-tools" class="container eclipsefdn-adopters" >}}
+{{< page/adopters working_group="cloud-development-tools" >}}

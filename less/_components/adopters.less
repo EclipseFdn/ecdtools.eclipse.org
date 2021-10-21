@@ -2,18 +2,76 @@
     background-image:@featured-jumbotron-adopters-bg-img; 
 }
 
-.eclipsefdn-adopters {
-    margin-bottom:40px;
-    .btn-xs.btn-secondary {
-        background-color:#a9a9a9;
-        border-color:#a9a9a9;
+.featured-section-adopters {
+    padding-top: 0;
+    .tab-content {
+        padding: 0;
+        border: none;
+        border-top: none;
+        background: transparent;
     }
+    .tab-pane {
+        padding: 0;
+    }
+    .white-bg-shadow {
+        height: @featured-section-adopters-box-height;
+        position: relative;
+    }
+}
+
+.featured-section-adopters-sidebar {
+    background-color: @featured-section-adopters-sidebar-bg-color;
+    padding: @featured-section-adopters-sidebar-padding;
+    box-shadow: @featured-section-adopters-sidebar-box-shadow;
     h2 {
-        text-align:center;
+        color: @featured-section-adopters-sidebar-h2-color;
     }
-    .adopters-img {
-        min-width: 130px;
-        max-width: 130px;
-        max-height: inherit;
+    li.active {
+        a {
+            color: @featured-section-adopters-sidebar-a-active-color;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: -40px;
+                width: 20px;
+                height: 3px;
+                background-color: @featured-section-adopters-sidebar-a-active-color;
+            }
+        }
     }
+    a {
+        color: @featured-section-adopters-sidebar-a-color;
+        &:hover {
+            color: @featured-section-adopters-sidebar-a-active-color;
+            text-decoration: none;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: -40px;
+                width: 20px;
+                height: 3px;
+                background-color: @featured-section-adopters-sidebar-a-active-color;
+            }
+        }
+    }
+}
+
+.featured-adopters-p-logo {
+    margin-bottom: 0;
+}
+
+.featured-adopters-img {
+    max-height: @featured-adopters-img-height;
+    max-width: @featured-adopters-img-width;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

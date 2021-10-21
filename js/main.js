@@ -17,6 +17,7 @@ import './src/projects'
 import './src/eclipseApi'
 import 'jquery-parallax.js/parallax.min.js'
 import './src/parallax'
+import './adopters-alternate.js'
 
 const solsticeSliderHome = () => {
     var owl = $('.solstice-slider-home');

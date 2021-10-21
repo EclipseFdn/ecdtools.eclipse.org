@@ -9,6 +9,11 @@
   SPDX-License-Identifier: EPL-2.0
 -->
 
+{{ $container_id := .Get "container_id" | default "" }}
+{{ $class := .Get "class" | default "ecdtools-adopters" }}
+{{ $working_group := .Get "working_group" | default "" }}
+{{ $ul_classes := .Get "ul_classes" | default "text-center list-inline" }}
+
 <div id="prowered-by" class="row featured-section featured-section-prefix text-center featured-content-white-bg">
     <div class="container">
         <div class="row">
@@ -35,3 +40,25 @@
         
     </div>
 </div>
+
+<div class="row featured-section featured-section-adopters">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="sidebarAdopters" class="featured-section-adopters-sidebar">
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div class="col-sm-18">
+          <div id="{{ $container_id }}" class="row tab-content {{ $class }}"></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  var eclipsefdn_adopters_configs = {
+    working_group: "{{ $working_group }}",
+    ul_classes: "{{ $ul_classes }}"
+  }
+</script>
