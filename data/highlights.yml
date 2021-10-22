@@ -1,10 +1,10 @@
 items:
-   - title: "Register for EclipseCon"
-     image: /images/ecdtools/highlights/eclipsecon2021.png
-     body: <h3>October 25-28</h3> <p>Don't miss the Web and Desktop Tools & IDEs and Modeling Tools and Technologies tracks at EclipseCon 2021!</p>
+   - title: "Download the 2021 Cloud Developer Survey"
+     image: /images/ecdtools/highlights/cloud-dev-survey-report.png
+     body: <p>Read this insightful and timely report to discover emerging trends in cloud native application development.</p>
      links:
-       - url: "https://www.eclipsecon.org/2021/registration"
-         text: "REGISTER TODAY"
+       - url: "https://outreach.eclipse.foundation/cloud-developer-survey"
+         text: "DOWNLOAD TODAY"
    - title: "Cloud Tool Time"
      image: /images/ecdtools/highlights/cloud-tool-time.jpg
      body: <p>Join us for this fun and educational webinar series, featuring interactive talks by Eclipse Cloud DevTools community members! Register for “Strategies for migrating Eclipse based applications to the Web” with Jonas Helming on November 23!</p>
