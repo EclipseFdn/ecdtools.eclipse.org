@@ -11,6 +11,7 @@ import List from 'list.js';
 
 const EclipseProjectList = (function ($) {
   if ($('.eclipsefdn-project-list').length) {
+
     $.ajax({
       type: 'GET',
       url: '/js/projects.json',
@@ -90,7 +91,7 @@ const EclipseProjectList = (function ($) {
 
         var options = {
             item: '<li class="col-md-8 col-sm-12"><div class="featured-projects-item">\
-                        <div class="featured-projects-item-category category"> </div>\
+                        <div class="featured-projects-item-category category labels"> </div>\
                         <div class="featured-projects-item-content match-height-item">\
                         <a href="#" class="link">\
                         <img class="featured-projects-item-img img-responsive logo logo_alt" alt="project">\
@@ -118,24 +119,24 @@ const EclipseProjectList = (function ($) {
               'status',
               'category', 
               {
-                    name: 'logo',
-                    attr: 'src',
-                },
-                'version', 
-                {
-                    name: 'link',
-                    attr: 'href',
-                }, 
-                {
-                    name: 'downloadUrl', 
-                    attr: 'href',
-                }, 
-                {
-                  name: 'logo_alt', 
-                  attr: 'alt',
-                },
-                'labels', 
-                'project_state',
+                name: 'logo',
+                attr: 'src',
+              },
+              'version', 
+              {
+                name: 'link',
+                attr: 'href',
+              }, 
+              {
+                name: 'downloadUrl', 
+                attr: 'href',
+              }, 
+              {
+                name: 'logo_alt', 
+                attr: 'alt',
+              },
+              'labels', 
+              'project_state',
             ],
         };
 
@@ -162,12 +163,31 @@ const EclipseProjectList = (function ($) {
         $('#update-project').empty();
         $('#update-project').removeClass('loading');
 
+        //@todo - Create filters
+
+        let categories = getCategories();
+        $.each( categories, function( key, value ) {
+          let duplicate = $('.eclipsefdn-project-list-filters').find("button:contains('"+ value +"')");
+          console.log(duplicate.length);
+          if (duplicate.length > 0) {
+            return;
+          }
+          var button = document.createElement('button');
+          button.innerHTML = value;
+          button.className = 'btn btn-filter-project';
+          button.setAttribute('data-toggle','button');
+          $('.eclipsefdn-project-list-filters').append(button);
+        });
+
         $('.btn-filter-project').on('click', function () {
           setTimeout(function () {
             list.filter();
-            // list.filter(computeFilterFunction());
+            list.filter(computeFilterFunction());
           }, 10);
         });
+
+
+        
 
         // Making sure each projects have the same height using match-height
         $('.eclipsefdn-project-list').trigger('shown.ef.news');
@@ -179,6 +199,31 @@ const EclipseProjectList = (function ($) {
     return /^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test(
       str
     );
+  };
+
+  var computeFilterFunction = function () {
+    return function (item) {
+      var filter = [];
+
+      $('.btn-filter-project').each(function (index, elem) {
+        if ($(elem).hasClass('active')) filter.push($(elem).text());
+      });
+      if (filter.length == 0) return true;
+
+      var found = false;
+
+      for (var i = 0; i < filter.length; i++) {
+        var element = filter[i];
+        if (item.values().category.indexOf(element) !== -1) {
+          found = true;
+          continue;
+        }
+        found = false;
+        break;
+      }
+
+      return found;
+    };
   };
 
   // Remove html, add ellipsis and cut strings.
@@ -214,7 +259,7 @@ const EclipseProjectList = (function ($) {
     return text;
   };
 
-  var getCategory = function(project_id) {
+  var getCategories = function() {
     var categories = {
         "ecd.che": "Cloud IDE",
         "ecd.che.che4z": "Extension Marketplace",
@@ -229,6 +274,11 @@ const EclipseProjectList = (function ($) {
         "ecd.cft": "Cloud IDE",
         "ecd.orion": "Extension Marketplace"
     };
+    return categories;
+  }
+
+  var getCategory = function(project_id) {
+    var categories = getCategories();
     return categories[project_id];
   }
 })(jQuery);
