@@ -40,7 +40,7 @@ To follow along with the work being done to integrate this into Eclipse Theia, h
 ## TraceCompass
 Eclipse TraceCompass is a popular open source application to solve performance and reliability issues by reading and analyzing [traces](https://en.wikipedia.org/wiki/Tracing_(software)) and [logs](https://en.wikipedia.org/wiki/Logfile) of a system. Its goal is to provide views, graphs, metrics, and more to help extract useful information from traces, in a way that is more user-friendly and informative than huge text dumps.
 
-![Trace Compass in action](images/image1.gif)
+![Trace Compass in action](images/tracecompass.gif)
 {{< grid/div isMarkdown="false" >}}
 <p style="text-align: center; font-style: italic;">
 Trace Compass in action
