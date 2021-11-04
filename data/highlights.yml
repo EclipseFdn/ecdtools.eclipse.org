@@ -15,7 +15,7 @@ items:
          text: "PROPOSE A TALK"
    - title: "Register For TheiaCon!"
      image: /images/ecdtools/highlights/theiacon.png
-     body: <p>Join us on November 17 for the largest Eclipse Theia event of the year!</p>
+     body: <p>Join us November 17-18 for the largest Eclipse Theia event of the year!</p>
      links:
        - url: "https://www.crowdcast.io/e/theiacon2021/register"
          text: "REGISTER NOW"
