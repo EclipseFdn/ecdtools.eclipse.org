@@ -163,12 +163,10 @@ const EclipseProjectList = (function ($) {
         $('#update-project').empty();
         $('#update-project').removeClass('loading');
 
-        //@todo - Create filters
-
+        // Filters
         let categories = getCategories();
         $.each( categories, function( key, value ) {
           let duplicate = $('.eclipsefdn-project-list-filters').find("button:contains('"+ value +"')");
-          console.log(duplicate.length);
           if (duplicate.length > 0) {
             return;
           }
@@ -179,9 +177,11 @@ const EclipseProjectList = (function ($) {
           $('.eclipsefdn-project-list-filters').append(button);
         });
 
-        $('.btn-filter-project').on('click', function () {
+        $('.btn-filter-project').on('click', function (elem) {
+          $('.btn-filter-project').not(this).each(function(){
+            $(this).removeClass('active');
+          });
           setTimeout(function () {
-            list.filter();
             list.filter(computeFilterFunction());
           }, 10);
         });
@@ -206,9 +206,14 @@ const EclipseProjectList = (function ($) {
       var filter = [];
 
       $('.btn-filter-project').each(function (index, elem) {
-        if ($(elem).hasClass('active')) filter.push($(elem).text());
+        if ($(elem).hasClass('active')) {
+          filter.push($(elem).text());
+        }
       });
-      if (filter.length == 0) return true;
+
+      if (filter.length == 0) {
+        return true;
+      }
 
       var found = false;
 
