@@ -11,7 +11,7 @@ The Eclipse Cloud Development Tools Working Group drives the evolution and broad
 Install dependencies, build assets and start a webserver:
 
 ```bash
-npm install 
+yarn
 hugo server
 ```
 
