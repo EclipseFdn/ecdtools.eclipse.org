@@ -19,6 +19,9 @@ const EclipseApi = (function($, document) {
   $("#event-list-container").eclipseFdnApi({
     type: "filteredEvents"
   });
+  $("#featured-story-custom").eclipseFdnApi({
+    type: "featuredStory"
+  });
 })(jQuery, document);
 
 export default EclipseApi;
