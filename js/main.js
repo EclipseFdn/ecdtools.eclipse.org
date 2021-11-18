@@ -18,13 +18,27 @@ import './src/eclipseApi'
 import 'jquery-parallax.js/parallax.min.js'
 import './src/parallax'
 
+const solsticeSliderHome = () => {
+    var owl = $('.solstice-slider-home');
+    owl.owlCarousel({
+        items:1,
+        autoplay:true,
+        autoplayTimeout:6000,
+        autoplayHoverPause:true,
+        autoplaySpeed: 2000,
+        loop:true,
+    });
+}
 
-var owl = $('.solstice-slider-home');
-owl.owlCarousel({
-    items:1,
-    autoplay:true,
-    autoplayTimeout:6000,
-    autoplayHoverPause:true,
-    autoplaySpeed: 2000,
-    loop:true,
+$(window).on("load", function() {
+    solsticeSliderHome();
+});
+
+
+
+$("body").on("shown.ef.featured_story", function(e) {
+    var owl = $('.solstice-slider-home');
+    owl.trigger('destroy.owl.carousel');
+    solsticeSliderHome();
+    owl.trigger('refresh.owl.carousel');
 });

@@ -1,0 +1,24 @@
+{{#featuredStory}}
+    <div class="container">
+    <div class="item">
+        <div class="row">
+            <div class="col-sm-12 match-height-item-by-row vertical-align-container">
+                <div>
+                    {{ #image }}<img alt="{{ title }}" class="featured-section-webinar-series-1-img" src="{{ image }}">{{ /image }}
+                </div>
+            </div>
+            <div class="col-sm-12 match-height-item-by-row vertical-align-container">
+                <div>
+                    <h2 class="webinar-series-1-title">{{ title }}</h2>
+                    {{ body }}
+                </div>
+            </div>
+        </div>
+        <ul class="list-inline text-center margin-top-20">
+            {{#links}}
+                <li><a class="btn btn-primary" href="{{ url }}">{{ title }}</a></li>
+            {{/links}}
+        </ul>
+    </div>
+    </div>
+{{/featuredStory}}

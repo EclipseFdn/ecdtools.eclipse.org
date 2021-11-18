@@ -10,33 +10,22 @@
 
   SPDX-License-Identifier: EPL-2.0
 -->
+{{ $id := .Get "id" | default "featured-story-container" }}
+{{ $templateId := .Get "templateId" }}
+{{ $templatePath := .Get "templatePath" }}
+{{ $publishTarget := .Get "publishTarget" }}
+{{ $count := .Get "count" }}
+{{ if and $templateId $templatePath }}
+  {{ .Page.Scratch.SetInMap "mustache-templates" $templateId $templatePath }}
+{{ end }}
 
-<div id="webinar-series-1" class="row featured-section featured-section-webinar-series-1">
-    <div class="container">
-
-        <div class="owl-carousel owl-theme solstice-slider-home" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
-            {{ range $.Site.Data.highlights.items }}
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-12 match-height-item-by-row vertical-align-container">
-                            <div>
-                            <img alt="{{.title}}" class="featured-section-webinar-series-1-img" src="{{.image}}">
-                        </div>
-                        </div>
-                        <div class="col-sm-12 match-height-item-by-row vertical-align-container">
-                            <div>
-                                <h2 class="webinar-series-1-title">{{.title | safeHTML }}</h2>
-                                {{ .body | safeHTML }}
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-inline text-center margin-top-20">
-                    {{ range .links }}
-                            <li><a class="btn btn-white" href="{{ .url }}">{{ .text }}</a></li>
-                    {{ end }}
-                    </ul>
-                </div>
-            {{ end }}
+<div class="row featured-section eclipsefdn-featured-story featured-story" 
+     id="{{ $id }}" 
+     data-template-id="{{ $templateId }}" 
+     data-publish-target="{{ $publishTarget }}"
+     data-count="{{ $count }}">
+    
+        <div class="featured-container owl-carousel owl-theme solstice-slider-home" data-slider-lg-count="1" data-slider-md-count="1" data-slider-sm-count="1">
         </div>
-    </div>
+    
 </div>
