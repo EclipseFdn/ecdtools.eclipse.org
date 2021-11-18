@@ -2,12 +2,14 @@
     <div class="container">
     <div class="item">
         <div class="row">
+            {{ #image }}
             <div class="col-sm-12 match-height-item-by-row vertical-align-container">
                 <div>
-                    {{ #image }}<img alt="{{ title }}" class="featured-section-webinar-series-1-img" src="{{ image }}">{{ /image }}
+                    <img alt="{{ title }}" class="featured-section-webinar-series-1-img" src="{{ image }}">
                 </div>
             </div>
-            <div class="col-sm-12 match-height-item-by-row vertical-align-container">
+            {{ /image }}
+            <div class="col-sm-12{{^image}} col-sm-offset-6 text-center{{/image}} match-height-item-by-row vertical-align-container">
                 <div>
                     <h2 class="webinar-series-1-title">{{ title }}</h2>
                     {{ body }}
