@@ -51,6 +51,12 @@ types:
          image: /images/ecdtools/members/st-logo.png
          img_width: 90
          type: "participant"
+       - title: Renesas Electronics Corporation
+         id: "renesas"
+         link: https://www.renesas.com/sg/en
+         image: /images/ecdtools/members/renesas.png
+         img_width: 125
+         type: "participant"
        - title: TypeFox GmbH
          id: "typefox"
          link: https://www.typefox.io/
