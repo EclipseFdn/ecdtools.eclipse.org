@@ -6,5 +6,5 @@ jumbotron_bg_class: "featured-jumbotron-sub-pages header-projects-bg-img"
 icon: "file-text"
 layout: "resources-sub-section"
 weight: 5
-hide_sidebar: true
+
 ---

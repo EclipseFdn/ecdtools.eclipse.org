@@ -1,0 +1,44 @@
+<!--
+  Copyright (c) 2018 Eclipse Foundation, Inc.
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License v. 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  Contributors:
+    Christopher Guindon <chris.guindon@eclipse-foundation.org>
+  SPDX-License-Identifier: EPL-2.0
+-->
+
+{{- if hasPrefix .File.Dir "resources/blogs/" }}
+  <aside class="subpage-sidebar">
+    <h3>Community Posts</h3>
+    <p>
+      In order to add your blog post, you must add your blog to
+      <a href="https://planeteclipse.org/planet/">planeteclipse.org</a>.
+      This section includes all the post from
+      <a href="https://planeteclipse.org/planet/">planeteclipse.org</a> with the
+      <strong>ECDTools</strong> tag.
+    </p>
+    <div
+      id="1637600557820631700-rss"
+      class="solstice-rss-feed"
+      data-limit="5"
+      data-src="https://planeteclipse.org/planet/ecdtools.xml"
+    >
+      <p class="solstice-loading">
+        <i class="fa fa-spinner fa-pulse"></i>
+      </p>
+      <ul hidden></ul>
+      <div class="template" hidden="hidden">
+        <li class="margin-bottom-15">
+          <p class="margin-bottom-0">
+            <strong><a target="_blank"></a></strong>
+          </p>
+          <p>
+            <small></small>
+          </p>
+        </li>
+      </div>
+      <hr />
+    </div>
+  </aside>
+{{- end }}

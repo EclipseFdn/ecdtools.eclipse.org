@@ -18,8 +18,10 @@ pluralizeListTitles = false
   styles = "css/styles.css?v1.2"
   favicon = "images/ecdtools/favicon/favicon.ico"
   share_img = "images/ecdtools/ecdtools-social-share.png"
-  gcse = ""
-  js = "js/solstice.js?v1.0"
+  gcse = "c3abf6ca625209d62"
+  gcse_result_url = "/search"
+  eclipse_search_icon = "<i data-feather=\"search\" stroke-width=\"1\"></i>"
+  js = "js/solstice.js"
   header_wrapper_class = " featured-section-darken"
   logo_width = "250"
   header_left_classes = "col-sm-7"
@@ -29,7 +31,7 @@ pluralizeListTitles = false
   featured_content_publish_target = "ecd_tools"
   linkedin_url = "https://www.linkedin.com/showcase/ecd-tools/"
   jumbotron_bg_class = "header-default-bg-img"
-  
+
 [taxonomies]
   category = "categories"
   tag = "tags"
