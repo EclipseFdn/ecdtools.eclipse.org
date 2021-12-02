@@ -205,6 +205,7 @@ const EclipseFdnAdoptersAlternate = (function (window, document) {
             let img_logo_adopter = document.createElement('img');
   
             a_logo_adopter.setAttribute('href', url);
+            a_logo_adopter.setAttribute('target', '_blank');
             img_logo_adopter.setAttribute('alt', name);
             img_logo_adopter.setAttribute('src', opts.src_root + '/assets/images/adopters/' + logo);
             img_logo_adopter.setAttribute('class', 'featured-adopters-img img-responsive');
