@@ -43,3 +43,13 @@ $("body").on("shown.ef.featured_story", function(e) {
     solsticeSliderHome();
     owl.trigger('refresh.owl.carousel');
 });
+
+(function (eclipseFdnAdoptersAlternate) {
+    if (typeof eclipsefdn_adopters_configs !== 'undefined') {
+      eclipseFdnAdoptersAlternate.getWGList({
+        src_root: 'https://api.eclipse.org/adopters',
+        working_group: eclipsefdn_adopters_configs.working_group,
+        ul_classes: eclipsefdn_adopters_configs.ul_classes,
+      });
+    }
+  })(eclipseFdnAdoptersAlternate);
