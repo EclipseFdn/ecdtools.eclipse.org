@@ -6,31 +6,20 @@
  * http://www.eclipse.org/legal/epl-2.0.
  *
  * Contributors:
+ *  Martin Lowe <martin.lowe@eclipse-foundation.org>
  *   Christopher Guindon <chris.guindon@eclipse-foundation.org>
  *
  * SPDX-License-Identifier: EPL-2.0
  */
 
-/*!
- * Copyright (c) 2020 Eclipse Foundation, Inc.
- *
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License v. 2.0 which is available at
- * http://www.eclipse.org/legal/epl-2.0.
- *
- * Contributors:
- *  Martin Lowe <martin.lowe@eclipse-foundation.org>
- *  Christopher Guindon <chris.guindon@eclipse-foundation.org>
- *
- * SPDX-License-Identifier: EPL-2.0
- */
 import jQuery from 'jquery';
 import template from './templates/blog-item.mustache';
 import dateFormat from 'dateformat';
+import 'core-js/modules/es.string.pad-start';
 
 const eclipseFdnRenderRSS = (function ($, document) {
-  function fetchRSSFeed(name, id) {
-    return new Promise(function (resolve, reject, notify) {
+  function fetchRSSFeed(name) {
+    return new Promise(function (resolve, reject) {
       $.ajax({
         type: 'GET',
         dataType: 'xml',
@@ -38,7 +27,11 @@ const eclipseFdnRenderRSS = (function ($, document) {
         url: name,
       })
         .done(function (data) {
-          const items = data.querySelectorAll(id);
+          let items = data.querySelectorAll('item');
+          if (items.length === 0) {
+            items = data.querySelectorAll('entry');
+          }
+
           const blogPosts = [];
           items.forEach((el) => {
             const item = {
@@ -65,7 +58,7 @@ const eclipseFdnRenderRSS = (function ($, document) {
             if (el.querySelector('link')) {
               item.link = el.querySelector('link').textContent;
               if (el.querySelector('link').getAttribute('href')) {
-                item.link = el.querySelector('link').getAttribute('href').textContent;
+                item.link = el.querySelector('link').getAttribute('href');
               }
             }
 
@@ -115,26 +108,31 @@ const eclipseFdnRenderRSS = (function ($, document) {
         });
     });
   }
+
   $(document).ready(function () {
     $('.solstice-rss-blog-list').each(function (index, element) {
-
-      var promises = [
-        fetchRSSFeed('/resources/blogs/index.xml', 'item'),
-        fetchRSSFeed('https://planeteclipse.org/planet/ecdtools.xml', 'entry'),
-      ];
+      // @todo create pagination
+      const options = {
+        limit: 9999,
+        urls: '',
+        ...$(element).data(),
+      };
+      var promises = [];
+      let urls = options.urls.split(',');
+      urls.forEach((element) => promises.push(fetchRSSFeed(element)));
 
       let results = [];
-
+      console.log(options);
       Promise.allSettled(promises).then(function (responses) {
         responses.forEach((el) => {
           results = results.concat(el.value);
         });
 
         // remove duplicate on link prop
-        results = [...new Map(results.map(v => [v.link, v])).values()]
+        results = [...new Map(results.map((v) => [v.link, v])).values()];
         // sort by date
         results.sort((a, b) => new Date(b.date) - new Date(a.date));
-
+        results = results.slice(0, options.limit);
         element.innerHTML = template({
           items: results,
         });

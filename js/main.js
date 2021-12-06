@@ -34,8 +34,6 @@ $(window).on("load", function() {
     solsticeSliderHome();
 });
 
-
-
 $("body").on("shown.ef.featured_story", function(e) {
     var owl = $('.solstice-slider-home');
     owl.trigger('destroy.owl.carousel');
