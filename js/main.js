@@ -15,8 +15,8 @@ import 'eclipsefdn-solstice-assets'
 import './src/userprofile'
 import './src/projects'
 import './src/eclipseApi'
-import 'jquery-parallax.js/parallax.min.js'
 import './src/parallax'
+import './src/EclipseBlogs'
 
 const solsticeSliderHome = () => {
     var owl = $('.solstice-slider-home');
