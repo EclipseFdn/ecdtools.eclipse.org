@@ -21,16 +21,3 @@ mix.setResourceRoot('../');
 mix.less('./less/styles.less', 'static/css/styles.css');
 
 mix.js('js/main.js', './static/js/solstice.js');
-
-/*
-mix.webpackConfig({
-  resolve: {
-    alias: {
-      timers: 'timers-browserify',
-      stream: 'stream-browserify',
-      os: 'os-browserify/browser',
-    },
-  },
-});
-
-*/

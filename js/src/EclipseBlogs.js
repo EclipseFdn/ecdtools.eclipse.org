@@ -25,13 +25,12 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 import jQuery from 'jquery';
-import Q from 'q';
 import template from './templates/blog-item.mustache';
 import dateFormat from 'dateformat';
 
 const eclipseFdnRenderRSS = (function ($, document) {
-  function xmlPromise(name, id) {
-    return Q.promise(function (resolve, reject, notify) {
+  function fetchRSSFeed(name, id) {
+    return new Promise(function (resolve, reject, notify) {
       $.ajax({
         type: 'GET',
         dataType: 'xml',
@@ -51,10 +50,10 @@ const eclipseFdnRenderRSS = (function ($, document) {
               author: '',
               formatDate: function () {
                 return function () {
-                  return dateFormat(item.date, "dddd, mmmm dS, yyyy, h:MM:ss TT");
-                  //var date = new Date("2013-03-10T02:00:00Z");
-                  //return date.toISOString().substring(0, 10);
-                  //return item.date.substring(0, 10);
+                  return dateFormat(
+                    item.date,
+                    'dddd, mmmm dS, yyyy - h:MM:ss TT'
+                  );
                 };
               },
             };
@@ -66,7 +65,7 @@ const eclipseFdnRenderRSS = (function ($, document) {
             if (el.querySelector('link')) {
               item.link = el.querySelector('link').textContent;
               if (el.querySelector('link').getAttribute('href')) {
-                item.link = el.querySelector('link').getAttribute('href');
+                item.link = el.querySelector('link').getAttribute('href').textContent;
               }
             }
 
@@ -116,37 +115,32 @@ const eclipseFdnRenderRSS = (function ($, document) {
         });
     });
   }
+  $(document).ready(function () {
+    $('.solstice-rss-blog-list').each(function (index, element) {
 
-  function getData() {
-    //your xml files can be stored in the promises variable
-    var promises = [
-      xmlPromise('/resources/blogs/index.xml', 'item'),
-      xmlPromise('https://planeteclipse.org/planet/ecdtools.xml', 'entry'),
-    ];
+      var promises = [
+        fetchRSSFeed('/resources/blogs/index.xml', 'item'),
+        fetchRSSFeed('https://planeteclipse.org/planet/ecdtools.xml', 'entry'),
+      ];
 
-    let results = [];
-    Q.allSettled(promises).then(function (responses) {
-      responses.forEach((element) => {
-        results = results.concat(element.value);
-      });
+      let results = [];
 
-      results.sort((a, b) => new Date(b.date) - new Date(a.date));
+      Promise.allSettled(promises).then(function (responses) {
+        responses.forEach((el) => {
+          results = results.concat(el.value);
+        });
 
-      const divArray = document.querySelectorAll('.solstice-rss-feed-test');
+        // remove duplicate on link prop
+        results = [...new Map(results.map(v => [v.link, v])).values()]
+        // sort by date
+        results.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-      // Use for loop instead of array.forEach or $().each to make sure
-      // the following fetch won't be executed before the current one is done
-      // so that the filter logic can work properly
-      console.log(results);
-      for (let index = 0; index < divArray.length; index++) {
-        const element = divArray[index];
         element.innerHTML = template({
           items: results,
         });
-      }
+      });
     });
-  }
-  getData();
+  });
 })(jQuery, document);
 
 export default eclipseFdnRenderRSS;

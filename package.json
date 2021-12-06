@@ -18,12 +18,11 @@
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "install": "NODE_ENV=production npm run production",
-    "postinstall": "npm run fetch_blogs && npm run fetch_projects && npm run yaml2json_projects",
+    "postinstall": "npm run fetch_projects && npm run yaml2json_projects",
     "fetch_projects": "node node_modules/eclipsefdn-hugo-solstice-theme/bin/projects/index.js -l data -u https://projects.eclipse.org/api/projects?working_group=cloud-development-tools",
     "yaml2json_projects": "node node_modules/js-yaml/bin/js-yaml.js -c data/eclipsefdn_projects.yaml | node node_modules/json-minify/index.js > static/js/projects.json",
-    "fetch_blogs": "curl https://planeteclipse.org/planet/ecdtools.xml -o static/documents/ecdtools.xml",
     "disallow_robots_txt": "echo \"User-agent: *\r\nDisallow: /\" > layouts/robots.txt",
-    "build_netlify": "NODE_ENV=production npm run disallow_robots_txt && npm run production && npm run fetch_blogs && npm run fetch_projects && npm run yaml2json_projects"
+    "build_netlify": "NODE_ENV=production npm run disallow_robots_txt && npm run production && npm run fetch_projects && npm run yaml2json_projects"
   },
   "dependencies": {
     "core-js": "^3.8.2",
@@ -33,8 +32,7 @@
     "js-yaml": "^3.13.1",
     "json-minify": "^1.0.0",
     "list.js": "^1.2.0",
-    "numeral": "^1.4.5",
-    "q": "^1.5.1"
+    "numeral": "^1.4.5"
   },
   "browserslist": "last 5 version, > 0.2%, not dead, IE 11"
 }
