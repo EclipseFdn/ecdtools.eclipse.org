@@ -140,7 +140,6 @@ const eclipseFdnRenderRSS = (function ($, document) {
         };
 
         let html = '';
-        console.log(options);
         if (options.templateId !== '') {
           const theme = document.getElementById(options.templateId).innerHTML;
           html = Mustache.render(theme, data);
