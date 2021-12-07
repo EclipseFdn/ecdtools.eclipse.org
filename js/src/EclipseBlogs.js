@@ -14,6 +14,7 @@
 
 import jQuery from 'jquery';
 import template from './templates/blog-item.mustache';
+import Mustache from 'mustache';
 import dateFormat from 'dateformat';
 import 'core-js/modules/es.string.pad-start';
 
@@ -71,8 +72,7 @@ const eclipseFdnRenderRSS = (function ($, document) {
             }
 
             if (item.date) {
-              let date = new Date(item.date);
-              item.date = date.toISOString();
+              item.date = new Date(item.date).toISOString();
             }
 
             if (el.querySelector('author')) {
@@ -115,14 +115,16 @@ const eclipseFdnRenderRSS = (function ($, document) {
       const options = {
         limit: 9999,
         urls: '',
+        templateId: '',
         ...$(element).data(),
       };
-      var promises = [];
-      let urls = options.urls.split(',');
+
+      const urls = options.urls.split(',');
+
+      const promises = [];
       urls.forEach((element) => promises.push(fetchRSSFeed(element)));
 
       let results = [];
-      console.log(options);
       Promise.allSettled(promises).then(function (responses) {
         responses.forEach((el) => {
           results = results.concat(el.value);
@@ -133,9 +135,19 @@ const eclipseFdnRenderRSS = (function ($, document) {
         // sort by date
         results.sort((a, b) => new Date(b.date) - new Date(a.date));
         results = results.slice(0, options.limit);
-        element.innerHTML = template({
+        const data = {
           items: results,
-        });
+        };
+
+        let html = '';
+        console.log(options);
+        if (options.templateId !== '') {
+          const theme = document.getElementById(options.templateId).innerHTML;
+          html = Mustache.render(theme, data);
+        } else {
+          html = template(data);
+        }
+        element.innerHTML = html;
       });
     });
   });

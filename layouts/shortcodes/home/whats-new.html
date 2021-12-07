@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Copyright (c) 2021 Eclipse Foundation, Inc.
 
   This program and the accompanying materials are made available under the
@@ -40,11 +40,11 @@
 
               <div class="col-sm-10 col-sm-offset-2 match-height-item-by-row whats-new-item">
                 <div class="whats-new-icon"><img alt="Blogs icon" src="images/ecdtools/home/blogs.svg"></div>
-                {{ range first 1 (where .Site.Pages "Params.category" "blog") }}
-                  <p class="whats-new-date">{{ dateFormat "Monday, January 2, 2006" .Date }}</p>
-                  <h4 class="whats-new-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                  <p class="whats-new-description">{{ .Summary }}</p>
-                {{ end }}
+                  <div class="solstice-rss-blog-list" data-limit="1" data-template-id="mustache-tpl-home-page-blog-item" data-urls="/resources/blogs/index.xml,https://planeteclipse.org/planet/ecdtools.xml">
+                    <p class="solstice-loading">
+                      <i class="fa fa-spinner fa-pulse"></i>
+                    </p>
+                  </div>
                 <p class="whats-new-view-all"><a href="/resources/blogs">View All Blog Posts <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
               </div>
               <div class="col-sm-10 match-height-item-by-row whats-new-item">
@@ -54,7 +54,11 @@
               </div>
             </div>
           </div>
-            
+
         </div>
     </div>
 </div>
+
+<script id="mustache-tpl-home-page-blog-item" type="x-tmpl-mustache">
+  {{ readFile "/js/src/templates/tpl-home-page-blog-item.mustache" | safeHTML }}
+</script>

@@ -1,4 +1,5 @@
-<div class="solstice-rss-blog-list" data-urls="/resources/blogs/index.xml,https://planeteclipse.org/planet/ecdtools.xml">
+
+<div class="solstice-rss-blog-list{{ with .Get "classes" }} {{ . }}{{ end }}" {{- with .Get "template-id" }} data-template-id="{{ . }}"{{ end }} {{- with .Get "urls" }} data-urls="{{ . }}"{{ end }}>
   <p class="solstice-loading">
     <i class="fa fa-spinner fa-pulse"></i>
   </p>
