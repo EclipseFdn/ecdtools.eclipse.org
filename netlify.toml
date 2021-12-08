@@ -3,7 +3,7 @@ publish = "public"
 command = "npm run build_netlify && hugo --gc --minify -b https://eclipsefdn-ecdtools.netlify.com"
 
 [build.environment]
-NODE_VERSION = "12.20.2"
+NODE_VERSION = "12.18.3"
 
 [context.production.environment]
 HUGO_VERSION = "0.76.5"
