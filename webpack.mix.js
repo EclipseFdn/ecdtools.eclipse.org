@@ -9,7 +9,7 @@
  *   Christopher Guindon <chris.guindon@eclipse-foundation.org>
  *
  * SPDX-License-Identifier: EPL-2.0
-*/
+ */
 
 require('./node_modules/eclipsefdn-solstice-assets/webpack-solstice-assets.mix.js');
 let mix = require('laravel-mix');

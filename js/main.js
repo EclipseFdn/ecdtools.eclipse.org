@@ -15,7 +15,6 @@ import 'eclipsefdn-solstice-assets'
 import './src/userprofile'
 import './src/projects'
 import './src/eclipseApi'
-import 'jquery-parallax.js/parallax.min.js'
 import './src/parallax'
 import './adopters-alternate.js'
 
@@ -34,8 +33,6 @@ const solsticeSliderHome = () => {
 $(window).on("load", function() {
     solsticeSliderHome();
 });
-
-
 
 $("body").on("shown.ef.featured_story", function(e) {
     var owl = $('.solstice-slider-home');

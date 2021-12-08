@@ -19,11 +19,12 @@ header_wrapper_class: "featured-jumbotron-home"
 {{< home/highlights
     id="featured-story-container"
     publishTarget="ecd_tools"
-    templateId="featured-story-custom" 
+    templateId="featured-story-custom"
     count="5"
     templatePath="/js/templates/featured-story-custom.mustache" >}}
 
 {{< home/projects highlight="ecd.openvsx:ecd.theia:ecd.jkube">}}
 {{< home/whats-new >}}
+{{< mustache_js template-id="homepage-news-list-item" path="/js/templates/homepage-news-list-item.mustache" >}}
 {{< home/stats >}}
 {{< home/members limit="50" >}}

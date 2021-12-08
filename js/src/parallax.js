@@ -1,8 +1,10 @@
+import 'jquery-parallax.js/parallax.min.js'
+
 (function($, window, document) {
     $(function() {
         parallax();
         $(window).resize(function() {
-            parallax();    
+            parallax();
         });
     });
 
