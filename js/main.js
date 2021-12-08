@@ -16,7 +16,6 @@ import './src/userprofile'
 import './src/projects'
 import './src/eclipseApi'
 import './src/parallax'
-import './src/EclipseBlogs'
 
 const solsticeSliderHome = () => {
     var owl = $('.solstice-slider-home');
