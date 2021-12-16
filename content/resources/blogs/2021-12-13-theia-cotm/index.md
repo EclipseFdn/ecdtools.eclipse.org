@@ -6,6 +6,8 @@ category = "blog"
 +++
 The Eclipse Cloud Developer Tools contributor award this month goes to [Evolved Binary](https://www.evolvedbinary.com/) for improving the migration guide and process for Eclipse Theia. As representatives, we want to acknowledge Charafeddine Cheraa, Duncan Paterson and Adam Retter. Congratulations and thanks for your contributions!
 
+![Contributor Award to Evolved Binary](images/tcotm202112.png)
+
 Let us look at the details of this great contribution and its background. [Eclipse Theia](https://theia-ide.org/) is a platform for building web-based tools and IDEs. It helps you efficiently develop and deliver multi-language Cloud & Desktop IDEs and tools with modern, state-of-the-art web technologies. As a platform, Theia is adopted by multiple parties to build their own custom tool offerings (see [here](https://theia-ide.org/) for a list of adopters).
 
 The Theia project is very active and delivers a release each month. This allows for a fast pace of innovation. Many core adopters that are also regular contributors integrate new versions very early in the process to evaluate new releases and provide initial feedback. In this process, necessary migration steps are discovered and often discussed among the committers. We call these core adopters “early adopters”.
