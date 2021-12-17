@@ -271,7 +271,7 @@ const EclipseProjectList = (function ($) {
         "ecd.codewind": "IDE-Agnostic Library",
         "ecd.dirigible": "Service (IDEAAS)",
         "ecd.emfcloud": "Cloud IDE",
-        "ecd.glsp": "Disagram Editors",
+        "ecd.glsp": "Diagram Editors",
         "ecd.jkube": "Cloud IDE",
         "ecd.openvsx": "Extension Marketplace",
         "ecd.sprotty": "Framework",
