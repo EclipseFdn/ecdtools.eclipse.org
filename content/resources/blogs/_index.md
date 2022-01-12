@@ -10,4 +10,4 @@ lastmod: '2021-12-06T16:41:08.491Z'
 layout: "single"
 ---
 
-{{< solstice_rss_blog_list urls="/resources/blogs/index.xml,https://planeteclipse.org/planet/ecdtools.xml">}}
+{{< solstice_rss_blog_list urls="/resources/blogs/index.xml,https://planeteclipse.org/planet/ecdtools.xml,https://che.eclipseprojects.io/feed.xml">}}
