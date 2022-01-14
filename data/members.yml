@@ -33,12 +33,6 @@ types:
          image: /images/ecdtools/members/eclipse-source.png
          img_width: 155
          type: "participant"
-       - title: Broadcom Inc.
-         id: "broadcom"
-         link: https://www.broadcom.com/
-         image: /images/ecdtools/members/broadcom.png
-         img_width: 155
-         type: "participant"
        - title: Arm
          id: "arm"
          link: https://www.arm.com/
