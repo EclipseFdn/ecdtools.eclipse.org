@@ -6,7 +6,7 @@ category = "blog"
 +++
 We would like to recognize [CS Group](https://www.csgroup.eu) (represented by Vincent Hemery), as the Eclipse Cloud DevTools Contributor of the Month for January 2022. Congratulations and thanks for your contributions!
 
-![Contributor Award to CS Group](images/tcotm202201.png)
+![Contributor Award to CS Group](images/tcotm202201.jpg)
 
 Vincent currently leads the implementation of a new web-based front-end for DISCO. DISCO is a modeling tool for satellite databases. The new DISCO version adopts [Eclipse Theia](https://theia-ide.org/), [Eclipse GLSP](https://www.eclipse.org/glsp/), [EMF.cloud](https://www.eclipse.org/emfcloud/), [JSON Forms](https://jsonforms.io/) and [Xtext](https://www.eclipse.org/Xtext/). For more details, we recommend watching the great talk Vincent gave at EclipseCon 2021. You can find the recording below.
 
