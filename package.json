@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "eclipsefdn-hugo-solstice-theme": "0.0.139",
+    "eclipsefdn-solstice-assets": "https://gitlab.eclipse.org/zhoufang/solstice-assets.git#zhoufang/master/ecd214",
     "jquery-parallax.js": "^1.5.0",
     "js-yaml": "^3.13.1",
     "json-minify": "^1.0.0",
