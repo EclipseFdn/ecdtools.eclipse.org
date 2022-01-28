@@ -2610,7 +2610,7 @@ eclipsefdn-solstice-assets@0.0.179:
 
 "eclipsefdn-solstice-assets@https://gitlab.eclipse.org/zhoufang/solstice-assets.git#zhoufang/master/ecd214":
   version "0.0.182"
-  resolved "https://gitlab.eclipse.org/zhoufang/solstice-assets.git#6e697b15ba447803f4afbf6695d5136debe4fe6d"
+  resolved "https://gitlab.eclipse.org/zhoufang/solstice-assets.git#1ab23d5bbb64dd974b924eb8cfcfeea0abc3d412"
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
