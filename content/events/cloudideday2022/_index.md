@@ -18,42 +18,43 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
 
 
 {{< grid/section-container containerClass="padding-bottom-40 padding-top-40" >}}
-{{< grid/div class="container eclipsefdn-registration" isMarkdown="false" >}}
-
+{{< grid/div class="eclipsefdn-registration" isMarkdown="false" >}}
+{{< grid/div class="container" isMarkdown="false" >}}
   <h2 class="text-center margin-bottom-30">Join the Conversation</h2>
+
   <div class="row">
   <div class="margin-bottom-30">
-    <div class="col-sm-4 text-center">
+    <div class="col-sm-3 text-center">
       <h3 class="uppercase">What:</h3>
     </div>
-    <div class="col-sm-20 margin-top-10">
+    <div class="col-sm-21 margin-top-10">
       <p>
         This is the 2nd annual virtual event for IDE developers, with an emphasis on tools and best practices for development in the cloud with the goal of guiding the future direction of IDE technology.
       </p>
     </div>
   </div>
   <div class="margin-bottom-30">
-    <div class="col-sm-4 text-center">
+    <div class="col-sm-3 text-center">
       <h3 class="uppercase">Why:</h3>
     </div>
-    <div class="col-sm-20 margin-top-10">
+    <div class="col-sm-21 margin-top-10">
       <p>
         The objective of this event is to openly discuss and share ideas around Cloud IDEs and cloud development. What do developers need in the next generation of remote or web-based IDEs? What new IDE tools will best help them build cloud-native applications? How can existing IDEs more efficiently harness the cloud?
       </p>
     </div>
   </div>
   <div class="margin-bottom-30">
-    <div class="col-sm-4 text-center">
+    <div class="col-sm-3 text-center">
       <h3 class="uppercase">Who:</h3>
     </div>
-    <div class="col-sm-20 margin-top-10">
+    <div class="col-sm-21 margin-top-10">
       <p>
         The event is open to anyone interested in adopting or currently building Cloud IDEs. It’s hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation. This is a vendor-neutral group focused on industry collaboration on open source cloud development tools.
       </p>
     </div>
     </div>
   </div>
-
+{{</ grid/div >}} 
 {{</ grid/div >}} 
 {{</ grid/section-container >}}
 
