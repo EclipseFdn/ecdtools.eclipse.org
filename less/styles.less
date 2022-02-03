@@ -26,18 +26,17 @@
 @import '_components/resources.less';
 @import '_components/featured-news.less';
 
-
-.logo-eclipse-default{
-  padding-top:22px;
+.logo-eclipse-default {
+  padding-top: 22px;
 }
 
-.logo-eclipse-default-mobile{
-  max-width:260px;
+.logo-eclipse-default-mobile {
+  max-width: 260px;
 }
 
 @media (max-width: @screen-xs-max) {
   #header-row {
-    padding-bottom:0;
+    padding-bottom: 0;
   }
 }
 
@@ -52,7 +51,7 @@
     background-position: center;
   }
 
-  .featured-jumbotron{
+  .featured-jumbotron {
     h1 {
       color: @brand-tertiary;
       font-weight: 600;
@@ -74,6 +73,45 @@
   }
 }
 
+//== For event 2022 page
+.header-ide-event-2022 {
+  .header-default-bg-img {
+    background-image: url('images/jumbotron-idesummit-2022.jpg');
+    background-position: center;
+  }
+  .featured-jumbotron {
+    h1 {
+      font-weight: 600;
+      font-size: 60px;
+      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 35px;
+      color: #fdb817;
+      font-weight: 600;
+      word-spacing: 4px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 600;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    a.btn-primary {
+      background-color: #fff;
+      border-color: #fff;
+      color: @brand-primary;
+      font-weight: 600;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
 .eclipsefdn-user-display-content {
   .owl-stage {
     display: block;
@@ -86,7 +124,10 @@
   background-image: url('images/alternate.jpg');
   background-size: cover;
   color: @brand-tertiary;
-  p, h2, .fa, .feather {
+  p,
+  h2,
+  .fa,
+  .feather {
     stroke: @brand-tertiary;
     color: @brand-tertiary;
   }
@@ -104,5 +145,10 @@
 //== END: For event page
 
 // events display, aligns presenters (should be moved to solstice-assets)
-.eclipsefdn-agenda-schedule ul { padding-left: 0px; }
-.eclipsefdn-agenda-schedule li { list-style: none; padding-bottom: 10px; }
+.eclipsefdn-agenda-schedule ul {
+  padding-left: 0px;
+}
+.eclipsefdn-agenda-schedule li {
+  list-style: none;
+  padding-bottom: 10px;
+}
