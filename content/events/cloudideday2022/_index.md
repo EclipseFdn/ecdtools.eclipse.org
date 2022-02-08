@@ -15,12 +15,10 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
 ---
 
 {{< grid/section-container containerClass="padding-bottom-40 padding-top-40" >}}
-{{< grid/div class="eclipsefdn-registration" isMarkdown="false" >}}
-{{< grid/div class="container" isMarkdown="false" >}}
+{{< grid/div class="cloud-ide-2022-registration container" isMarkdown="false" >}}
   <h2 class="text-center margin-bottom-30">Join the Conversation</h2>
 
-  <div class="row">
-  <div class="margin-bottom-30">
+  <div class="margin-bottom-30 row">
     <div class="col-sm-3 text-center">
       <h3 class="uppercase">What:</h3>
     </div>
@@ -30,7 +28,7 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
       </p>
     </div>
   </div>
-  <div class="margin-bottom-30">
+  <div class="margin-bottom-30 row">
     <div class="col-sm-3 text-center">
       <h3 class="uppercase">Why:</h3>
     </div>
@@ -40,7 +38,7 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
       </p>
     </div>
   </div>
-  <div class="margin-bottom-30">
+  <div class="margin-bottom-30 row">
     <div class="col-sm-3 text-center">
       <h3 class="uppercase">Who:</h3>
     </div>
@@ -49,9 +47,7 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
         The event is open to anyone interested in adopting or currently building Cloud IDEs. Cloud IDE Day is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration on open source cloud development tools.
       </p>
     </div>
-    </div>
   </div>
-{{</ grid/div >}} 
 {{</ grid/div >}} 
 {{</ grid/section-container >}}
 
