@@ -2554,61 +2554,18 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-eclipsefdn-hugo-solstice-theme@0.0.139:
-  version "0.0.139"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.139.tgz#91449224f4985898a70d0bda9320f6be64c59fe3"
-  integrity sha512-6n+SJrSt4qj7I+80D6hMoC6x4uwnp28dU+8CtP1i0C9ACdoDs3RXSCgWIPxcga4fla0RadyDrbKy40k3lbcA5w==
+eclipsefdn-hugo-solstice-theme@0.0.140:
+  version "0.0.140"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.140.tgz#b8258f687c6deb88757491f2e9c33533055f3833"
+  integrity sha512-8J2mrfXtsnnl8wcafKRZrFpmXVfwygQ5JIT0SDjYZ/5Hj3PayDowjhjTYROCcWGlHvzKXQckUOHyzNZr9I2ujA==
   dependencies:
     axios "^0.21.1"
-    eclipsefdn-solstice-assets "0.0.179"
+    eclipsefdn-solstice-assets "0.0.184"
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
-eclipsefdn-solstice-assets@0.0.179:
-  version "0.0.179"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.179.tgz#3599b9ea96861d00940ef17dd75de05272071d26"
-  integrity sha512-WagXKFGTAoVew2Bk5A/YW4HDZkw67vqj7n/HUf6nr+9g/5ihnepSgmd79U01tYimnOW2NUTkMg9GEsAOGgAoWw==
-  dependencies:
-    "@babel/core" "^7.0.0-0"
-    "@babel/plugin-proposal-class-properties" "^7.12.1"
-    "@babel/plugin-proposal-object-rest-spread" "^7.15.6"
-    "@babel/plugin-syntax-class-properties" "^7.12.1"
-    "@babel/plugin-syntax-dynamic-import" "^7.8.3"
-    "@babel/plugin-transform-runtime" "^7.15.8"
-    "@babel/preset-env" "^7.12.11"
-    "@geedmo/yamm3" "^1.3.1"
-    bootstrap "^3.4.1"
-    browserslist "^4.16.6"
-    cookieconsent "^3.1.0"
-    core-js "^3.15.2"
-    date-fns "^2.27.0"
-    element-closest-polyfill "^1.0.4"
-    ellipsize "^0.2.0"
-    feather-icons "^4.7.0"
-    file-loader "^6.2.0"
-    font-awesome "^4.7.0"
-    hogan.js "^3.0.2"
-    html-webpack-plugin "^5.3.2"
-    isomorphic-fetch "^3.0.0"
-    jquery "^3.5.1"
-    jquery-match-height "^0.7.2"
-    laravel-mix "^6.0.25"
-    laravel-mix-transpile-node-modules "^2.0.1"
-    less "^3.13.1"
-    less-loader "^7.3.0"
-    lightbox2 "^2.11.1"
-    mustache "^4.0.1"
-    mustache-loader "^1.4.3"
-    napa "^3.0.0"
-    owl.carousel "^2.3.4"
-    parse-link-header "^1.0.1"
-    postcss "^8.3.5"
-    webpack "^5.60.0"
-    webpack-cli "^4.9.1"
-    whatwg-fetch "^3.6.2"
-
-eclipsefdn-solstice-assets@^0.0.184:
+eclipsefdn-solstice-assets@0.0.184:
   version "0.0.184"
   resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.184.tgz#e276d0dd25be15a726f57af9e723bc4ec8b27e78"
   integrity sha512-Q+0VK6kCe1enUfTGObNDOepib4/D8a1FbcN7k76NHEFRMVz9Z42/103W7L4crtl72M74sXYknP5vLeNR3Bvquw==
