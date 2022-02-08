@@ -2608,9 +2608,10 @@ eclipsefdn-solstice-assets@0.0.179:
     webpack-cli "^4.9.1"
     whatwg-fetch "^3.6.2"
 
-"eclipsefdn-solstice-assets@https://gitlab.eclipse.org/zhoufang/solstice-assets.git#zhoufang/master/ecd214":
-  version "0.0.182"
-  resolved "https://gitlab.eclipse.org/zhoufang/solstice-assets.git#283b0077db1b4311edd735751bc78c5ad0bd10a9"
+eclipsefdn-solstice-assets@^0.0.183:
+  version "0.0.183"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.183.tgz#7718260090ea11e70024acf9e9bca70228d8f9fc"
+  integrity sha512-pMtIDYw0++6IqwFuudFO3mXGJP/dEP4LpohdPALO+/WqDy7ZRUpWy4yLgkdR4Qi5mLu4wHt764NSMq2651HaBw==
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
