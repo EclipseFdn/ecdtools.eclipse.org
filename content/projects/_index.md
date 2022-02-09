@@ -9,4 +9,11 @@ container: "container-fluid"
 main_content_class: "col-sm-18 col-sm-offset-3"
 ---
 
+{{< home/projects 
+    templateId="tpl-projects-item"
+    url="https://projects.eclipse.org/api/projects?working_group=cloud-development-tools"
+    classes="margin-top-30"
+    >}}
+
 {{< page/projects >}}
+

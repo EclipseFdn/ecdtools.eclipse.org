@@ -23,7 +23,15 @@ header_wrapper_class: "featured-jumbotron-home"
     count="5"
     templatePath="/js/templates/featured-story-custom.mustache" >}}
 
-{{< home/projects highlight="ecd.openvsx:ecd.theia:ecd.jkube">}}
+{{< home/projects 
+    projectIds="ecd.openvsx,ecd.theia,ecd.jkube"
+    templateId="homepage-featured-projects"
+    url="https://projects.eclipse.org/api/projects?working_group=cloud-development-tools"
+    classes="margin-top-30"
+    >}}
+
+{{< mustache_js template-id="homepage-featured-projects" path="/js/templates/homepage-featured-projects.mustache" >}}
+
 {{< home/whats-new >}}
 {{< mustache_js template-id="homepage-news-list-item" path="/js/templates/homepage-news-list-item.mustache" >}}
 {{< home/stats >}}

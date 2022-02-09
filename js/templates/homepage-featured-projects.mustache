@@ -1,0 +1,27 @@
+{{#items}}
+<li class="col-xs-24 col-sm-8">
+    <div class="project-item">
+        <h3 class="h4">
+        <span class="image-container vertical-align margin-bottom-20 text-center">
+            {{#logo}}
+                <img class="logo img img-responsive margin-auto" src="{{ logo }}" alt="{{ name }} logo" height="50"/>
+            {{/logo}}
+            {{^logo}}
+                <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
+            {{/logo}}
+        </span>
+        </h3>
+        <p class="match-height-item-by-row description"><span>The Project:</span> {{{ summary }}}
+        <br><a href="{{ website_url }}" target="_blank" title="Learn more about {{ name }}">Learn more&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+        <div class="row">
+            <div class="col-xs-12 padding-right-0">
+                <img class="img-responsive featured-section-projects-picture" src="{{ project_lead_image }}" alt="{{ project_lead_full_name }}">
+            </div>
+            <div class="col-xs-12 padding-left-0 padding-top-20">
+                <p class="project-lead"><span>Project Lead:</span><br>
+                {{ project_lead_full_name }}</p>
+            </div>
+        </div>
+    </div>
+</li>
+{{/items}}

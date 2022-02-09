@@ -14,7 +14,7 @@ const EclipseProjectList = (function ($) {
 
     $.ajax({
       type: 'GET',
-      url: '/js/projects.json',
+      url: 'https://projects.eclipse.org/api/projects?working_group=cloud-development-tools',
       dataType: 'json',
       cache: true,
       success: function (data) {

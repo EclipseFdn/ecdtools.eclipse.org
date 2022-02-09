@@ -11,73 +11,21 @@
   SPDX-License-Identifier: EPL-2.0
 -->
 
-{{ $highlights:= split (.Get "highlight") ":" }}
-{{/* Pre process projects to find projects with the given working groups (if one is set) */}}
-{{ range sort $.Site.Data.eclipsefdn_projects "name" "asc" }}
-  {{ $project_contains_working_group := false }}
-  {{ if $.Site.Params.projects_working_group }}
-    {{ $working_group_id := $.Site.Params.projects_working_group }}
-    {{ range .working_groups }}
-      {{ if and (ne $project_contains_working_group true) (eq .id $working_group_id) }}
-        {{ $project_contains_working_group = true }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  {{ if or (not ($.Site.Params.projects_working_group)) (eq $project_contains_working_group true) }}
-    {{ $.Scratch.SetInMap "wg_projects" .name . }}
-  {{ end }}
-{{ end }}
-
-{{ $scratch := .Scratch }}
-
-
+{{ $id := .Get "id" | default "featured-story-container" }}
+{{ $templateId := .Get "templateId" }}
+{{ $projectIds :=  .Get "projectIds" }}
+{{ $url :=  .Get "url" }}
+{{ $classes :=  .Get "classes" }}
 
 <section id="wg-projects" class="container featured-section featured-section-projects" data-filter-wg="{{ $.Site.Params.projects_working_group }}">
   <div class="row">
     <div class="col-md-18 col-md-offset-3">
       <h2 id="projects" class="brand-primary text-center heading-underline">Featured Projects</h2>
-      <ul class="list-inline margin-top-30">
-        {{ range $highlights }}
-          {{ $id:=.}}
-          {{ range first 1 (where ($.Scratch.GetSortedMapValues "wg_projects") "project_id" $id) }} 
-          <li class="col-xs-24 col-sm-8">
-            <div class="project-item">
-              <h3 class="h4">
-                <span class="image-container vertical-align margin-bottom-20 text-center">
-                  {{ if .logo }}
-                  <img class="logo img img-responsive margin-auto" src="{{ .logo | relURL }}" alt="{{ .name }} logo" height="50"/>
-                  {{ else }}
-                  <i style="width:70px;height:70px;" class="center-block" data-feather="file-text" stroke-width="1"></i>
-                  {{ end }}
-                </span>
-              </h3>
-              <p class="match-height-item-by-row description"><span>The Project:</span> {{ .summary | safeHTML }}
-                <br><a href="{{ .website_url | default .url }}" target="_blank" title="Learn more about {{ .name }}">Learn more&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-              <div class="row">
-                {{ range first 1 .project_leads }}
-                  <div class="col-xs-12 padding-right-0">
-                    {{ $scratch.Set "user_picture" "static/images/ecdtools/projects/" }}
-                    {{ $scratch.Add "user_picture" .username }}
-                    {{ $scratch.Add "user_picture" ".png" }}
-                    {{ $user_picture := $scratch.Get "user_picture" }}   
-                    {{ if (fileExists $user_picture) }}
-                      <img class="img-responsive featured-section-projects-picture" src="images/ecdtools/projects/{{ .username }}.png" alt="{{ .full_name }}">
-                    {{ else }}
-                    <img class="img-responsive featured-section-projects-picture" src="images/ecdtools/home/silhouette.jpg" alt="{{ .full_name }}">
-                    {{ end }}
-                  </div>
-                  <div class="col-xs-12 padding-left-0 padding-top-20">
-                      <p class="project-lead"><span>Project Lead:</span><br>
-                        {{ .full_name }}</p>
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </li>
-          {{ end }}
-        {{ end }}
-      </ul>
+      <ul class="featured-projects list-inline {{ $classes }}" 
+           id="{{ $id }}"
+           data-project-ids="{{ $projectIds }}" 
+           data-template-id="{{ $templateId }}"
+           data-url="{{ $url }}"></ul>
     </div>
   </div>
   <p class="text-center margin-top-30">

@@ -14,6 +14,7 @@
 import 'eclipsefdn-solstice-assets'
 import './src/userprofile'
 import './src/projects'
+import './src/featured-projects'
 import './src/eclipseApi'
 import './src/parallax'
 import './adopters-alternate.js'

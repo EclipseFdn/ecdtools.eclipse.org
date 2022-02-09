@@ -1,0 +1,22 @@
+{{#items}}
+<li class="col-md-8 col-sm-12">
+   <div class="featured-projects-item">
+      <div class="featured-projects-item-category category labels">{{ category }}</div>
+      <div class="featured-projects-item-content match-height-item" style="height: 330px;">
+         <a href="{{ website_url }}" class="link">
+          <img class="featured-projects-item-img img-responsive logo logo_alt" alt="{{ name }}" src="{{ logo }}">
+        </a>                        
+         <div class="featured-projects-item-text">
+            <p class="featured-projects-item-heading name">{{ name }}</p>
+            <p class="description">{{ summary }}</p>
+            <p><a class="downloadUrl" href="{{ website_url }}">Get Started &gt;</a></p>
+         </div>
+      </div>
+      <hr>
+      <div class="details">
+         <p>Latest release: <strong class="version">{{ version }}</strong></p>
+         <p>Project status: <strong class="project_state">{{ state }}</strong></p>
+      </div>
+   </div>
+</li>
+{{/items}}
