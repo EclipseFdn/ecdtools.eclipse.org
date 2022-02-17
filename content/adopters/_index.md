@@ -1,7 +1,7 @@
 ---
 title: "Adopters"
 headline: Adopters
-seo_title: "Adopters - Eclipse Cloud Development Tools"
+seo_title: "Adopters"
 layout: "single"
 hide_sidebar: true
 hide_page_title: true
