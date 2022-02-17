@@ -12,7 +12,7 @@ pluralizeListTitles = false
 [Params]
   google_tag_manager = "GTM-5WLCZXC"
   description = "The Eclipse Cloud Development Tools Working Group drives the evolution and broad adoption of de facto standards for cloud development tools, including language support, extensions, and developer workspace definition."
-  seo_title_suffix = " | The Eclipse Foundation"
+  seo_title_suffix = " | Eclipse Cloud DevTools"
   keywords = ["Cloud developer tools", "Cloud-based developer tools", "Cloud native applications","Open source", "Vendor-neutral", "Multi-language support", "Extensions", "Marketplaces", "Developer workspace", "In-browser IDE", "Building", "Testing", "Debugging", "Industry collaboration"]
   logo = "images/ecdtools/ecdtools-logo.svg"
   styles = "css/styles.css?v1.2"
