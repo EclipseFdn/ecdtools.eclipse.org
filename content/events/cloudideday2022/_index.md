@@ -53,7 +53,7 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
 
 {{< grid/section-container id="registration" containerClass="eclipsefdn-registration-content white-row backdrop padding-bottom-40 padding-top-40" >}}
 {{< events/registration event="cloudideday2022" year="2022" title="Call for Presentations" >}} 
-Cloud IDE Day gathers developers, providers and adopters in one place to guide the direction of IDE technology. If you have a topic you’d like to discuss, submit your proposal using the button below. The deadline to submit is February 28, 2022. 
+Cloud IDE Day gathers developers, providers and adopters in one place to guide the direction of IDE technology. If you have a topic you’d like to discuss, submit your proposal using the button below. The deadline to submit is March 11, 2022. 
 {{</ events/registration >}}
 {{</ grid/section-container >}}
 
