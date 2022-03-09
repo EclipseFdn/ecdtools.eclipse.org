@@ -1,7 +1,7 @@
 ---
-title: 'Cloud IDE Day 2022'
-headline: 'Cloud IDE Day 2022'
-custom_jumbotron: '<h2 class="margin-top-10">Guiding the Future of IDE Development</h2><p class="margin-top-20">Virtual Conference | April 27, 2022</p>'
+title: 'Cloud IDE Days 2022'
+headline: 'Cloud IDE Days 2022'
+custom_jumbotron: '<h2 class="margin-top-10">Guiding the Future of IDE Development</h2><p class="margin-top-20">Virtual Conference | April 27 - 28, 2022</p>'
 date: 2022-02-02T08:00:00-24:00
 hide_page_title: true
 hide_sidebar: true
@@ -24,7 +24,7 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
     </div>
     <div class="col-sm-21 margin-top-10">
       <p>
-        Cloud IDE Day 2022 is our second annual virtual event for IDE developers, with an emphasis on tools and best practices for development in the cloud.
+        Cloud IDE Days 2022 is our second annual virtual event for IDE developers, with an emphasis on tools and best practices for development in the cloud.
       </p>
     </div>
   </div>
@@ -44,7 +44,7 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
     </div>
     <div class="col-sm-21 margin-top-10">
       <p>
-        The event is open to anyone interested in adopting or currently building Cloud IDEs. Cloud IDE Day is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration on open source cloud development tools.
+        The event is open to anyone interested in adopting or currently building Cloud IDEs. Cloud IDE Days is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration on open source cloud development tools.
       </p>
     </div>
   </div>
@@ -53,14 +53,14 @@ links: [['href': 'https://forms.gle/NivdhFW4dponn19EA', 'text': 'PROPOSE A TALK'
 
 {{< grid/section-container id="registration" containerClass="eclipsefdn-registration-content white-row backdrop padding-bottom-40 padding-top-40" >}}
 {{< events/registration event="cloudideday2022" year="2022" title="Call for Presentations" >}} 
-Cloud IDE Day gathers developers, providers and adopters in one place to guide the direction of IDE technology. If you have a topic you’d like to discuss, submit your proposal using the button below. The deadline to submit is March 11, 2022. 
+Cloud IDE Days gathers developers, providers and adopters in one place to guide the direction of IDE technology. If you have a topic you’d like to discuss, submit your proposal using the button below. The deadline to submit is March 11, 2022. 
 {{</ events/registration >}}
 {{</ grid/section-container >}}
 
 {{< grid/section-container id="organizers" class="featured-section-row text-center">}}
 {{< grid/div isMarkdown="true" >}}
 ## Organized by
-Cloud IDE Day is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration in open source cloud development tools.
+Cloud IDE Days is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration in open source cloud development tools.
 {{</ grid/div >}}
 
 {{< events/sponsors event="cloudideday2022" year="2022" headerClass="hidden" source="organizers" title=" " useMax="false" displayBecomeSponsor="false" >}}
