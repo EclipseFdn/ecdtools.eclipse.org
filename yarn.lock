@@ -2554,21 +2554,21 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-eclipsefdn-hugo-solstice-theme@0.0.140:
-  version "0.0.140"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.140.tgz#b8258f687c6deb88757491f2e9c33533055f3833"
-  integrity sha512-8J2mrfXtsnnl8wcafKRZrFpmXVfwygQ5JIT0SDjYZ/5Hj3PayDowjhjTYROCcWGlHvzKXQckUOHyzNZr9I2ujA==
+eclipsefdn-hugo-solstice-theme@0.0.141:
+  version "0.0.141"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-hugo-solstice-theme/-/eclipsefdn-hugo-solstice-theme-0.0.141.tgz#a554c259fcd1d0e775d8857140ce07cc7a5f0a2d"
+  integrity sha512-GUHDL3yRo/cqyzTLd2pk/5S8ByDCzDQFNb4oGKLbFXsEsqIHsYdj6UoravLGJQBWjbJth+Xa7QNH/3LSok7VXA==
   dependencies:
     axios "^0.21.1"
-    eclipsefdn-solstice-assets "0.0.184"
+    eclipsefdn-solstice-assets "0.0.186"
     json2yaml "^1.1.0"
     parse-link-header "^1.0.1"
     toml "^3.0.0"
 
-eclipsefdn-solstice-assets@0.0.184:
-  version "0.0.184"
-  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.184.tgz#e276d0dd25be15a726f57af9e723bc4ec8b27e78"
-  integrity sha512-Q+0VK6kCe1enUfTGObNDOepib4/D8a1FbcN7k76NHEFRMVz9Z42/103W7L4crtl72M74sXYknP5vLeNR3Bvquw==
+eclipsefdn-solstice-assets@0.0.186:
+  version "0.0.186"
+  resolved "https://registry.yarnpkg.com/eclipsefdn-solstice-assets/-/eclipsefdn-solstice-assets-0.0.186.tgz#fa866c8d7a92fa58b61713ab149c0c02f95b6654"
+  integrity sha512-UXIAlDQSxHTIDPM7N5xnjZrPPMeDvKlxwVf9nw0+lqhBoEEGGuJ2pxf/F4Wni5NBKmtAvAIqsb7grtGrJjCOFw==
   dependencies:
     "@babel/core" "^7.0.0-0"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
