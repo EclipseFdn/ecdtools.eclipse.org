@@ -3,8 +3,8 @@ date = "2021-12-16"
 title = "Internationalization in Eclipse Theia"
 summary = "Even though some attempts by contributors have been made in the past, as of mid 2021 still Theia had no support for different locales. Arduino has addressed this with  the all new Arduino IDE based on Theia. Having supported Arduino previously with their IDE, they tasked TypeFox with contributing this feature to Theia."
 category = "blog"
-author = "Brian King"
-email = "briks.si@gmail.com"
+author = "Mark Sujew"
+email = "mark.sujew@typefox.io"
 +++
 *This post was written by **Mark Sujew**, Software Engineer at TypeFox*
 
