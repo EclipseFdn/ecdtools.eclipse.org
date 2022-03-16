@@ -4,7 +4,7 @@ title = "Moving Embedded Software Development Tools into the Cloud"
 summary = "In this article, we introduce the embedded special interest group (embedded SIG), hosted by the Eclipse Foundation. The embedded SIG is an open collaboration of embedded vendors and service providers, with the goal of strengthening the open source ecosystem for building web- and cloud-based tools used for embedded development. The SIG provides the structure for participants to coordinate efforts, share insights and collaborate on technical initiatives and standards."
 category = "blog"
 author = "Brian King"
-email = "briks.si@gmail.com"
+email = "brian.king@eclipse-foundation.org"
 +++
 In this article, we introduce the embedded special interest group (embedded SIG), hosted by the Eclipse Foundation. The embedded SIG is an open collaboration of embedded vendors and service providers, with the goal of strengthening the open source ecosystem for building web- and cloud-based tools used for embedded development. The SIG provides the structure for participants to coordinate efforts, share insights and collaborate on technical initiatives and standards.
 

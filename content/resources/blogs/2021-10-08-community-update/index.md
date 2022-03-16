@@ -4,7 +4,7 @@ title = "Cloud DevTools Community Update - October 2021"
 summary = "In this post we talk about the latest happenings in the Cloud DevTools community. Included is information about our new website design, upcoming events, project updates, the Embedded SIG, our developer survey, and more."
 category = "blog"
 author = "Brian King"
-email = "briks.si@gmail.com"
+email = "brian.king@eclipse-foundation.org"
 +++
 # About Us
 The [Eclipse Cloud DevTools Working Group](https://ecdtools.eclipse.org/) provides a vendor-neutral ecosystem of open-source projects focused on defining, implementing and promoting best-in-class web and cloud-based development tools. This working group accelerates innovation and adoption of Cloud Integrated Development Environment (IDE) and container-based workspace management technologies.

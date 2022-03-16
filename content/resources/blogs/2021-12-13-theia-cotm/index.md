@@ -4,7 +4,7 @@ title = "Eclipse Cloud DevTools Contributor Award: Improving the Migration Guide
 summary = "The Eclipse Cloud Developer Tools contributor award this month goes to Evolved Binary for improving the migration guide and process for Eclipse Theia."
 category = "blog"
 author = "Brian King"
-email = "briks.si@gmail.com"
+email = "brian.king@eclipse-foundation.org"
 +++
 The Eclipse Cloud Developer Tools contributor award this month goes to [Evolved Binary](https://www.evolvedbinary.com/) for improving the migration guide and process for Eclipse Theia. As representatives, we want to acknowledge Charafeddine Cheraa, Duncan Paterson and Adam Retter. Congratulations and thanks for your contributions!
 

@@ -4,7 +4,7 @@ title = "Eclipse Cloud DevTools Contributor Award: The DISCO Experience"
 summary = "The Eclipse Cloud Developer Tools contributor award this month goes to CS Group, represented by Vincent Hemery, for DISCO which is a modeling tool for satellite databases built with Eclipse Theia."
 category = "blog"
 author = "Brian King"
-email = "briks.si@gmail.com"
+email = "brian.king@eclipse-foundation.org"
 +++
 We would like to recognize [CS Group](https://www.csgroup.eu) (represented by Vincent Hemery), as the Eclipse Cloud DevTools Contributor of the Month for January 2022. Congratulations and thanks for your contributions!
 
