@@ -1,0 +1,16 @@
+items:
+  - name: "Irina Artemeva"
+    title: "TypeFox"
+    img: "irina-artemeva.jpg"
+    bio: |
+      <p>Irina Artemeva is passionate about everything related to programming languages theory. This interest got started with Haskell, which showed her the multidimensional nature of programming paradigms, and blossomed into love for all programming languages in general. She has earned a master’s degree in Computer Science, and now works at TypeFox where she helps customers build their own programming languages and development environments. She deeply cares about improving the user experience of other software developers and is therefore happy to work on the language engineering framework Langium.</p>
+  - name: "Arnaud Fiorini"
+    title: "Polytechnique Montréal"
+    img: "arnaud-fiorini.jpg"
+    bio: |
+      <p>Arnaud Fiorini is a research associate who helps students with their research on many topics around tracing. Arnaud is developing technical solutions for tracing and profiling issues in the HPC domain, mainly on GPU programming. He also contributes to open source projects at the Eclipse Foundation like Trace Compass and Theia.</p>
+  - name: "Jonas Helming"
+    title: "EclipseSource"
+    img: "jonas-helming.jpg"
+    bio: |
+      <p>Dr. Jonas Helming is CEO of EclipseSource as well as consultant, trainer and software engineer for building web-based and desktop-based tools. He is project lead and committer to various open source projects including Eclipse Theia. Jonas regularly published articles about tool and IDE related topics and is a regular conference speaker on these topics.</p>

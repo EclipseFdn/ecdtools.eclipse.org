@@ -1,0 +1,13 @@
+items:
+  - name: "John Kellerman"
+    title: "Eclipse Foundation"
+    img: "john-kellerman.jpg"
+  - name: "Tim deBoer"
+    title: "Red Hat"
+    img: "tim-deboer.jpg"
+  - name: "Matthew Khouzam"
+    title: "Ericsson"
+    img: "matthew-khouzam.jpg"
+  - name: "Peter Haumer"
+    title: "IBM"
+    img: "peter-haumer.jpg"
