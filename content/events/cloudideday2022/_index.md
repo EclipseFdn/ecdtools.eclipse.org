@@ -11,6 +11,7 @@ container: 'container-fluid idesummit-event'
 summary: 'This is the 2nd annual virtual event for IDE developers, with an emphasis on tools and best practices for development in the cloud with the goal of guiding the future direction of IDE technology. The event is open to anyone interested in adopting or currently building Cloud IDEs. It’s hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation. This is a vendor-neutral group focused on industry collaboration on open source cloud development tools.'
 layout: single
 featured_section_class: 'featured-idesummit-event'
+links: [['href': 'https://cloud-ide-days-2022.eventbrite.com', 'text': 'REGISTER NOW']]
 ---
 
 {{< grid/section-container containerClass="padding-bottom-40 padding-top-40" >}}
@@ -55,6 +56,16 @@ featured_section_class: 'featured-idesummit-event'
 ## Program and Registration Coming Soon!
 Thank you to everyone who submitted a proposal. The program will be published soon. Registration will open on March 25.
 
+{{</ grid/div >}}
+{{</ grid/section-container >}}
+
+{{< grid/section-container id="speakers" class="row text-center margin-top-50 margin-bottom-20">}}
+{{< events/user_display event="cloudideday2022" year="events" title="Featured Speakers" source="speakers" imageRoot="/events/cloudideday2022/images/" subpage="speakers" displayLearnMore="false" />}}
+{{</ grid/section-container >}}
+
+{{< grid/section-container id="committee" class="row white-row text-center">}}
+{{< grid/div class="text-center margin-top-10" isMarkdown="false" >}}
+{{< events/user_display event="cloudideday2022" year="events" title="Meet the Program Committee" source="committee" imageRoot="/events/cloudideday2022/images/" displayLearnMore="false" />}}
 {{</ grid/div >}}
 {{</ grid/section-container >}}
 
