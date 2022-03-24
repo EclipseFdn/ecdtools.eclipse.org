@@ -266,6 +266,7 @@ const EclipseProjectList = (function ($) {
 
   var getCategories = function() {
     var categories = {
+        "ecd.cdt.cloud": "Cloud IDE",
         "ecd.che": "Cloud IDE",
         "ecd.che.che4z": "Extension Marketplace",
         "ecd.codewind": "IDE-Agnostic Library",
