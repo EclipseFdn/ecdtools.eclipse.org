@@ -58,7 +58,7 @@ links: [['href': 'https://cloud-ide-days-2022.eventbrite.com', 'text': 'REGISTER
 {{</ grid/section-container >}}
 
 {{< grid/section-container id="committee" class="row white-row text-center">}}
-{{< grid/div class="text-center padding-top-40" isMarkdown="false" >}}
+{{< grid/div class="text-center" isMarkdown="false" >}}
 {{< events/user_display event="cloudideday2022" year="events" title="Meet the Program Committee" source="committee" imageRoot="/events/cloudideday2022/images/" displayLearnMore="false" />}}
 {{</ grid/div >}}
 {{</ grid/section-container >}}
