@@ -14,7 +14,7 @@ featured_section_class: 'featured-idesummit-event'
 links: [['href': 'https://cloud-ide-days-2022.eventbrite.com', 'text': 'REGISTER NOW']]
 ---
 
-{{< grid/section-container containerClass="padding-bottom-40 padding-top-40" >}}
+{{< grid/section-container containerClass="white-row" >}}
 {{< grid/div class="cloud-ide-2022-registration container" isMarkdown="false" >}}
   <h2 class="text-center margin-bottom-30">Join the Conversation</h2>
 
@@ -51,20 +51,14 @@ links: [['href': 'https://cloud-ide-days-2022.eventbrite.com', 'text': 'REGISTER
 {{</ grid/div >}} 
 {{</ grid/section-container >}}
 
-{{< grid/section-container id="organizers" class="row white-row text-center">}}
-{{< grid/div class="margin-bottom-30" isMarkdown="true" >}}
-## Program and Registration Coming Soon!
-Thank you to everyone who submitted a proposal. The program will be published soon. Registration will open on March 25.
-
-{{</ grid/div >}}
-{{</ grid/section-container >}}
-
-{{< grid/section-container id="speakers" class="row text-center margin-top-50 margin-bottom-20">}}
-{{< events/user_display event="cloudideday2022" year="events" title="Featured Speakers" source="speakers" imageRoot="/events/cloudideday2022/images/" subpage="speakers" displayLearnMore="false" />}}
+{{< grid/section-container id="speakers" class="row text-center padding-top-40 padding-bottom-40">}}
+<h2>Featured Speakers</h2>
+<p>The full program will be published soon! Here are three of the speakers you will see at Cloud IDE Days.</p>
+{{< events/user_display event="cloudideday2022" year="events" title=" " source="speakers" imageRoot="/events/cloudideday2022/images/" subpage="speakers" displayLearnMore="false" />}}
 {{</ grid/section-container >}}
 
 {{< grid/section-container id="committee" class="row white-row text-center">}}
-{{< grid/div class="text-center margin-top-10" isMarkdown="false" >}}
+{{< grid/div class="text-center padding-top-40" isMarkdown="false" >}}
 {{< events/user_display event="cloudideday2022" year="events" title="Meet the Program Committee" source="committee" imageRoot="/events/cloudideday2022/images/" displayLearnMore="false" />}}
 {{</ grid/div >}}
 {{</ grid/section-container >}}
@@ -74,7 +68,5 @@ Thank you to everyone who submitted a proposal. The program will be published so
 ## Organized by
 Cloud IDE Days is hosted by the Eclipse Cloud DevTools Working Group, part of the Eclipse Foundation, a vendor-neutral group focused on industry collaboration in open source cloud development tools.
 {{</ grid/div >}}
-
 {{< events/sponsors event="cloudideday2022" year="2022" headerClass="hidden" source="organizers" title=" " useMax="false" displayBecomeSponsor="false" >}}
-
 {{</ grid/section-container >}}
