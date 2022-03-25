@@ -70,3 +70,4 @@ Cloud IDE Days is hosted by the Eclipse Cloud DevTools Working Group, part of th
 {{</ grid/div >}}
 {{< events/sponsors event="cloudideday2022" year="2022" headerClass="hidden" source="organizers" title=" " useMax="false" displayBecomeSponsor="false" >}}
 {{</ grid/section-container >}}
+ 
