@@ -1,5 +1,12 @@
 # ecdtools.eclipse.org
 
+---
+**NOTE**
+
+This project was migrated to [Eclipse Gitlab](https://gitlab.eclipse.org/eclipsefdn/it/websites/ecdtools.eclipse.org) on March 25, 2022.
+
+---
+
 The [ecdtools.eclipse.org](https://ecdtools.eclipse.org) website is generated with [Hugo](https://gohugo.io/documentation/).
 
 The Eclipse Cloud Development Tools Working Group drives the evolution and broad adoption of de facto standards for cloud development tools, including language support, extensions, and developer workspace definition. In addition, the group explores the impacts and optimizations for running developer tools in a cloud environment, including scale out / scale-to-zero execution of compute-intensive tasks like CI and testing.
