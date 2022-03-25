@@ -218,8 +218,8 @@ const EclipseProjectList = (function ($) {
       var found = false;
 
       for (var i = 0; i < filter.length; i++) {
-        var element = filter[i];
-        if (item.values().category.indexOf(element) !== -1) {
+        var element = filter[i];       
+        if (typeof item.values().category !== "undefined" && item.values().category.indexOf(element) !== -1) {
           found = true;
           continue;
         }
@@ -285,7 +285,10 @@ const EclipseProjectList = (function ($) {
 
   var getCategory = function(project_id) {
     var categories = getCategories();
-    return categories[project_id];
+    if (typeof categories[project_id] !== "undefined") {
+      return categories[project_id];
+    }
+    return "";
   }
 })(jQuery);
 // The global jQuery object is passed as a parameter
